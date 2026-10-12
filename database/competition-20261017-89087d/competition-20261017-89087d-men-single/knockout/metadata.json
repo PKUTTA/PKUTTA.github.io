@@ -9,7 +9,7 @@
         ],
         "team": "Team 1"
       },
-      "seed": 8
+      "seed": 4
     },
     {
       "participant": {
@@ -19,7 +19,7 @@
         ],
         "team": "Team 2"
       },
-      "seed": 4
+      "seed": -1
     },
     {
       "participant": {
@@ -29,17 +29,17 @@
         ],
         "team": "Team 1"
       },
-      "seed": 7
+      "seed": 3
     },
     {
       "participant": {
         "kind": "player",
         "members": [
-          "张8"
+          "张14"
         ],
         "team": "Team 1"
       },
-      "seed": 3
+      "seed": -1
     },
     {
       "participant": {
@@ -49,7 +49,7 @@
         ],
         "team": "Team 2"
       },
-      "seed": 6
+      "seed": 2
     },
     {
       "participant": {
@@ -59,7 +59,7 @@
         ],
         "team": "Team 2"
       },
-      "seed": 2
+      "seed": -1
     },
     {
       "participant": {
@@ -69,7 +69,7 @@
         ],
         "team": "Team 2"
       },
-      "seed": 5
+      "seed": 1
     },
     {
       "participant": {
@@ -79,7 +79,7 @@
         ],
         "team": "Team 1"
       },
-      "seed": 1
+      "seed": -1
     }
   ]
 }

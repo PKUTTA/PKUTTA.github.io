@@ -114,7 +114,9 @@ h3 { font-size: 18px; }
 .ranking-summary-right { display: inline-flex; align-items: center; gap: 16px; }
 .ranking-chevron { width: 9px; height: 9px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); transition: transform .15s; }
 .ranking-panel[open] .ranking-chevron { transform: rotate(225deg); }
-.round-robin-layout { display: grid; grid-template-columns: minmax(220px, 1fr) minmax(0, 1.8fr); gap: 24px; align-items: start; }
+.round-robin-layout { display: grid; grid-template-columns: 220px minmax(0, var(--matrix-width)); gap: 18px; align-items: start; }
+.group-table-layout { grid-template-columns: 220px minmax(0, var(--matrix-width)) minmax(180px, 1fr); gap: 18px; }
+.two-table-layout { grid-template-columns: 220px minmax(0, var(--matrix-width)); width: max-content; max-width: 100%; margin-left: auto; margin-right: auto; }
 .round-robin-layout > div { min-width: 0; }
 .table-section-title { font-size: 12px; font-weight: 800; color: var(--muted); letter-spacing: .05em; margin-bottom: 10px; min-height: 25px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .ranking-toggle { padding: 3px 5px; border: 0; background: transparent; color: var(--brand); font-size: 12px; font-weight: 750; letter-spacing: 0; }
@@ -125,23 +127,24 @@ h3 { font-size: 18px; }
 .data-table tr:last-child td { border-bottom: 0; }
 .data-table th:last-child, .data-table td:last-child { border-right: 0; }
 .data-table thead th { height: 43px; color: #566271; background: #f8f9fa; font-weight: 750; }
-.roster-table th, .roster-table td, .roster-table thead th { height: 44px; box-sizing: border-box; }
+.roster-table .person-link { display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .roster-table th:first-child, .roster-table td:first-child { width: 46px; color: var(--muted); }
 .roster-table th:last-child, .roster-table td:last-child { text-align: left; }
 .roster-table.ranked-roster th:last-child, .roster-table.ranked-roster td:last-child { width: 58px; text-align: center; font-weight: 750; }
-.roster-table td.qualifier { background: var(--success-soft); color: var(--success); font-weight: 750; }
+.roster-table td.qualifier, .group-standings-table td.qualifier { background: var(--success-soft); color: var(--success); font-weight: 750; }
 .person-link { border: 0; background: transparent; color: inherit; text-align: inherit; padding: 0; font-size: 13px; font-weight: 650; }
 .person-link:not(:disabled):hover { color: var(--brand); text-decoration: underline; }
 .matrix-wrap { width: max-content; max-width: 100%; }
 .matrix-table { width: max-content; table-layout: auto; border-collapse: separate; border-spacing: 0; }
-.matrix-table th, .matrix-table td, .matrix-table thead th { box-sizing: border-box; width: 44px; min-width: 44px; max-width: 44px; height: 44px; padding: 0; }
+.matrix-table th, .matrix-table td { box-sizing: border-box; width: 56px; min-width: 56px; max-width: 56px; height: 46px; padding: 0; }
+.matrix-table thead th { height: 43px; }
 .matrix-table td.self { background: repeating-linear-gradient(135deg, #f0f2f4 0, #f0f2f4 4px, #f7f8f9 4px, #f7f8f9 8px); }
 .matrix-table td.finished { background: var(--success-soft); color: var(--success); }
 .score-button { border: 0; border-radius: 6px; background: transparent; color: var(--ink); font-size: 13px; font-weight: 750; min-height: 32px; min-width: 34px; }
 .score-button:hover { background: var(--brand-soft); color: var(--brand); }
 .score-button.pending { color: #aab2b9; font-weight: 500; }
 .score-button.live { color: var(--brand); }
-.matrix-table .score-button { display: flex; align-items: center; justify-content: center; width: 100%; height: 43px; min-width: 0; padding: 0; border-radius: 0; white-space: nowrap; color: inherit; }
+.matrix-table .score-button { display: flex; align-items: center; justify-content: center; width: 100%; height: 45px; min-width: 0; padding: 0; border-radius: 0; white-space: nowrap; color: inherit; }
 .matrix-table .score-button.pending { color: #aab2b9; }
 .matrix-table .score-button.live { color: var(--brand); }
 .matrix-table .score-button:hover { box-shadow: inset 0 0 0 2px #d3a2af; background: transparent; }
@@ -149,6 +152,10 @@ h3 { font-size: 18px; }
 .qualifier-table th:first-child, .qualifier-table td:first-child { width: 125px; }
 .qualifier-table th:last-child, .qualifier-table td:last-child { width: 110px; }
 .qualifier-table td:nth-child(2) { text-align: left; }
+.group-standings-table { width: max-content; min-width: 100%; table-layout: auto; }
+.group-standings-table th, .group-standings-table td { white-space: nowrap; min-width: 56px; }
+.group-standings-table th:nth-child(2), .group-standings-table td:nth-child(2) { min-width: 110px; text-align: left; }
+.group-standings-table td.unused-metric { background: #f0f2f4; }
 
 .bracket-scroll { overflow: auto; background: #fff; border-radius: 17px; border: 1px solid var(--line); }
 .bracket-canvas { position: relative; min-height: 340px; margin: 0 auto; }
@@ -157,10 +164,12 @@ h3 { font-size: 18px; }
 .bracket-card { position: absolute; height: 44px; border-radius: 9px; padding: 5px 9px; background: #fff; border: 1px solid #cdd3d9; display: flex; align-items: center; justify-content: space-between; gap: 8px; box-shadow: 0 2px 5px rgba(20,31,42,.045); font-size: 12px; font-weight: 700; overflow: hidden; z-index: 1; }
 .bracket-card.champion { color: var(--brand); border-color: #d3a2af; background: var(--brand-soft); }
 .bracket-card .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bracket-card .slot-number { flex: none; color: var(--muted); font-size: 11px; font-weight: 650; }
+.bracket-card:has(.slot-number) { justify-content: flex-start; }
 .bracket-card .seed { color: var(--muted); flex: none; font-weight: 500; }
 .bracket-card.interactive { cursor: pointer; }
 .bracket-card.interactive:hover { border-color: var(--brand); color: var(--brand); }
-.bracket-match { position: absolute; z-index: 2; border: 1px solid #cdd3d9; border-radius: 7px; background: #fff; color: var(--ink); min-width: 42px; min-height: 28px; padding: 3px 5px; text-align: center; font-size: 11px; font-weight: 800; box-shadow: 0 2px 5px rgba(20,31,42,.06); }
+.bracket-match { position: absolute; z-index: 2; border: 1px solid #cdd3d9; border-radius: 7px; background: #fff; color: var(--ink); min-width: 56px; min-height: 28px; padding: 3px 5px; text-align: center; font-size: 11px; font-weight: 800; white-space: nowrap; box-shadow: 0 2px 5px rgba(20,31,42,.06); }
 .bracket-match:hover { background: var(--brand-soft); border-color: var(--brand); color: var(--brand); }
 .bracket-match.live { color: var(--brand); }
 .bracket-match.finished { color: var(--success); border-color: #a4d0be; }
@@ -229,14 +238,21 @@ h3 { font-size: 18px; }
 #toast-root { position: fixed; z-index: 80; bottom: 22px; right: 22px; display: grid; gap: 8px; }
 .toast { max-width: min(390px, calc(100vw - 44px)); padding: 12px 16px; border-radius: 10px; background: var(--ink); color: #fff; box-shadow: 0 8px 30px rgba(0,0,0,.2); font-size: 13px; }
 .toast.error { background: #a72b26; }
+.submit-button { position: fixed; z-index: 30; left: 22px; bottom: 22px; box-shadow: 0 4px 16px rgba(20,31,42,.2); }
+.submit-button:disabled { background: #8b929a; color: #fff; border-color: #8b929a; cursor: wait; opacity: 1; }
 
 @media (max-width: 950px) {
   .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .round-robin-layout { grid-template-columns: 1fr; }
+  .round-robin-layout { grid-template-columns: 1fr; width: 100%; }
+  .round-robin-layout > div:first-child { width: 220px; max-width: 100%; }
+  .round-robin-layout > div:nth-child(2) { width: var(--matrix-width); max-width: 100%; }
+  .round-robin-layout > div:nth-child(3) { width: 100%; }
 }
 @media (max-width: 620px) {
   .round-robin-layout .table-section-title { justify-content: center; }
   .round-robin-layout .table-wrap { margin-left: auto; margin-right: auto; }
+  .round-robin-layout > div { margin-left: auto; margin-right: auto; }
+  .submit-button { left: 16px; bottom: 16px; }
   .header-inner, .page-shell, .footer-inner { padding-left: 16px; padding-right: 16px; }
   .header-inner { min-height: 64px; }
   .brand-name { font-size: 13px; }

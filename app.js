@@ -25,6 +25,9 @@
   let modalState = null;
   const rankingVisibility = new Map();
   const scoreQueues = new Map();
+  let submitRunning = false;
+  let submitTimer = null;
+  let submitSerial = 0;
 
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const attr = esc;
@@ -125,7 +128,63 @@
       <span class="brand-name">北京大学乒乓球协会<small>TABLE TENNIS ASSOCIATION</small></span></a>
       <div class="header-right">${admin ? '<span class="mode-badge">管理后台</span>' : ''}<a class="header-link" href="${routeHome}">赛事首页</a></div>
     </div></header><main class="page-shell">${content}</main>
-    <footer class="site-footer"><div class="footer-inner"><span>北京大学乒乓球协会 · 赛事中心</span></div></footer>`;
+    <footer class="site-footer"><div class="footer-inner"><span>北京大学乒乓球协会 · 赛事中心</span></div></footer>
+    ${admin ? `<button type="button" class="button primary submit-button" data-action="publish" ${submitRunning ? 'disabled' : ''} aria-busy="${submitRunning}">${submitRunning ? 'Submit · 提交中…' : 'Submit'}</button>` : ''}`;
+  }
+
+  function updateSubmitButton() {
+    const button = app.querySelector('[data-action="publish"]');
+    if (!button) return;
+    button.disabled = submitRunning;
+    button.setAttribute('aria-busy', String(submitRunning));
+    button.textContent = submitRunning ? 'Submit · 提交中…' : 'Submit';
+  }
+
+  function submitWarning(message) {
+    flushVisibleGameRows();
+    modalState = { type: 'submit-warning' };
+    openModal('提交失败', `<p class="danger-copy" role="alert">${esc(message || '提交未完成，请查看后台终端。')}</p>`,
+      '<button class="button secondary" type="button" data-action="close-modal">关闭</button>');
+  }
+
+  function handleSubmitState(state, serial, notifyFailure) {
+    if (serial !== submitSerial) return;
+    submitRunning = !!state.running;
+    updateSubmitButton();
+    if (submitRunning) {
+      submitTimer = setTimeout(() => { void pollSubmit(serial, true); }, 1000);
+    } else if (notifyFailure && state.success === false) {
+      submitWarning(state.error);
+    }
+  }
+
+  async function pollSubmit(serial, notifyFailure = false) {
+    if (serial !== submitSerial) return;
+    submitTimer = null;
+    try {
+      const state = await fetchJson('/api/submit');
+      handleSubmitState(state, serial, notifyFailure);
+    } catch (error) {
+      if (serial !== submitSerial) return;
+      // A failed status read does not prove that the server's Git commands stopped.
+      if (submitRunning) submitTimer = setTimeout(() => { void pollSubmit(serial, notifyFailure); }, 2000);
+    }
+  }
+
+  async function submitChanges() {
+    if (!admin || submitRunning) return;
+    if (submitTimer !== null) clearTimeout(submitTimer);
+    const serial = ++submitSerial;
+    submitRunning = true;
+    updateSubmitButton();
+    try {
+      handleSubmitState(await mutate('POST', '/submit'), serial, true);
+    } catch (error) {
+      if (serial !== submitSerial) return;
+      submitWarning(error.message);
+      // The POST may have reached the server before its response was lost.
+      void pollSubmit(serial);
+    }
   }
 
   function breadcrumbs(items) {
@@ -275,18 +334,47 @@
 
   function bigScore(match) {
     let a = 0, b = 0;
-    for (const game of match?.games || []) {
+    let forfeitedA = false, forfeitedB = false;
+    for (const rawGame of match?.games || []) {
+      const game = normalizedWalkoverGame(rawGame);
       if (!hasCompleteGameScore(game)) continue;
-      if (Number(game[0]) > Number(game[1])) a++;
-      if (Number(game[1]) > Number(game[0])) b++;
+      const woA = isWalkover(game[0]), woB = isWalkover(game[1]);
+      forfeitedA ||= woA;
+      forfeitedB ||= woB;
+      if (woA || woB) {
+        if (!woA) a++;
+        if (!woB) b++;
+      } else {
+        if (Number(game[0]) > Number(game[1])) a++;
+        if (Number(game[1]) > Number(game[0])) b++;
+      }
     }
-    return [a, b];
+    return [forfeitedA ? 'wo' : a, forfeitedB ? 'wo' : b];
+  }
+
+  function isWalkover(value) {
+    return typeof value === 'string' && value.trim().toLowerCase() === 'wo';
+  }
+
+  function rankingScore(value) {
+    return isWalkover(value) ? 0 : Number(value);
+  }
+
+  function normalizedWalkoverGame(game) {
+    if (!Array.isArray(game)) return game;
+    const absent = value => value === null || value === undefined || value === '';
+    return [
+      isWalkover(game[0]) ? 'wo' : isWalkover(game[1]) && absent(game[0]) ? 0 : game[0],
+      isWalkover(game[1]) ? 'wo' : isWalkover(game[0]) && absent(game[1]) ? 0 : game[1]
+    ];
   }
 
   function hasCompleteGameScore(game) {
+    game = normalizedWalkoverGame(game);
     return Array.isArray(game) && game[0] !== null && game[1] !== null &&
       game[0] !== undefined && game[1] !== undefined && game[0] !== '' && game[1] !== '' &&
-      Number.isFinite(Number(game[0])) && Number.isFinite(Number(game[1]));
+      (isWalkover(game[0]) || Number.isFinite(Number(game[0]))) &&
+      (isWalkover(game[1]) || Number.isFinite(Number(game[1])));
   }
 
   function hasScoredGame(match) {
@@ -313,7 +401,10 @@
     if (participantB?.kind === 'bye') return participantA;
     if (!match?.finished) return { kind: 'undecided', members: [], team: '' };
     const [a, b] = bigScore(match);
+    if (a === 'wo' && b === 'wo') return { kind: 'bye', members: [], team: '', seed: -1 };
     if (a === b) return { kind: 'undecided', members: [], team: '' };
+    if (a === 'wo') return participantB;
+    if (b === 'wo') return participantA;
     return a > b ? participantA : participantB;
   }
 
@@ -327,15 +418,17 @@
       if (!Number.isInteger(a) || !Number.isInteger(b) || a < 0 || b < 0 ||
           a >= count || b >= count || a === b) continue;
       let gamesA = 0, gamesB = 0, pointsA = 0, pointsB = 0;
-      for (const game of match.games || []) {
+      for (const rawGame of match.games || []) {
+        const game = normalizedWalkoverGame(rawGame);
         if (!hasCompleteGameScore(game)) continue;
-        const scoreA = Number(game[0]), scoreB = Number(game[1]);
+        const scoreA = rankingScore(game[0]), scoreB = rankingScore(game[1]);
         if (scoreA > scoreB) gamesA++;
         if (scoreB > scoreA) gamesB++;
         pointsA += scoreA;
         pointsB += scoreB;
       }
-      const winner = gamesA > gamesB ? a : gamesB > gamesA ? b : null;
+      const [totalA, totalB] = bigScore(match);
+      const winner = totalA === totalB ? null : totalA === 'wo' ? b : totalB === 'wo' ? a : totalA > totalB ? a : b;
       records.push({ a, b, winner, gamesA, gamesB, pointsA, pointsB });
     }
 
@@ -389,10 +482,11 @@
     return matches.find(match => (match.a === a && match.b === b) || (match.a === b && match.b === a));
   }
 
-  function renderRoundRobinTable(participants, matches, qualifiers = 0, rankingId = 'round-robin-rank') {
-    const rank = rankRoundRobin(participants, matches);
+  function renderRoundRobinTable(participants, matches, qualifiers = 0, rankingId = 'round-robin-rank', groupStandings = undefined) {
+    const isGroup = groupStandings !== undefined;
+    const rank = isGroup ? (groupStandings?.rows ? Object.fromEntries(groupStandings.rows.map(row => [row.index, row.rank])) : null) : rankRoundRobin(participants, matches);
     const rankColumn = `data-rank-column="${attr(rankingId)}" ${rankingOpen(rankingId) ? '' : 'hidden'}`;
-    const rosterRows = participants.map((person, i) => `<tr><td>${i + 1}</td><td class="${rank && rank[i] <= qualifiers ? 'qualifier' : ''}">${participantButton(person)}</td><td ${rankColumn}>${rank ? rank[i] : ''}</td></tr>`).join('');
+    const rosterRows = participants.map((person, i) => `<tr><td>${i + 1}</td><td class="${rank && rank[i] <= qualifiers ? 'qualifier' : ''}">${participantButton(person)}</td>${isGroup ? '' : `<td ${rankColumn}>${rank ? rank[i] : ''}</td>`}</tr>`).join('');
     const header = participants.map((_, i) => `<th scope="col">${i + 1}</th>`).join('');
     const rows = participants.map((_, i) => {
       const cells = participants.map((__, j) => {
@@ -407,9 +501,26 @@
       }).join('');
       return `<tr><th scope="row">${i + 1}</th>${cells}</tr>`;
     }).join('');
-    return `<div class="round-robin-layout"><div><div class="table-section-title"><span>选手列表</span>${rankingToggle(rankingId)}</div>
-      <div class="table-wrap"><table id="${attr(rankingId)}-table" class="data-table roster-table ranked-roster"><thead><tr><th scope="col">#</th><th scope="col">选手</th><th scope="col" ${rankColumn}>排名</th></tr></thead><tbody>${rosterRows}</tbody></table></div></div>
-      <div><div class="table-section-title"><span>对阵图</span></div><div class="table-wrap matrix-wrap"><table class="data-table matrix-table"><thead><tr><th></th>${header}</tr></thead><tbody>${rows}</tbody></table></div></div></div>`;
+    const standings = isGroup && groupStandings?.rows ? `<div class="group-ranking-section"><div class="table-section-title"><span>排名</span></div>${renderGroupStandings(participants, groupStandings, qualifiers)}</div>` : '';
+    return `<div class="round-robin-layout${isGroup ? ' group-table-layout' : ''}${standings ? '' : ' two-table-layout'}" style="--matrix-width:${(participants.length + 1) * 56 + 2}px"><div><div class="table-section-title"><span>选手列表</span>${isGroup ? '' : rankingToggle(rankingId)}</div>
+      <div class="table-wrap"><table id="${attr(rankingId)}-table" class="data-table roster-table${isGroup ? '' : ' ranked-roster'}"><thead><tr><th scope="col">#</th><th scope="col">选手</th>${isGroup ? '' : `<th scope="col" ${rankColumn}>排名</th>`}</tr></thead><tbody>${rosterRows}</tbody></table></div></div>
+      <div><div class="table-section-title"><span>对阵图</span></div><div class="table-wrap matrix-wrap"><table class="data-table matrix-table"><thead><tr><th></th>${header}</tr></thead><tbody>${rows}</tbody></table></div></div>${standings}</div>`;
+  }
+
+  function renderGroupStandings(participants, standings, qualifiers) {
+    const rows = [...standings.rows].sort((a, b) => a.rank - b.rank);
+    const columns = [
+      ['tied_points', '同分内部积分'], ['game_ratio', '局胜负比'],
+      ['point_ratio', '球分胜负比'], ['draw_rank', '抽签名次']
+    ].filter(([key]) => rows.some(row => row[key] !== null && row[key] !== undefined));
+    const metricCell = (row, key) => {
+      const metric = row[key];
+      if (metric === null || metric === undefined) return '<td class="unused-metric" aria-label="未参与该比较"></td>';
+      return `<td>${esc(typeof metric === 'object' ? `${metric.won}:${metric.lost}` : metric)}</td>`;
+    };
+    return `<div class="table-wrap standings-wrap"><table class="data-table group-standings-table"><thead><tr>
+      <th scope="col">名次</th><th scope="col">选手</th><th scope="col">积分</th>${columns.map(([, title]) => `<th scope="col">${title}</th>`).join('')}
+      </tr></thead><tbody>${rows.map(row => `<tr><td>${row.rank}</td><td class="${row.rank <= qualifiers ? 'qualifier' : ''}">${participantButton(participants[row.index])}</td><td>${esc(row.points)}</td>${columns.map(([key]) => metricCell(row, key)).join('')}</tr>`).join('')}</tbody></table></div>`;
   }
 
   function renderRoundRobinStage(stage) {
@@ -426,15 +537,17 @@
       const participants = group.participants || [];
       const matches = group.matches || [];
       const groupId = group.id ?? index + 1;
+      const groupFinished = matches.length >= participants.length * (participants.length - 1) / 2 && matches.every(match => match.finished);
       return `<section class="panel"><div class="panel-header"><div class="group-heading"><h2>小组 #${esc(groupId)}</h2>
-        <div class="group-schedule"><span>预定时间：${esc(group.scheduled_time || '待定')}</span><span>预定桌号：${esc(group.scheduled_table || '待定')}</span></div></div>
+        <div class="group-schedule"><span>预定时间：${esc(group.scheduled_time || '待定')}</span><span>预定桌号：${esc(group.scheduled_table || '待定')}</span><span>预定裁判：${esc(group.scheduled_referee || '待定')}</span></div></div>
         <div class="group-header-actions"><span class="panel-subtitle">出线 ${esc(group.qualifiers ?? 0)} 人 · ${matches.filter(match => match.finished).length}/${matches.length} 场已完成</span>
         ${admin ? `<button class="button secondary small" type="button" data-action="edit-group-schedule" data-group-id="${attr(groupId)}">${icon.edit} 设置预定安排</button>` : ''}</div></div>
-        <div class="panel-body">${renderRoundRobinTable(participants, matches, group.qualifiers || 0, `${current.competition.slug}-${current.event.slug}-group-${group.id ?? index + 1}`)}</div></section>`;
+        <div class="panel-body">${renderRoundRobinTable(participants, matches, group.qualifiers || 0, `${current.competition.slug}-${current.event.slug}-group-${group.id ?? index + 1}`, groupFinished ? group.standings || null : null)}</div></section>`;
     }).join('');
     const qualifierNames = finished ? groups.flatMap((group, index) => {
-      const rank = rankRoundRobin(group.participants || [], group.matches || []);
-      return rank ? (group.participants || []).flatMap((person, i) => rank[i] <= group.qualifiers ? [{ person, group: group.id ?? index + 1, groupIndex: index, rank: rank[i] }] : []) : [];
+      return (group.standings?.rows || []).filter(row => row.rank <= group.qualifiers).map(row => ({
+        person: group.participants[row.index], group: group.id ?? index + 1, groupIndex: index, rank: row.rank
+      }));
     }) : [];
     qualifierNames.sort((a, b) => a.groupIndex - b.groupIndex || a.rank - b.rank);
     const qualifierTable = `<div class="table-wrap"><table class="data-table qualifier-table"><thead><tr><th scope="col">小组</th><th scope="col">选手</th><th scope="col">出线名次</th></tr></thead>
@@ -471,7 +584,7 @@
     return `<div class="bracket-card${champion ? ' champion' : ''}${clickable ? ' interactive' : ''}" 
       style="left:${node.x}px;top:${node.y - 22}px;width:${node.width}px" 
       ${clickable ? `role="button" tabindex="0" data-action="participant" data-person="${attr(JSON.stringify(person))}"` : ''}
-      title="${attr(participantName(person))}"><span class="name">${title}${esc(participantName(person))}</span></div>`;
+      title="${attr(participantName(person))}">${node.slotNumber !== undefined ? `<span class="slot-number">#${node.slotNumber}</span>` : ''}<span class="name">${title}${esc(participantName(person))}</span></div>`;
   }
 
   function renderKnockoutStage(stage) {
@@ -496,7 +609,7 @@
       const offset = side === 'left' ? 0 : half;
       const xAt = level => side === 'left' ? marginX + level * (cardWidth + gapX) : width - marginX - cardWidth - level * (cardWidth + gapX);
       let nodes = Array.from({ length: half }, (_, i) => ({
-        x: xAt(0), y: leafTop + i * 72, width: cardWidth, person: slots[offset + i] || undecided
+        x: xAt(0), y: leafTop + i * 72, width: cardWidth, person: slots[offset + i] || undecided, slotNumber: offset + i + 1
       }));
       nodes.forEach(node => cards.push(renderBracketCard(node)));
       for (let level = 1; level < rounds; level++) {
@@ -514,7 +627,7 @@
             lines.push(`<path class="bracket-line" d="M ${side === 'left' ? child.x + cardWidth : child.x} ${child.y} H ${junction} V ${parent.y} H ${parentEdge}"/>`);
           }
           if (match) buttons.push(`<button class="bracket-match${match.finished ? ' finished' : hasScoredGame(match) ? ' live' : ''}" 
-            style="left:${junction - 21}px;top:${parent.y - 14}px" data-action="match" data-match-id="${attr(match.id)}" 
+            style="left:${junction - 28}px;top:${parent.y - 14}px" data-action="match" data-match-id="${attr(match.id)}"
             aria-label="查看第 ${level} 轮场次">${bracketScore(match)}</button>`);
           next.push(parent);
           cards.push(renderBracketCard(parent));
@@ -532,7 +645,7 @@
     lines.push(`<path class="bracket-line" d="M ${right.x} ${right.y} H ${champion.x + cardWidth}"/>`);
     cards.push(renderBracketCard(champion, true));
     if (finalMatch) buttons.push(`<button class="bracket-match${finalMatch.finished ? ' finished' : hasScoredGame(finalMatch) ? ' live' : ''}" 
-      style="left:${width / 2 - 21}px;top:${height / 2 + 33}px" data-action="match" data-match-id="${attr(finalMatch.id)}" 
+      style="left:${width / 2 - 28}px;top:${height / 2 + 33}px" data-action="match" data-match-id="${attr(finalMatch.id)}"
       aria-label="查看决赛场次">${bracketScore(finalMatch)}</button>`);
 
     const bronze = bronzeMatch ? `<div class="bronze-fixture" style="left:${width / 2 - 85}px;top:${height / 2 + 83}px">
@@ -654,9 +767,10 @@
     if (!group) return toast('找不到该小组。', true);
     modalState = { type: 'group-schedule', groupId: group.id };
     const body = `<form id="group-schedule-form" data-form="group-schedule">
-      <div class="field-row"><div class="field"><label for="group-scheduled-time">预定时间</label><input id="group-scheduled-time" name="scheduled_time" value="${attr(group.scheduled_time || '')}" placeholder="例如：14:30"></div>
-      <div class="field"><label for="group-scheduled-table">预定桌号</label><input id="group-scheduled-table" name="scheduled_table" value="${attr(group.scheduled_table || '')}" placeholder="例如：3"></div></div>
-      <p class="field-help">保存会将预定时间和预定桌号覆盖到本组所有场次的时间和桌号；留空会清除对应安排。单独修改场次的实际时间或桌号不会改变小组的预定安排。</p></form>`;
+      <div class="field-row three"><div class="field"><label for="group-scheduled-time">预定时间</label><input id="group-scheduled-time" name="scheduled_time" value="${attr(group.scheduled_time || '')}" placeholder="例如：14:30"></div>
+      <div class="field"><label for="group-scheduled-table">预定桌号</label><input id="group-scheduled-table" name="scheduled_table" value="${attr(group.scheduled_table || '')}" placeholder="例如：3"></div>
+      <div class="field"><label for="group-scheduled-referee">预定裁判</label><input id="group-scheduled-referee" name="scheduled_referee" value="${attr(group.scheduled_referee || '')}" placeholder="裁判姓名"></div></div>
+      <p class="field-help">保存会将预定时间、预定桌号和预定裁判覆盖到本组所有场次；留空会清除对应安排。单独修改场次的时间、桌号或裁判不会改变小组的预定安排。</p></form>`;
     openModal(`小组 #${group.id} · 预定安排`, body,
       '<button class="button secondary" type="button" data-action="close-modal">取消</button><button class="button primary" type="submit" form="group-schedule-form">保存预定安排</button>');
   }
@@ -676,9 +790,11 @@
   }
 
   function nullableScore(input) {
-    if (!input.checkValidity()) throw new Error('局分请输入 0 到 99 的整数，或留空。');
     const value = input.value.trim();
-    return value === '' ? null : Number(value);
+    if (value === '') return null;
+    if (isWalkover(value)) return 'wo';
+    if (!/^\d{1,2}$/.test(value)) throw new Error('局分请输入 0 到 99 的整数、wo（弃权），或留空。');
+    return Number(value);
   }
 
   function gameSaveStatus(path, index, message, isError = false) {
@@ -695,7 +811,7 @@
     const match = findCurrentMatch(matchId)?.match;
     if (!match) return;
     const [a, b] = bigScore(match);
-    if (!hasScoredGame(match) || a === b) match.finished = false;
+    if (!hasScoredGame(match) || (a === b && a !== 'wo')) match.finished = false;
     const status = modalRoot.querySelector('[data-match-finished-status]');
     if (status) status.textContent = match.finished ? '已结束' : '未结束';
     const checkbox = modalRoot.querySelector('[data-form="match-meta"] input[name="finished"]');
@@ -738,6 +854,9 @@
     let desired;
     try {
       desired = fields.map(nullableScore);
+      if (desired[0] === 'wo' && desired[1] === null) desired[1] = 0;
+      if (desired[1] === 'wo' && desired[0] === null) desired[0] = 0;
+      fields.forEach((field, side) => { if (desired[side] !== null) field.value = String(desired[side]); });
     } catch (error) {
       gameSaveStatus(path, index, error.message, true);
       return;
@@ -792,26 +911,28 @@
     const [a, b] = matchParticipants(match, participants);
     const [scoreA, scoreB] = bigScore(match);
     modalState = { type: 'match', matchId, stage: current.stage, path: gamePath(matchId), scoreEdited: false, mutating: false };
-    const games = admin ? match.games || [] : (match.games || []).filter(hasCompleteGameScore);
+    const games = admin ? match.games || [] : (match.games || []).filter(hasCompleteGameScore).map(normalizedWalkoverGame);
     const gameList = games.length ? `<ul class="game-list">${games.map((game, index) => `<li class="${admin ? 'game-row-admin' : ''}" data-game-row="${index}"><span class="game-number">第 ${index + 1} 局</span>
       ${admin ? `<div class="game-score-fields">
-        <label class="game-score-field"><span>选手 A</span><input type="number" min="0" max="99" step="1" inputmode="numeric" data-game-side="a" aria-label="${attr(participantName(a))}第 ${index + 1} 局得分" value="${attr(game?.[0] ?? '')}"></label>
+        <label class="game-score-field"><span>选手 A</span><input type="text" inputmode="text" maxlength="2" autocomplete="off" spellcheck="false" placeholder="分数或 wo" data-game-side="a" aria-label="${attr(participantName(a))}第 ${index + 1} 局得分" value="${attr(game?.[0] ?? '')}"></label>
         <span class="game-score-separator" aria-hidden="true">:</span>
-        <label class="game-score-field"><span>选手 B</span><input type="number" min="0" max="99" step="1" inputmode="numeric" data-game-side="b" aria-label="${attr(participantName(b))}第 ${index + 1} 局得分" value="${attr(game?.[1] ?? '')}"></label>
+        <label class="game-score-field"><span>选手 B</span><input type="text" inputmode="text" maxlength="2" autocomplete="off" spellcheck="false" placeholder="分数或 wo" data-game-side="b" aria-label="${attr(participantName(b))}第 ${index + 1} 局得分" value="${attr(game?.[1] ?? '')}"></label>
       </div><span class="game-save-status" role="status" aria-live="polite"></span>
       <button class="icon-button danger" type="button" data-action="delete-game" data-index="${index}" aria-label="删除第 ${index + 1} 局">${icon.trash}</button>` : `<strong>${esc(game[0])} : ${esc(game[1])}</strong>`}</li>`).join('')}</ul>` : '<div class="game-empty">暂无局分记录</div>';
     const metaForm = admin ? `<div class="modal-divider"></div><form data-form="match-meta">
-      <div class="field-row"><div class="field"><label for="match-table">桌号</label><input id="match-table" name="table" value="${attr(match.table || '')}" placeholder="例如：3"></div>
-      <div class="field"><label for="match-time">比赛时间</label><input id="match-time" name="time" value="${attr(match.time || '')}" placeholder="例如：14:30"></div></div>
+      <div class="field-row three"><div class="field"><label for="match-table">桌号</label><input id="match-table" name="table" value="${attr(match.table || '')}" placeholder="例如：3"></div>
+      <div class="field"><label for="match-time">比赛时间</label><input id="match-time" name="time" value="${attr(match.time || '')}" placeholder="例如：14:30"></div>
+      <div class="field"><label for="match-referee">裁判</label><input id="match-referee" name="referee" value="${attr(match.referee || '')}" placeholder="裁判姓名"></div></div>
       <div class="field"><label><input name="finished" type="checkbox" ${match.finished ? 'checked' : ''} style="width:auto;min-height:auto;margin-right:7px">本场次已结束</label>
-      <span class="field-help">结束场次前请录入局分，且双方局数不能相同。</span></div>
+      <span class="field-help">结束场次前请录入局分；双方局数不能相同，双方弃权（wo:wo）除外。</span></div>
       <button class="button secondary small" type="submit">保存场次信息</button></form>` : '';
     const body = `<div class="match-players"><div class="match-player">${esc(participantName(a))}</div><span class="match-vs">VS</span><div class="match-player">${esc(participantName(b))}</div></div>
       <div class="match-score">${scoreA} : ${scoreB}</div>
       <div class="match-details"><span>桌号：${esc(match.table || '待定')}</span><span>时间：${esc(match.time || '待定')}</span>
+      <span>裁判：${esc(match.referee || '待定')}</span>
       <span data-match-finished-status>${match.finished ? '已结束' : '未结束'}</span></div>
       <div class="game-heading"><h3>各局比分</h3>${admin ? `<button class="button secondary small" type="button" data-action="add-game">${icon.plus} 添加一局</button>` : ''}</div>
-      ${admin ? '<p class="game-help">修改后自动暂存；留空的局不计入比分，保存场次信息时会移除。</p>' : ''}
+      ${admin ? '<p class="game-help">修改后自动暂存。弃权填 wo，对方留空时按 0 保存；空比分局不计入比分，保存场次信息时会移除。</p>' : ''}
       ${gameList}${metaForm}`;
     openModal('场次详情', body, `<button class="button secondary" type="button" data-action="close-modal">关闭</button>`, `场次 ${match.id}`, true);
   }
@@ -843,6 +964,7 @@
     }
     if (!admin) return;
 
+    if (action === 'publish') return submitChanges();
     if (action === 'edit-group-schedule') return showGroupSchedule(button.dataset.groupId);
     if (action === 'add-competition') return showCompetitionForm();
     if (action === 'edit-competition') {
@@ -970,7 +1092,8 @@
       } else if (form.dataset.form === 'group-schedule' && modalState?.type === 'group-schedule') {
         const body = {
           scheduled_time: form.elements.scheduled_time.value.trim(),
-          scheduled_table: form.elements.scheduled_table.value.trim()
+          scheduled_table: form.elements.scheduled_table.value.trim(),
+          scheduled_referee: form.elements.scheduled_referee?.value.trim() || ''
         };
         await mutate('PATCH', `${apiPath(current.competition.slug, current.event.slug)}/groups/${encodeURIComponent(modalState.groupId)}`, body);
         closeModal();
@@ -984,6 +1107,7 @@
         const body = {
           table: form.elements.table.value.trim() || null,
           time: form.elements.time.value.trim() || null,
+          referee: form.elements.referee?.value.trim() || '',
           finished: form.elements.finished.checked
         };
         await mutate('PATCH', apiPath(current.competition.slug, current.event.slug, current.stage, matchId), body);
@@ -999,7 +1123,6 @@
   }
 
   document.addEventListener('click', event => {
-    if (event.target.matches('[data-overlay]')) return closeModal();
     const button = event.target.closest('[data-action]');
     if (!button) return;
     event.preventDefault();
@@ -1018,12 +1141,20 @@
     if (details.matches?.('details[data-ranking-id]')) rankingVisibility.set(details.dataset.rankingId, details.open);
   }, true);
   document.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && modalRoot.firstChild) closeModal();
+    if (event.key === 'Tab' && modalRoot.firstChild) {
+      const focusable = [...modalRoot.querySelectorAll('button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled), a[href], [tabindex="0"]')].filter(node => !node.hidden && node.getClientRects().length);
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (first && (event.shiftKey && document.activeElement === first || !event.shiftKey && document.activeElement === last)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
+      }
+    }
     if ((event.key === 'Enter' || event.key === ' ') && event.target.matches('.bracket-card[data-action]')) {
       event.preventDefault();
       void onAction('participant', event.target);
     }
   });
   window.addEventListener('hashchange', () => { closeModal(); void render(); });
+  window.addEventListener('load', () => { if (admin) void pollSubmit(++submitSerial); });
   void render();
 })();

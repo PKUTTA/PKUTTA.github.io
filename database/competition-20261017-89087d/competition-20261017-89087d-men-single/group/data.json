@@ -47,8 +47,9 @@
               0
             ]
           ],
-          "table": null,
-          "time": null
+          "table": "5/6",
+          "time": "14:30",
+          "referee": ""
         },
         {
           "id": "g1-m-2",
@@ -61,8 +62,9 @@
               1
             ]
           ],
-          "table": null,
-          "time": null
+          "table": "5/6",
+          "time": "14:30",
+          "referee": ""
         },
         {
           "id": "g1-m-3",
@@ -75,8 +77,9 @@
               1
             ]
           ],
-          "table": null,
-          "time": null
+          "table": "5/6",
+          "time": "14:30",
+          "referee": ""
         },
         {
           "id": "g1-m-4",
@@ -89,8 +92,9 @@
               1
             ]
           ],
-          "table": null,
-          "time": null
+          "table": "5/6",
+          "time": "14:30",
+          "referee": ""
         },
         {
           "id": "g1-m-5",
@@ -103,8 +107,9 @@
               11
             ]
           ],
-          "table": null,
-          "time": null
+          "table": "5/6",
+          "time": "14:30",
+          "referee": ""
         },
         {
           "id": "g1-m-6",
@@ -117,12 +122,66 @@
               11
             ]
           ],
-          "table": null,
-          "time": null
+          "table": "5/6",
+          "time": "14:30",
+          "referee": ""
         }
       ],
-      "scheduled_time": "",
-      "scheduled_table": ""
+      "scheduled_time": "14:30",
+      "scheduled_table": "5/6",
+      "scheduled_referee": "",
+      "ranking_draw_order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "standings": {
+        "order": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -171,7 +230,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g2-m-2",
@@ -185,7 +245,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g2-m-3",
@@ -199,7 +260,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g2-m-4",
@@ -213,7 +275,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g2-m-5",
@@ -227,7 +290,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g2-m-6",
@@ -241,11 +305,83 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         }
       ],
       "scheduled_time": "",
-      "scheduled_table": ""
+      "scheduled_table": "",
+      "scheduled_referee": "",
+      "ranking_draw_order": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "standings": {
+        "order": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 2,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": {
+              "won": 1,
+              "lost": 1
+            },
+            "point_ratio": {
+              "won": 12,
+              "lost": 11
+            },
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 3,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": {
+              "won": 1,
+              "lost": 1
+            },
+            "point_ratio": {
+              "won": 12,
+              "lost": 12
+            },
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 4,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": {
+              "won": 1,
+              "lost": 1
+            },
+            "point_ratio": {
+              "won": 11,
+              "lost": 12
+            },
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -294,7 +430,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g3-m-2",
@@ -308,7 +445,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g3-m-3",
@@ -322,7 +460,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g3-m-4",
@@ -336,7 +475,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g3-m-5",
@@ -350,7 +490,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g3-m-6",
@@ -364,11 +505,65 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         }
       ],
       "scheduled_time": "",
-      "scheduled_table": ""
+      "scheduled_table": "",
+      "scheduled_referee": "",
+      "ranking_draw_order": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "standings": {
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 4,
@@ -417,7 +612,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g4-m-2",
@@ -431,7 +627,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g4-m-3",
@@ -445,7 +642,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g4-m-4",
@@ -459,7 +657,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g4-m-5",
@@ -473,7 +672,8 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         },
         {
           "id": "g4-m-6",
@@ -487,11 +687,65 @@
             ]
           ],
           "table": null,
-          "time": null
+          "time": null,
+          "referee": ""
         }
       ],
       "scheduled_time": "",
-      "scheduled_table": ""
+      "scheduled_table": "",
+      "scheduled_referee": "",
+      "ranking_draw_order": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "standings": {
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     }
   ]
 }

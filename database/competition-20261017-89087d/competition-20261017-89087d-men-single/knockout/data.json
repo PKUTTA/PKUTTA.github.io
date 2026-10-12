@@ -1,62 +1,46 @@
 {
-  "drawn": true,
+  "drawn": false,
   "rounds": 3,
   "slots": [
     {
-      "kind": "player",
-      "members": [
-        "王1"
-      ],
-      "team": "Team 1"
+      "kind": "undecided",
+      "members": [],
+      "team": ""
     },
     {
-      "kind": "player",
-      "members": [
-        "张15"
-      ],
-      "team": "Team 2"
+      "kind": "undecided",
+      "members": [],
+      "team": ""
     },
     {
-      "kind": "player",
-      "members": [
-        "王2"
-      ],
-      "team": "Team 1"
+      "kind": "undecided",
+      "members": [],
+      "team": ""
     },
     {
-      "kind": "player",
-      "members": [
-        "张8"
-      ],
-      "team": "Team 1"
+      "kind": "undecided",
+      "members": [],
+      "team": ""
     },
     {
-      "kind": "player",
-      "members": [
-        "王3"
-      ],
-      "team": "Team 2"
+      "kind": "undecided",
+      "members": [],
+      "team": ""
     },
     {
-      "kind": "player",
-      "members": [
-        "张9"
-      ],
-      "team": "Team 2"
+      "kind": "undecided",
+      "members": [],
+      "team": ""
     },
     {
-      "kind": "player",
-      "members": [
-        "王4"
-      ],
-      "team": "Team 2"
+      "kind": "undecided",
+      "members": [],
+      "team": ""
     },
     {
-      "kind": "player",
-      "members": [
-        "张7"
-      ],
-      "team": "Team 1"
+      "kind": "undecided",
+      "members": [],
+      "team": ""
     }
   ],
   "matches": [
@@ -65,92 +49,80 @@
       "round": 0,
       "index": 0,
       "a": {
-        "kind": "player",
-        "members": [
-          "王1"
-        ],
-        "team": "Team 1"
+        "kind": "undecided",
+        "members": [],
+        "team": ""
       },
       "b": {
-        "kind": "player",
-        "members": [
-          "张15"
-        ],
-        "team": "Team 2"
+        "kind": "undecided",
+        "members": [],
+        "team": ""
       },
       "finished": false,
       "games": [],
       "table": null,
-      "time": null
+      "time": null,
+      "referee": ""
     },
     {
       "id": "r1-m2",
       "round": 0,
       "index": 1,
       "a": {
-        "kind": "player",
-        "members": [
-          "王2"
-        ],
-        "team": "Team 1"
+        "kind": "undecided",
+        "members": [],
+        "team": ""
       },
       "b": {
-        "kind": "player",
-        "members": [
-          "张8"
-        ],
-        "team": "Team 1"
+        "kind": "undecided",
+        "members": [],
+        "team": ""
       },
       "finished": false,
       "games": [],
       "table": null,
-      "time": null
+      "time": null,
+      "referee": ""
     },
     {
       "id": "r1-m3",
       "round": 0,
       "index": 2,
       "a": {
-        "kind": "player",
-        "members": [
-          "王3"
-        ],
-        "team": "Team 2"
+        "kind": "undecided",
+        "members": [],
+        "team": ""
       },
       "b": {
-        "kind": "player",
-        "members": [
-          "张9"
-        ],
-        "team": "Team 2"
+        "kind": "undecided",
+        "members": [],
+        "team": ""
       },
       "finished": false,
       "games": [],
       "table": null,
-      "time": null
+      "time": null,
+      "referee": ""
     },
     {
       "id": "r1-m4",
       "round": 0,
       "index": 3,
       "a": {
-        "kind": "player",
-        "members": [
-          "王4"
-        ],
-        "team": "Team 2"
+        "kind": "undecided",
+        "members": [],
+        "team": ""
       },
       "b": {
-        "kind": "player",
-        "members": [
-          "张7"
-        ],
-        "team": "Team 1"
+        "kind": "undecided",
+        "members": [],
+        "team": ""
       },
       "finished": false,
       "games": [],
       "table": null,
-      "time": null
+      "time": null,
+      "referee": ""
     },
     {
       "id": "r2-m1",
@@ -169,7 +141,8 @@
       "finished": false,
       "games": [],
       "table": null,
-      "time": null
+      "time": null,
+      "referee": ""
     },
     {
       "id": "r2-m2",
@@ -188,7 +161,8 @@
       "finished": false,
       "games": [],
       "table": null,
-      "time": null
+      "time": null,
+      "referee": ""
     },
     {
       "id": "r3-m1",
@@ -207,7 +181,8 @@
       "finished": false,
       "games": [],
       "table": null,
-      "time": null
+      "time": null,
+      "referee": ""
     }
   ],
   "bronze_match": {
@@ -225,7 +200,8 @@
     "finished": false,
     "games": [],
     "table": null,
-    "time": null
+    "time": null,
+    "referee": ""
   },
   "results": null
 }
