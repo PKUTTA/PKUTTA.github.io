@@ -1,46 +1,62 @@
 {
-  "drawn": false,
+  "drawn": true,
   "rounds": 3,
   "slots": [
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "王1"
+      ],
+      "team": "Team 1"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "张9"
+      ],
+      "team": "Team 2"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "王3"
+      ],
+      "team": "Team 2"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "张7"
+      ],
+      "team": "Team 1"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "王4"
+      ],
+      "team": "Team 2"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "张14"
+      ],
+      "team": "Team 1"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "王2"
+      ],
+      "team": "Team 1"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "张15"
+      ],
+      "team": "Team 2"
     }
   ],
   "matches": [
@@ -49,14 +65,18 @@
       "round": 0,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "王1"
+        ],
+        "team": "Team 1"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "张9"
+        ],
+        "team": "Team 2"
       },
       "finished": false,
       "games": [],
@@ -69,14 +89,18 @@
       "round": 0,
       "index": 1,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "王3"
+        ],
+        "team": "Team 2"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "张7"
+        ],
+        "team": "Team 1"
       },
       "finished": false,
       "games": [],
@@ -89,14 +113,18 @@
       "round": 0,
       "index": 2,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "王4"
+        ],
+        "team": "Team 2"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "张14"
+        ],
+        "team": "Team 1"
       },
       "finished": false,
       "games": [],
@@ -109,14 +137,18 @@
       "round": 0,
       "index": 3,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "王2"
+        ],
+        "team": "Team 1"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "张15"
+        ],
+        "team": "Team 2"
       },
       "finished": false,
       "games": [],

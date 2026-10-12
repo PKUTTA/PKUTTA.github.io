@@ -18,7 +18,8 @@
     edit: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4l11-11a2.1 2.1 0 0 0-4-4L4 16v4Zm9-13 4 4"/></svg>',
     trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 4h4m-8 3 1 13h10l1-13M10 11v6m4-6v6"/></svg>',
     close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5 5 19"/></svg>',
-    plus: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>'
+    plus: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
+    search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>'
   };
   let routeSerial = 0;
   let current = null;
@@ -28,6 +29,10 @@
   let submitRunning = false;
   let submitTimer = null;
   let submitSerial = 0;
+  const dataCache = new Map();
+  const progressSubscriptions = new Map();
+  const CACHE_TTL = 60000;
+  let cacheGeneration = 0;
 
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const attr = esc;
@@ -59,13 +64,64 @@
     return response.json();
   }
 
-  async function getJson(path) {
+  function cloneJson(value) { return JSON.parse(JSON.stringify(value)); }
+
+  function cachedRead(key, loader) {
+    const existing = dataCache.get(key);
+    if (existing?.promise) return existing.promise;
+    if (existing?.value !== undefined && Date.now() - existing.loadedAt < CACHE_TTL) return Promise.resolve(existing.value);
+    const generation = cacheGeneration;
+    const entry = { value: existing?.value, loadedAt: existing?.loadedAt || 0 };
+    entry.promise = Promise.resolve().then(loader).then(value => {
+      // A mutation invalidates every older in-flight read, including aggregate loaders.
+      if (generation !== cacheGeneration) return cachedRead(key, loader);
+      if (dataCache.get(key) === entry) {
+        entry.value = value;
+        entry.loadedAt = Date.now();
+        entry.promise = null;
+      }
+      return value;
+    }).catch(error => {
+      if (generation !== cacheGeneration) return cachedRead(key, loader);
+      if (dataCache.get(key) === entry) {
+        entry.promise = null;
+        if (entry.value === undefined) dataCache.delete(key);
+      }
+      throw error;
+    });
+    dataCache.set(key, entry);
+    return entry.promise;
+  }
+
+  function invalidateData(path) {
+    const match = path.match(/^\/competitions\/([^/]+)/);
+    if (!path.startsWith('/competitions')) return;
+    cacheGeneration++;
+    for (const subscription of progressSubscriptions.values()) subscription.partial = null;
+    const slug = match?.[1];
+    for (const [key, entry] of dataCache) {
+      if (entry.promise || !slug || key === 'path:/competitions' || key === 'file:./database/index.json' ||
+          key.startsWith(`path:/competitions/${slug}`) || key.startsWith(`file:./database/${slug}/`)) dataCache.delete(key);
+    }
+  }
+
+  async function assembleJson(path, onProgress) {
     if (admin) return fetchJson(endpoint(path));
-    const read = relativePath => fetchJson(endpoint(`/${relativePath}`));
+    const read = relativePath => {
+      const url = endpoint(`/${relativePath}`);
+      return cachedRead(`file:${url}`, () => fetchJson(url));
+    };
+    const progress = data => onProgress?.(cloneJson(data));
     const competitionMeta = async slug => ({ ...(await read(`${encodeURIComponent(slug)}/meta.json`)), slug });
     if (path === '/competitions') {
       const index = await read('index.json');
-      return { competitions: await Promise.all((index.competitions || []).map(competitionMeta)) };
+      const competitions = [];
+      progress({ competitions, loading: true });
+      await Promise.all((index.competitions || []).map(async slug => {
+        competitions.push(await competitionMeta(slug));
+        progress({ competitions, loading: true });
+      }));
+      return { competitions };
     }
     const routeParts = path.match(/^\/competitions\/([^/]+)(?:\/events\/([^/]+))?$/);
     if (!routeParts) throw new Error('页面或数据不存在。');
@@ -73,15 +129,51 @@
     const competition = await competitionMeta(slug);
     const eventMeta = async eventSlug => ({ ...(await read(`${encodeURIComponent(slug)}/${encodeURIComponent(eventSlug)}/meta.json`)), slug: eventSlug });
     if (!routeParts[2]) {
-      return { competition, events: await Promise.all((competition.events || []).map(eventMeta)) };
+      const events = [];
+      progress({ competition, events, loading: true });
+      await Promise.all((competition.events || []).map(async eventSlug => {
+        events.push(await eventMeta(eventSlug));
+        progress({ competition, events, loading: true });
+      }));
+      return { competition, events };
     }
     const event = await eventMeta(decodeURIComponent(routeParts[2]));
-    const stages = Object.fromEntries(await Promise.all((event.stages || []).map(async name => {
+    const stages = {};
+    const loadingStages = [...(event.stages || [])];
+    progress({ competition, event, stages, loadingStages, loading: true });
+    await Promise.all((event.stages || []).map(async name => {
       const prefix = `${encodeURIComponent(slug)}/${encodeURIComponent(event.slug)}/${encodeURIComponent(name)}`;
       const [metadata, data] = await Promise.all([read(`${prefix}/metadata.json`), read(`${prefix}/data.json`)]);
-      return [name, { metadata, data }];
-    })));
+      stages[name] = { metadata, data };
+      loadingStages.splice(loadingStages.indexOf(name), 1);
+      progress({ competition, event, stages, loadingStages, loading: true });
+    }));
     return { competition, event, stages };
+  }
+
+  async function getJson(path, onProgress) {
+    let subscription = progressSubscriptions.get(path);
+    if (!subscription) {
+      subscription = { callbacks: new Set(), partial: null };
+      progressSubscriptions.set(path, subscription);
+    }
+    if (onProgress) {
+      subscription.callbacks.add(onProgress);
+      if (subscription.partial) onProgress(cloneJson(subscription.partial));
+    }
+    try {
+      return cloneJson(await cachedRead(`path:${path}`, () => {
+        const generation = cacheGeneration;
+        return assembleJson(path, partial => {
+          if (generation !== cacheGeneration) return;
+          subscription.partial = partial;
+          for (const callback of subscription.callbacks) callback(cloneJson(partial));
+        });
+      }));
+    } finally {
+      if (onProgress) subscription.callbacks.delete(onProgress);
+      if (!subscription.callbacks.size) progressSubscriptions.delete(path);
+    }
   }
 
   async function mutate(method, path, body) {
@@ -92,6 +184,7 @@
     });
     const result = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(result.error || `操作失败（${response.status}）。`);
+    invalidateData(path);
     return result;
   }
 
@@ -123,10 +216,11 @@
 
   function shell(content, title = '赛事中心') {
     document.title = `${title} · 北京大学乒乓球协会`;
+    const hasCompetition = !!current?.competition?.slug;
     app.innerHTML = `<header class="site-header"><div class="header-inner">
-      <a class="brand" href="${routeHome}" aria-label="返回赛事首页"><span class="brand-mark">PKU</span>
+      <a class="brand" href="${routeHome}" aria-label="返回赛事首页"><img class="brand-mark" src="${admin ? '/icon.jpg' : './icon.jpg'}" alt="北京大学乒乓球协会标志">
       <span class="brand-name">北京大学乒乓球协会<small>TABLE TENNIS ASSOCIATION</small></span></a>
-      <div class="header-right">${admin ? '<span class="mode-badge">管理后台</span>' : ''}<a class="header-link" href="${routeHome}">赛事首页</a></div>
+      <div class="header-right">${admin ? '<span class="mode-badge">管理后台</span>' : ''}<button class="icon-button header-search" type="button" data-action="search" aria-label="搜索比赛场次" title="${hasCompetition ? '搜索本赛事比赛场次' : '进入赛事后搜索比赛场次'}" ${hasCompetition ? '' : 'disabled'}>${icon.search}</button></div>
     </div></header><main class="page-shell">${content}</main>
     <footer class="site-footer"><div class="footer-inner"><span>北京大学乒乓球协会 · 赛事中心</span></div></footer>
     ${admin ? `<button type="button" class="button primary submit-button" data-action="publish" ${submitRunning ? 'disabled' : ''} aria-busy="${submitRunning}">${submitRunning ? 'Submit · 提交中…' : 'Submit'}</button>` : ''}`;
@@ -233,30 +327,73 @@
   async function render() {
     const serial = ++routeSerial;
     const r = route();
-    shell('<div class="empty-state"><strong>正在加载赛事信息…</strong></div>');
+    const path = r.page === 'home' ? '/competitions' : r.slug ? apiPath(r.slug, r.eventSlug) : null;
+    const cached = path && dataCache.get(`path:${path}`)?.value;
+    const sameEvent = r.page === 'event' && current?.page === 'event' && current.competition.slug === r.slug && current.event.slug === r.eventSlug;
+    const renderData = data => {
+      current = { page: r.page, ...data, requestedStage: r.stage };
+      if (r.page === 'home') renderHome();
+      if (r.page === 'competition') renderCompetition();
+      if (r.page === 'event') renderEvent();
+    };
+    if (sameEvent) {
+      current.requestedStage = r.stage;
+      renderEvent();
+    } else if (cached) {
+      renderData(cloneJson(cached));
+    } else {
+      renderLoading(r);
+    }
     try {
-      if (r.page === 'home') {
-        const data = await getJson('/competitions');
-        if (serial !== routeSerial) return;
-        current = { page: 'home', competitions: data.competitions || [] };
-        renderHome();
-      } else if (r.page === 'competition') {
-        const data = await getJson(`/competitions/${encodeURIComponent(r.slug)}`);
-        if (serial !== routeSerial) return;
-        current = { page: 'competition', ...data };
-        renderCompetition();
-      } else if (r.page === 'event') {
-        const data = await getJson(`/competitions/${encodeURIComponent(r.slug)}/events/${encodeURIComponent(r.eventSlug)}`);
-        if (serial !== routeSerial) return;
-        current = { page: 'event', ...data, requestedStage: r.stage };
-        renderEvent();
-      } else {
+      if (!path || r.page === 'not-found') {
+        current = null;
         shell(empty('页面不存在', '请从赛事首页选择要查看的内容。', true), '页面不存在');
+        return;
       }
+      const generation = cacheGeneration;
+      const data = await getJson(path, partial => {
+        if (serial === routeSerial && generation === cacheGeneration && !sameEvent && !cached) renderData(partial);
+      });
+      if (serial !== routeSerial) return;
+      renderData(data);
     } catch (error) {
       if (serial !== routeSerial) return;
-      shell(`${breadcrumbs([])}${empty('暂时无法显示', error.message, true)}`, '加载失败');
+      const partialVisible = current?.page === r.page && (r.page === 'home' ? current.competitions?.length :
+        current.competition?.slug === r.slug && (r.page === 'competition' ? current.events?.length :
+          current.event?.slug === r.eventSlug && Object.keys(current.stages || {}).length));
+      if (sameEvent || cached || partialVisible) {
+        current.loading = false;
+        current.loadError = error.message;
+        if (r.page === 'event') renderEvent();
+        else if (r.page === 'competition') renderCompetition();
+        else renderHome();
+      } else renderLoading(r, error.message);
     }
+  }
+
+  function loadingBlock(message = '正在加载…') {
+    return `<div class="section-loading loading-card" role="status" aria-live="polite">${esc(message)}</div>`;
+  }
+
+  function loadNotice() {
+    return current?.loadError ? `<div class="section-error" role="alert">更新失败：${esc(current.loadError)}。再次进入页面可重试。</div>` : '';
+  }
+
+  function renderLoading(r, error = '') {
+    if (r.page === 'home') {
+      current = { page: 'home', competitions: [], loading: true, loadError: error };
+      renderHome();
+      return;
+    }
+    const knownCompetition = r.slug && current?.competition?.slug === r.slug ? current.competition :
+      current?.competitions?.find(item => item.slug === r.slug) || dataCache.get(`path:${apiPath(r.slug || '')}`)?.value?.competition;
+    const knownEvent = r.eventSlug && current?.event?.slug === r.eventSlug && current?.competition?.slug === r.slug ? current.event :
+      (r.slug && current?.competition?.slug === r.slug ? current.events?.find(item => item.slug === r.eventSlug) : null);
+    current = { page: r.page, competition: knownCompetition || { slug: r.slug, name: '赛事' },
+      event: knownEvent || { slug: r.eventSlug, name: '比赛项目', stages: [], schedule: '' },
+      events: [], stages: {}, requestedStage: r.stage, loading: true, loadError: error };
+    if (r.page === 'competition') renderCompetition();
+    else if (r.page === 'event') renderEvent();
   }
 
   function renderHome() {
@@ -265,7 +402,8 @@
       <p class="lead">查看比赛项目、对阵安排与实时赛果。</p></div>
       <div class="section-heading"><div><h2>全部赛事</h2><span class="count">共 ${competitions.length} 场赛事</span></div>
       ${admin ? `<div class="section-actions"><button class="button primary" data-action="add-competition">${icon.plus} 添加赛事</button></div>` : ''}</div>
-      ${competitions.length ? `<div class="card-grid">${competitions.map(competitionCard).join('')}</div>` : empty('尚无赛事', admin ? '点击“添加赛事”创建第一场比赛。' : '赛事信息发布后会显示在这里。')}`, '赛事中心');
+      ${loadNotice()}${competitions.length ? `<div class="card-grid">${competitions.map(competitionCard).join('')}</div>` : current.loading ? '' : empty('尚无赛事', admin ? '点击“添加赛事”创建第一场比赛。' : '赛事信息发布后会显示在这里。')}
+      ${current.loading && !current.loadError ? loadingBlock('正在加载赛事列表…') : ''}`, '赛事中心');
   }
 
   function renderCompetition() {
@@ -275,7 +413,8 @@
       <p class="lead">${esc(dateText(competition))}　·　${esc(competition.venue || '地点待定')}</p></div>
       <div class="section-heading"><div><h2>比赛项目</h2><span class="count">共 ${events.length} 个项目</span></div>
       ${admin ? `<div class="section-actions"><button class="button primary" data-action="add-event">${icon.plus} 添加项目</button></div>` : ''}</div>
-      ${events.length ? `<div class="card-grid">${events.map(event => eventCard(event, competition.slug)).join('')}</div>` : empty('尚无项目', admin ? '点击“添加项目”设置赛程与选手。' : '项目发布后会显示在这里。')}`, competition.name);
+      ${loadNotice()}${events.length ? `<div class="card-grid">${events.map(event => eventCard(event, competition.slug)).join('')}</div>` : current.loading ? '' : empty('尚无项目', admin ? '点击“添加项目”设置赛程与选手。' : '项目发布后会显示在这里。')}
+      ${current.loading && !current.loadError ? loadingBlock('正在加载比赛项目…') : ''}`, competition.name);
   }
 
   function isGroupComplete(stage) {
@@ -302,7 +441,7 @@
       <a class="schedule-tab${stage === 'group' ? ' active' : ''}" role="tab" aria-selected="${stage === 'group'}" href="${attr(routeEvent(competition.slug, event.slug, 'group'))}">小组赛</a>
       ${complete ? `<a class="schedule-tab${stage === 'knockout' ? ' active' : ''}" role="tab" aria-selected="${stage === 'knockout'}" href="${attr(routeEvent(competition.slug, event.slug, 'knockout'))}">淘汰赛</a>` : '<button class="schedule-tab locked" type="button" disabled title="小组赛结束后开放">淘汰赛 · 待解锁</button>'}</div>` : '';
     const stageData = stages[stage];
-    let body = empty('赛程准备中', '该阶段尚未建立。');
+    let body = current.loading ? loadingBlock('正在加载本阶段对阵…') : empty('赛程准备中', '该阶段尚未建立。');
     if (stageData && stage === 'round_robin') body = renderRoundRobinStage(stageData);
     if (stageData && stage === 'group') body = renderGroupStage(stageData);
     if (stageData && stage === 'knockout') body = renderKnockoutStage(stageData);
@@ -312,7 +451,7 @@
       <div class="event-heading"><div><div class="eyebrow">EVENT</div><h1>${esc(competition.name)} <span style="color:var(--brand)">·</span> ${esc(eventName(event))}</h1>
       <p class="lead">${esc(label[event.schedule] || event.schedule)}</p>${tabs}</div></div>
       <div class="stage-toolbar"><div class="stage-summary"><strong>${esc(label[stage])}</strong>　${stage === 'group' ? '各组排名与出线名单' : stage === 'knockout' ? '对阵与晋级路线' : '选手与对阵成绩'}</div>
-      <div class="section-actions">${drawButton}</div></div>${body}`, `${eventName(event)} · ${competition.name}`);
+      <div class="section-actions">${drawButton}</div></div>${loadNotice()}${body}`, `${eventName(event)} · ${competition.name}`);
   }
 
   function participantName(participant) {
@@ -719,8 +858,115 @@
       <div class="field-row"><div class="field"><label for="competition-start">开始日期</label><input id="competition-start" name="start_date" type="date" required value="${attr(competition?.start_date || '')}"></div>
       <div class="field"><label for="competition-end">结束日期</label><input id="competition-end" name="end_date" type="date" required value="${attr(competition?.end_date || '')}"></div></div>
       <div class="field"><label for="competition-venue">比赛地点</label><input id="competition-venue" name="venue" required maxlength="120" value="${attr(competition?.venue || '')}" placeholder="例如：邱德拔体育馆"></div>
+      ${edit ? '' : `<div class="field"><label class="checkbox-field" for="competition-custom-slug"><input id="competition-custom-slug" name="custom_slug" type="checkbox">自定义文件名</label>
+      <label for="competition-slug">赛事文件名</label><input id="competition-slug" name="slug" maxlength="80" disabled placeholder="例如：pku-autumn-2026">
+      <span class="field-help">以小写字母开头，仅使用小写字母、数字和连字符；未勾选时自动生成。</span></div>`}
       </form>`, `<button class="button secondary" type="button" data-action="close-modal">取消</button>
       <button class="button primary" type="submit" form="competition-form">${edit ? '保存修改' : '创建赛事'}</button>`);
+  }
+
+  function updateCompetitionSlug() {
+    const form = modalRoot.querySelector('#competition-form');
+    if (!form?.elements.slug) return;
+    const enabled = !!form.elements.custom_slug?.checked;
+    form.elements.slug.disabled = !enabled;
+    form.elements.slug.required = enabled;
+  }
+
+  function searchMatchRows(event, stages, query) {
+    const normalized = query.trim().toLowerCase();
+    if (!normalized) return [];
+    const rows = [];
+    const contains = participant => participantClickable(participant) &&
+      (participant.members || (participant.name ? [participant.name] : [])).some(name => String(name).toLowerCase().includes(normalized));
+    const append = (stageName, match, participants, groupId = '') => {
+      const [a, b] = matchParticipants(match, participants);
+      if (!contains(a) && !contains(b)) return;
+      rows.push({ event: eventName(event), stage: label[stageName] || stageName, match, a, b,
+        key: `${event.slug}:${stageName}:${groupId}:${match.id}` });
+    };
+    for (const [stageName, stage] of Object.entries(stages || {})) {
+      const data = stage.data || {};
+      if (stageName === 'group') {
+        for (const group of data.groups || []) for (const match of group.matches || []) append(stageName, match, group.participants || [], group.id);
+      } else {
+        const participants = data.participants || stage.metadata?.entrants?.map(entry => entry.participant) || [];
+        for (const match of data.matches || []) append(stageName, match, participants);
+        if (data.bronze_match && !(data.matches || []).some(match => match.id === data.bronze_match.id)) append(stageName, data.bronze_match, participants);
+      }
+    }
+    return rows;
+  }
+
+  function searchResultsHtml(state) {
+    const waiting = state.searching ? '<div class="search-state loading-card" role="status" aria-live="polite">正在搜索…</div>' : '';
+    const errors = (state.errors || []).map(error => `<div class="section-error" role="alert">${esc(error)}</div>`).join('');
+    if (!state.query) return '<div class="search-state">输入选手名称，搜索本赛事所有项目和阶段。</div>';
+    const table = state.results.length ? `<table class="search-results"><tbody>${state.results.map(row => {
+      const score = bigScore(row.match).join(':');
+      return `<tr${row.match.finished ? '' : ' class="pending"'}><td>
+        <div class="search-result-project">${esc(row.event)} · ${esc(row.stage)}</div>
+        <div class="search-result-players">${esc(participantName(row.a))} - ${esc(participantName(row.b))}</div>
+        <div class="search-result-status">${row.match.finished ? `已完成（${esc(score)}）` : '未完成'}</div>
+        <div class="search-result-plan"><span>预定时间：${esc(row.match.time || '待定')}</span><span>预定桌号：${esc(row.match.table || '待定')}</span><span>裁判：${esc(row.match.referee || '待定')}</span></div>
+      </td></tr>`;
+    }).join('')}</tbody></table>` : '';
+    const summary = !state.searching ? `<p class="search-result-count" role="status">${state.results.length ? `找到 ${state.results.length} 场比赛` : state.errors.length ? '已加载的项目中没有匹配场次，请重试未能加载的项目。' : '没有找到相关比赛场次。'}</p>` : '';
+    return waiting + errors + summary + table;
+  }
+
+  function updateSearchResults(state) {
+    if (modalState !== state) return;
+    const output = modalRoot.querySelector('[data-search-results]');
+    if (output) output.innerHTML = searchResultsHtml(state);
+  }
+
+  function showSearch() {
+    if (!current?.competition?.slug) return;
+    flushVisibleGameRows();
+    modalState = { type: 'search', slug: current.competition.slug, query: '', results: [], errors: [], searching: false, serial: 0 };
+    openModal('搜索比赛场次', `<div class="search-modal"><form class="search-form" data-form="search">
+      <div class="field search-input"><label class="sr-only" for="search-player-name">选手名称</label><input id="search-player-name" name="player_name" type="search" placeholder="选手名称" autocomplete="off" required></div>
+      <button class="icon-button search-submit" type="submit" aria-label="搜索" title="搜索">${icon.search}</button></form>
+      <div data-search-results>${searchResultsHtml(modalState)}</div></div>`, '<button class="button secondary" type="button" data-action="close-modal">关闭</button>', current.competition.name, true);
+    modalRoot.querySelector('#search-player-name')?.focus();
+  }
+
+  async function searchCompetition(query) {
+    const state = modalState;
+    if (state?.type !== 'search') return;
+    const serial = ++state.serial;
+    state.query = query.trim();
+    state.results = [];
+    state.errors = [];
+    state.searching = !!state.query;
+    updateSearchResults(state);
+    if (!state.query) return;
+    const active = () => modalState === state && state.serial === serial;
+    try {
+      const { events = [] } = await getJson(apiPath(state.slug));
+      if (!active()) return;
+      // Each project updates the list when ready; one failed project does not discard others.
+      const resultsByEvent = new Map();
+      await Promise.all(events.map(async event => {
+        try {
+          const data = await getJson(apiPath(state.slug, event.slug));
+          if (!active()) return;
+          resultsByEvent.set(event.slug, searchMatchRows(data.event, data.stages, state.query));
+          state.results = events.flatMap(item => resultsByEvent.get(item.slug) || []);
+        } catch (error) {
+          if (active()) state.errors.push(`${eventName(event)}加载失败：${error.message}`);
+        }
+        if (active()) updateSearchResults(state);
+      }));
+    } catch (error) {
+      if (active()) state.errors.push(`赛事项目加载失败：${error.message}`);
+    } finally {
+      if (active()) {
+        state.searching = false;
+        updateSearchResults(state);
+      }
+    }
   }
 
   function showEventForm() {
@@ -938,16 +1184,21 @@
   }
 
   async function refreshCurrentEvent(stage = current.stage, matchId = null) {
+    const serial = ++routeSerial;
     const slug = current.competition.slug;
     const eventSlug = current.event.slug;
+    const routeAtRefresh = location.hash;
+    const editing = modalState;
     const data = await getJson(apiPath(slug, eventSlug));
+    if (serial !== routeSerial || location.hash !== routeAtRefresh) return;
     current = { page: 'event', ...data, requestedStage: stage };
     renderEvent();
-    if (matchId) showMatch(matchId);
+    if (matchId && modalState === editing) showMatch(matchId);
   }
 
   async function onAction(action, button) {
     if (action === 'close-modal') return closeModal();
+    if (action === 'search') return showSearch();
     if (action === 'participant') return showParticipant(JSON.parse(button.dataset.person));
     if (action === 'match') return showMatch(button.dataset.matchId);
     if (action === 'toggle-rank') {
@@ -1057,6 +1308,10 @@
     const form = event.target;
     if (!form.dataset.form) return;
     event.preventDefault();
+    if (form.dataset.form === 'search') {
+      await searchCompetition(form.elements.player_name.value);
+      return;
+    }
     if (!admin) return;
     const submitter = event.submitter;
     if (submitter) submitter.disabled = true;
@@ -1070,6 +1325,10 @@
         };
         if (body.end_date < body.start_date) throw new Error('结束日期不能早于开始日期。');
         const editingSlug = modalState.slug;
+        if (!editingSlug && form.elements.custom_slug?.checked) {
+          body.slug = form.elements.slug.value.trim();
+          if (!body.slug) throw new Error('请输入自定义赛事文件名。');
+        }
         await mutate(editingSlug ? 'PATCH' : 'POST', editingSlug ? apiPath(editingSlug) : '/competitions', body);
         closeModal();
         await render();
@@ -1131,6 +1390,7 @@
   document.addEventListener('submit', event => { void onSubmit(event); });
   document.addEventListener('change', event => {
     if (event.target.id === 'event-schedule') updateEventFields();
+    if (event.target.id === 'competition-custom-slug') updateCompetitionSlug();
     if (event.target.matches('[data-game-side]')) saveGameRow(event.target);
   });
   document.addEventListener('focusout', event => {
