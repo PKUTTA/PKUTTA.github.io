@@ -1,8 +1,8 @@
 {
-  "slug": "xsb26-women-single",
-  "discipline": "women",
+  "slug": "men-single",
+  "discipline": "men",
   "format": "single",
-  "name": "女子单打",
+  "name": "男子单打",
   "schedule": "group-knockout",
   "stages": [
     "group",

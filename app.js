@@ -38,8 +38,8 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const attr = esc;
   const routeHome = '#/';
-  const routeCompetition = slug => `#/competitions/${encodeURIComponent(slug)}`;
-  const routeEvent = (slug, eventSlug, stage) => `${routeCompetition(slug)}/events/${encodeURIComponent(eventSlug)}${stage ? `?stage=${encodeURIComponent(stage)}` : ''}`;
+  const routeCompetition = slug => `#/${encodeURIComponent(slug)}`;
+  const routeEvent = (slug, eventSlug, stage) => `${routeCompetition(slug)}/${encodeURIComponent(eventSlug)}${stage ? `?stage=${encodeURIComponent(stage)}` : ''}`;
   const endpoint = path => admin ? `/api${path}` : `./database${path}`;
   const apiPath = (slug, eventSlug, stage, matchId) => `/competitions/${encodeURIComponent(slug)}` +
     (eventSlug ? `/events/${encodeURIComponent(eventSlug)}` : '') +
@@ -52,10 +52,18 @@
     const parts = path.split('/').filter(Boolean).map(decodeURIComponent);
     const stage = new URLSearchParams(query).get('stage');
     if (parts.length === 0) return { page: 'home' };
-    if (parts[0] === 'competitions' && parts.length === 2) return { page: 'competition', slug: parts[1] };
-    if (parts[0] === 'competitions' && parts[2] === 'events' && parts.length === 4) {
-      return { page: 'event', slug: parts[1], eventSlug: parts[3], stage };
+    // Keep old bookmarks usable after the public URL and event-directory migration.
+    if (parts[0] === 'competitions' && parts.length === 2) {
+      if (typeof history !== 'undefined') history.replaceState(null, '', routeCompetition(parts[1]));
+      return { page: 'competition', slug: parts[1] };
     }
+    if (parts[0] === 'competitions' && parts[2] === 'events' && parts.length === 4) {
+      const eventSlug = parts[3].startsWith(`${parts[1]}-`) ? parts[3].slice(parts[1].length + 1) : parts[3];
+      if (typeof history !== 'undefined') history.replaceState(null, '', routeEvent(parts[1], eventSlug, stage));
+      return { page: 'event', slug: parts[1], eventSlug, stage };
+    }
+    if (parts.length === 1) return { page: 'competition', slug: parts[0] };
+    if (parts.length === 2) return { page: 'event', slug: parts[0], eventSlug: parts[1], stage };
     return { page: 'not-found' };
   }
 
@@ -705,10 +713,14 @@
   function renderRoundRobinStage(stage) {
     const participants = stage.data?.participants || stage.metadata?.entrants?.map(entry => entry.participant) || [];
     const matches = stage.data?.matches || [];
+    const schedule = stage.data || {};
     const finished = participants.length > 0 && matches.length >= participants.length * (participants.length - 1) / 2 && matches.every(match => match.finished);
     const standings = finished ? stage.data?.standings || null : null;
     const results = standings?.rows?.map(row => ({ rank: row.rank, participant: participants[row.index] })) || [];
-    return `<div class="stage-stack">${results.length ? renderResultsPanel('round-robin', results) : ''}<section class="panel"><div class="panel-header"><h2>循环赛</h2><span class="panel-subtitle">${participants.length} 位选手 · ${matches.length} 场比赛</span></div>
+    return `<div class="stage-stack">${results.length ? renderResultsPanel('round-robin', results) : ''}<section class="panel"><div class="panel-header"><div class="group-heading"><h2>循环赛</h2>
+      <div class="group-schedule"><span>预定时间：${esc(schedule.scheduled_time || '待定')}</span><span>预定桌号：${esc(schedule.scheduled_table || '待定')}</span><span>预定裁判：${esc(schedule.scheduled_referee || '待定')}</span></div></div>
+      <div class="group-header-actions"><span class="panel-subtitle">${participants.length} 位选手 · ${matches.filter(match => match.finished).length}/${matches.length} 场已完成</span>
+      ${admin ? `<button class="button secondary small" type="button" data-action="edit-round-robin-schedule">${icon.edit} 设置预定安排</button>` : ''}</div></div>
       <div class="panel-body">${participants.length ? renderRoundRobinTable(participants, matches, 0, `${current.competition.slug}-${current.event.slug}-round-robin`, standings) : empty('暂无选手', '请添加包含选手名单的项目。')}</div></section></div>`;
   }
 
@@ -1068,6 +1080,19 @@
       '<button class="button secondary" type="button" data-action="close-modal">取消</button><button class="button primary" type="submit" form="group-schedule-form">保存预定安排</button>');
   }
 
+  function showRoundRobinSchedule() {
+    const schedule = current?.stages?.round_robin?.data;
+    if (!schedule) return toast('找不到循环赛。', true);
+    modalState = { type: 'round-robin-schedule' };
+    const body = `<form id="round-robin-schedule-form" data-form="round-robin-schedule">
+      <div class="field-row three"><div class="field"><label for="round-robin-scheduled-time">预定时间</label><input id="round-robin-scheduled-time" name="scheduled_time" value="${attr(schedule.scheduled_time || '')}" placeholder="例如：14:30"></div>
+      <div class="field"><label for="round-robin-scheduled-table">预定桌号</label><input id="round-robin-scheduled-table" name="scheduled_table" value="${attr(schedule.scheduled_table || '')}" placeholder="例如：3"></div>
+      <div class="field"><label for="round-robin-scheduled-referee">预定裁判</label><input id="round-robin-scheduled-referee" name="scheduled_referee" value="${attr(schedule.scheduled_referee || '')}" placeholder="裁判姓名"></div></div>
+      <p class="field-help">保存会将预定时间、预定桌号和预定裁判覆盖到循环赛所有场次；留空会清除对应安排。单独修改场次的时间、桌号或裁判不会改变循环赛的预定安排。</p></form>`;
+    openModal('循环赛 · 预定安排', body,
+      '<button class="button secondary" type="button" data-action="close-modal">取消</button><button class="button primary" type="submit" form="round-robin-schedule-form">保存预定安排</button>');
+  }
+
   function matchParticipants(match, participants) {
     const a = Number.isInteger(match.a) ? participants[match.a] : match.a;
     const b = Number.isInteger(match.b) ? participants[match.b] : match.b;
@@ -1253,6 +1278,7 @@
 
     if (action === 'publish') return submitChanges();
     if (action === 'edit-group-schedule') return showGroupSchedule(button.dataset.groupId);
+    if (action === 'edit-round-robin-schedule') return showRoundRobinSchedule();
     if (action === 'add-competition') return showCompetitionForm();
     if (action === 'edit-competition') {
       const competition = current.competitions.find(item => item.slug === button.dataset.id);
@@ -1394,6 +1420,16 @@
         closeModal();
         await refreshCurrentEvent('group');
         toast('小组预定安排已保存。');
+      } else if (form.dataset.form === 'round-robin-schedule' && modalState?.type === 'round-robin-schedule') {
+        const body = {
+          scheduled_time: form.elements.scheduled_time.value.trim(),
+          scheduled_table: form.elements.scheduled_table.value.trim(),
+          scheduled_referee: form.elements.scheduled_referee?.value.trim() || ''
+        };
+        await mutate('PATCH', `${apiPath(current.competition.slug, current.event.slug)}/round-robin/schedule`, body);
+        closeModal();
+        await refreshCurrentEvent('round_robin');
+        toast('循环赛预定安排已保存。');
       } else if (form.dataset.form === 'match-meta' && modalState?.type === 'match') {
         const editing = modalState;
         const matchId = editing.matchId;

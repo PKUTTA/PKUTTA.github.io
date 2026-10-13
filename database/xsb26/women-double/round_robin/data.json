@@ -41,7 +41,7 @@
       "b": 1,
       "finished": false,
       "games": [],
-      "table": "10",
+      "table": "7",
       "time": "10/17 18:00",
       "referee": ""
     },
@@ -51,7 +51,7 @@
       "b": 2,
       "finished": false,
       "games": [],
-      "table": "10",
+      "table": "7",
       "time": "10/17 18:00",
       "referee": ""
     },
@@ -61,7 +61,7 @@
       "b": 3,
       "finished": false,
       "games": [],
-      "table": "10",
+      "table": "7",
       "time": "10/17 18:00",
       "referee": ""
     },
@@ -71,7 +71,7 @@
       "b": 2,
       "finished": false,
       "games": [],
-      "table": "10",
+      "table": "7",
       "time": "10/17 18:00",
       "referee": ""
     },
@@ -81,7 +81,7 @@
       "b": 3,
       "finished": false,
       "games": [],
-      "table": "10",
+      "table": "7",
       "time": "10/17 18:00",
       "referee": ""
     },
@@ -91,11 +91,14 @@
       "b": 3,
       "finished": false,
       "games": [],
-      "table": "10",
+      "table": "7",
       "time": "10/17 18:00",
       "referee": ""
     }
   ],
   "standings": null,
-  "ranking_draw_order": null
+  "ranking_draw_order": null,
+  "scheduled_time": "",
+  "scheduled_table": "",
+  "scheduled_referee": ""
 }

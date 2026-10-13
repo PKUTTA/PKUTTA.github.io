@@ -476,7 +476,7 @@
       "size": 4,
       "qualifiers": 2,
       "scheduled_time": "10/17 18:00",
-      "scheduled_table": "7",
+      "scheduled_table": "8",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -509,7 +509,7 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": "7",
+          "table": "8",
           "time": "10/17 18:00",
           "referee": ""
         },
@@ -519,7 +519,7 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": "7",
+          "table": "8",
           "time": "10/17 18:00",
           "referee": ""
         },
@@ -529,7 +529,7 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": "7",
+          "table": "8",
           "time": "10/17 18:00",
           "referee": ""
         },
@@ -539,7 +539,7 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": "7",
+          "table": "8",
           "time": "10/17 18:00",
           "referee": ""
         },
@@ -549,7 +549,7 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": "7",
+          "table": "8",
           "time": "10/17 18:00",
           "referee": ""
         },
@@ -559,7 +559,7 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": "7",
+          "table": "8",
           "time": "10/17 18:00",
           "referee": ""
         }
@@ -570,7 +570,7 @@
       "size": 3,
       "qualifiers": 2,
       "scheduled_time": "10/17 18:00",
-      "scheduled_table": "8",
+      "scheduled_table": "9",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -598,7 +598,7 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": "8",
+          "table": "9",
           "time": "10/17 18:00",
           "referee": ""
         },
@@ -608,7 +608,7 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": "8",
+          "table": "9",
           "time": "10/17 18:00",
           "referee": ""
         },
@@ -618,7 +618,7 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": "8",
+          "table": "9",
           "time": "10/17 18:00",
           "referee": ""
         }
@@ -629,7 +629,7 @@
       "size": 3,
       "qualifiers": 2,
       "scheduled_time": "10/17 18:00",
-      "scheduled_table": "9",
+      "scheduled_table": "10",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -657,7 +657,7 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": "9",
+          "table": "10",
           "time": "10/17 18:00",
           "referee": ""
         },
@@ -667,7 +667,7 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": "9",
+          "table": "10",
           "time": "10/17 18:00",
           "referee": ""
         },
@@ -677,7 +677,7 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": "9",
+          "table": "10",
           "time": "10/17 18:00",
           "referee": ""
         }
