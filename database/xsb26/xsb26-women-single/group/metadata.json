@@ -5,9 +5,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "林茵"
+          "戈梓淇"
         ],
-        "team": "Team 22"
+        "team": "历史学系"
       },
       "seed": 0
     },
@@ -15,9 +15,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "钱宁"
+          "卢星洁"
         ],
-        "team": "Team 29"
+        "team": "城市与环境学院"
       },
       "seed": 0
     },
@@ -25,19 +25,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "罗悦琪"
+          "王镱霏"
         ],
-        "team": "Team 13"
-      },
-      "seed": 4
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "薛知仪"
-        ],
-        "team": "Team 3"
+        "team": "城市与环境学院"
       },
       "seed": 0
     },
@@ -45,59 +35,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "吕宁"
+          "张馨睿"
         ],
-        "team": "Team 26"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "白书瑶"
-        ],
-        "team": "Team 3"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "钱悦茹"
-        ],
-        "team": "Team 35"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "彭欣羽"
-        ],
-        "team": "Team 33"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "许映琳"
-        ],
-        "team": "Team 9"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "闫宁"
-        ],
-        "team": "Team 4"
+        "team": "数学科学学院"
       },
       "seed": 2
     },
@@ -105,9 +45,59 @@
       "participant": {
         "kind": "player",
         "members": [
-          "朱清琪"
+          "范可枫"
         ],
-        "team": "Team 13"
+        "team": "中国语言文学系"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "郭恬圆"
+        ],
+        "team": "光华管理学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "向怡颖"
+        ],
+        "team": "信息管理系"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "康宝宸"
+        ],
+        "team": "外国语学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "朱珂瑶"
+        ],
+        "team": "外国语学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "张诗悦"
+        ],
+        "team": "外国语学院"
       },
       "seed": 1
     },
@@ -115,9 +105,49 @@
       "participant": {
         "kind": "player",
         "members": [
-          "罗若月"
+          "孙澜媛"
         ],
-        "team": "Team 16"
+        "team": "教育学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "姜懿真"
+        ],
+        "team": "前沿交叉学科研究院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "商靓"
+        ],
+        "team": "哲学系"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "徐士茹"
+        ],
+        "team": "哲学系"
+      },
+      "seed": 4
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "闫孟涵"
+        ],
+        "team": "建筑与景观设计学院"
       },
       "seed": 5
     },
@@ -125,9 +155,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "余艺涵"
+          "Xiong Edwina Hui Yun"
         ],
-        "team": "Team 11"
+        "team": "燕京学堂"
       },
       "seed": 0
     },
@@ -135,9 +165,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "闫予莹"
+          "尹梓涵"
         ],
-        "team": "Team 16"
+        "team": "社会学系"
       },
       "seed": 0
     },
@@ -145,9 +175,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "贾予月"
+          "高艺耘"
         ],
-        "team": "Team 12"
+        "team": "社会学系"
       },
       "seed": 0
     },
@@ -155,9 +185,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "谢佳瑶"
+          "黄靖雯"
         ],
-        "team": "Team 21"
+        "team": "社会学系"
       },
       "seed": 0
     },
@@ -165,9 +195,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "孔诗柔"
+          "索鑫宇"
         ],
-        "team": "Team 1"
+        "team": "社会学系"
       },
       "seed": 0
     },
@@ -175,9 +205,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "向诗璇"
+          "陈文婷"
         ],
-        "team": "Team 30"
+        "team": "社会学系"
       },
       "seed": 0
     },
@@ -185,9 +215,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "唐语桐"
+          "王之韵"
         ],
-        "team": "Team 4"
+        "team": "经济学院"
       },
       "seed": 0
     },
@@ -195,9 +225,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "闫若倩"
+          "彭妍歆"
         ],
-        "team": "Team 35"
+        "team": "考古文博学院"
       },
       "seed": 0
     },
@@ -205,9 +235,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "何云悦"
+          "焦国曦"
         ],
-        "team": "Team 25"
+        "team": "考古文博学院"
       },
       "seed": 0
     },
@@ -215,9 +245,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "黄柔"
+          "朱悦"
         ],
-        "team": "Team 9"
+        "team": "软件与微电子学院"
       },
       "seed": 0
     },
@@ -225,9 +255,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "廖思桐"
+          "郭珈汛"
         ],
-        "team": "Team 21"
+        "team": "软件与微电子学院"
       },
       "seed": 0
     },
@@ -235,29 +265,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "廖晨娜"
+          "周子瑄"
         ],
-        "team": "Team 11"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "郝梓蓉"
-        ],
-        "team": "Team 7"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "向书荷"
-        ],
-        "team": "Team 22"
+        "team": "集成电路学院"
       },
       "seed": 3
     },
@@ -265,9 +275,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "史佳姗"
+          "邱晨璇"
         ],
-        "team": "Team 33"
+        "team": "医学部"
       },
       "seed": 0
     },
@@ -275,9 +285,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "陆熙"
+          "钟千然"
         ],
-        "team": "Team 12"
+        "team": "医学部"
       },
       "seed": 0
     },
@@ -285,9 +295,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "覃姗"
+          "王佳睿"
         ],
-        "team": "Team 25"
+        "team": "地球与空间科学学院"
       },
       "seed": 0
     },
@@ -295,19 +305,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "董可柔"
+          "张煜晗"
         ],
-        "team": "Team 30"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "宋安馨"
-        ],
-        "team": "Team 29"
+        "team": "地球与空间科学学院"
       },
       "seed": 0
     }

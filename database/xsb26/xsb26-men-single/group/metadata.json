@@ -5,9 +5,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "夏航"
+          "宣铭祺"
         ],
-        "team": "Team 32"
+        "team": "工学院"
       },
       "seed": 0
     },
@@ -15,9 +15,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "马秉超"
+          "郭宁宇"
         ],
-        "team": "Team 22"
+        "team": "工学院"
       },
       "seed": 0
     },
@@ -25,9 +25,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "林怀然"
+          "张择然"
         ],
-        "team": "Team 24"
+        "team": "工学院"
       },
       "seed": 0
     },
@@ -35,9 +35,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "肖瑞尧"
+          "陈玉树"
         ],
-        "team": "Team 14"
+        "team": "工学院"
       },
       "seed": 0
     },
@@ -45,9 +45,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "杨正熙"
+          "梁鉴诚"
         ],
-        "team": "Team 34"
+        "team": "工学院"
       },
       "seed": 0
     },
@@ -55,9 +55,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "于景凡"
+          "韩宇明"
         ],
-        "team": "Team 13"
+        "team": "工学院"
       },
       "seed": 0
     },
@@ -65,9 +65,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "胡庭辰"
+          "马奥"
         ],
-        "team": "Team 10"
+        "team": "工学院"
       },
       "seed": 0
     },
@@ -75,9 +75,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "孟梓毅"
+          "程知非"
         ],
-        "team": "Team 32"
+        "team": "工学院"
       },
       "seed": 0
     },
@@ -85,9 +85,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "李致宁"
+          "张益卓"
         ],
-        "team": "Team 35"
+        "team": "工学院"
       },
       "seed": 0
     },
@@ -95,659 +95,19 @@
       "participant": {
         "kind": "player",
         "members": [
-          "邱文尧"
+          "于金声"
         ],
-        "team": "Team 9"
+        "team": "历史学系"
       },
-      "seed": 2
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "邵梓恒"
-        ],
-        "team": "Team 23"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "夏清松"
-        ],
-        "team": "Team 17"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "董俊杰"
-        ],
-        "team": "Team 27"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "贾瑞松"
-        ],
-        "team": "Team 4"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "曾弘宁"
-        ],
-        "team": "Team 27"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "龚远哲"
-        ],
-        "team": "Team 7"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "周浩毅"
-        ],
-        "team": "Team 23"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "陶志哲"
-        ],
-        "team": "Team 26"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "姚弘哲"
-        ],
-        "team": "Team 19"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "夏昊轩"
-        ],
-        "team": "Team 23"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "于嘉熙"
-        ],
-        "team": "Team 2"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "蒋亦朗"
-        ],
-        "team": "Team 12"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "钱霖"
-        ],
-        "team": "Team 2"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "熊亦宁"
-        ],
-        "team": "Team 17"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "杨弘翔"
-        ],
-        "team": "Team 29"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "蒋正然"
-        ],
-        "team": "Team 14"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "任航"
-        ],
-        "team": "Team 30"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "傅文霖"
-        ],
-        "team": "Team 24"
-      },
-      "seed": 7
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "范子凯"
-        ],
-        "team": "Team 25"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "石宇辰"
-        ],
-        "team": "Team 14"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "于家森"
-        ],
-        "team": "Team 22"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "邹维"
-        ],
-        "team": "Team 7"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "黎远晨"
-        ],
-        "team": "Team 30"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "朱明宏"
-        ],
-        "team": "Team 1"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "张泽言"
-        ],
-        "team": "Team 8"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "邵清然"
-        ],
-        "team": "Team 21"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "闫宏"
-        ],
-        "team": "Team 9"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "段世平"
-        ],
-        "team": "Team 2"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "魏明博"
-        ],
-        "team": "Team 24"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "江书昕"
-        ],
-        "team": "Team 21"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "徐涛"
-        ],
-        "team": "Team 5"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "覃振朗"
-        ],
-        "team": "Team 3"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "于森"
-        ],
-        "team": "Team 30"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "叶启平"
-        ],
-        "team": "Team 14"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "李嘉翔"
-        ],
-        "team": "Team 19"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "尹尧"
-        ],
-        "team": "Team 29"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "向绍成"
-        ],
-        "team": "Team 33"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "郭维"
-        ],
-        "team": "Team 21"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "魏远宁"
-        ],
-        "team": "Team 18"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "许远航"
-        ],
-        "team": "Team 19"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "余嘉然"
-        ],
-        "team": "Team 25"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "石正凡"
-        ],
-        "team": "Team 22"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "徐明然"
-        ],
-        "team": "Team 28"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "许启宏"
-        ],
-        "team": "Team 3"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "廖浩平"
-        ],
-        "team": "Team 13"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "钟彦达"
-        ],
-        "team": "Team 8"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "卢承维"
-        ],
-        "team": "Team 21"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "袁俊杰"
-        ],
-        "team": "Team 6"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "傅朗"
-        ],
-        "team": "Team 35"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "田庭森"
-        ],
-        "team": "Team 16"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "孔川"
-        ],
-        "team": "Team 27"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "戴秉诚"
-        ],
-        "team": "Team 16"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "郝毅"
-        ],
-        "team": "Team 9"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "金霖"
-        ],
-        "team": "Team 20"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "石梓衡"
-        ],
-        "team": "Team 32"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "李秉衡"
-        ],
-        "team": "Team 8"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "范彦凡"
-        ],
-        "team": "Team 12"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "郝昕"
-        ],
-        "team": "Team 5"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "韩书凡"
-        ],
-        "team": "Team 10"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "彭平"
-        ],
-        "team": "Team 28"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "崔景松"
-        ],
-        "team": "Team 17"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "朱昊涛"
-        ],
-        "team": "Team 11"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "顾云恒"
-        ],
-        "team": "Team 16"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "许梓达"
-        ],
-        "team": "Team 33"
-      },
       "seed": 0
     },
     {
       "participant": {
         "kind": "player",
         "members": [
-          "侯浩川"
+          "何曜宇"
         ],
-        "team": "Team 30"
+        "team": "历史学系"
       },
       "seed": 0
     },
@@ -755,9 +115,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "汤卓辰"
+          "徐翔宇"
         ],
-        "team": "Team 1"
+        "team": "历史学系"
       },
       "seed": 0
     },
@@ -765,9 +125,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "向家诚"
+          "王靖焜"
         ],
-        "team": "Team 5"
+        "team": "历史学系"
       },
       "seed": 0
     },
@@ -775,9 +135,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "孟云晨"
+          "洪宇泽"
         ],
-        "team": "Team 18"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -785,9 +145,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "郭诚"
+          "周道"
         ],
-        "team": "Team 33"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -795,9 +155,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "陈清昕"
+          "蒋晓冉"
         ],
-        "team": "Team 11"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -805,9 +165,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "朱修衡"
+          "胡可为"
         ],
-        "team": "Team 26"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -815,9 +175,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "王家睿"
+          "余哲浩"
         ],
-        "team": "Team 25"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -825,9 +185,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "石嘉衡"
+          "赵巍然"
         ],
-        "team": "Team 20"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -835,9 +195,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "余航"
+          "张素诚"
         ],
-        "team": "Team 34"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -845,9 +205,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "侯凡"
+          "吴锴佳"
         ],
-        "team": "Team 31"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -855,9 +215,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "刘阳"
+          "黄思宇"
         ],
-        "team": "Team 4"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -865,9 +225,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "汤嘉然"
+          "陈奥博"
         ],
-        "team": "Team 6"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -875,9 +235,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "徐卓帆"
+          "万睿希"
         ],
-        "team": "Team 34"
+        "team": "物理学院"
       },
       "seed": 0
     },
@@ -885,9 +245,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "邹家宁"
+          "李锦洲"
         ],
-        "team": "Team 26"
+        "team": "城市与环境学院"
       },
       "seed": 0
     },
@@ -895,9 +255,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "蔡航"
+          "费屹萌"
         ],
-        "team": "Team 35"
+        "team": "城市与环境学院"
       },
       "seed": 0
     },
@@ -905,9 +265,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "秦言"
+          "欧阳承丰"
         ],
-        "team": "Team 29"
+        "team": "城市与环境学院"
       },
       "seed": 0
     },
@@ -915,9 +275,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "贺清凡"
+          "贾景顺"
         ],
-        "team": "Team 6"
+        "team": "城市与环境学院"
       },
       "seed": 0
     },
@@ -925,9 +285,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "马子然"
+          "胡佳乐"
         ],
-        "team": "Team 4"
+        "team": "城市与环境学院"
       },
       "seed": 0
     },
@@ -935,9 +295,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "孔宏"
+          "谢东桓"
         ],
-        "team": "Team 27"
+        "team": "数学科学学院"
       },
       "seed": 3
     },
@@ -945,9 +305,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "韦予航"
+          "艾宇航"
         ],
-        "team": "Team 32"
+        "team": "数学科学学院"
       },
       "seed": 0
     },
@@ -955,9 +315,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "顾云睿"
+          "王乐言"
         ],
-        "team": "Team 3"
+        "team": "数学科学学院"
       },
       "seed": 0
     },
@@ -965,9 +325,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "杜予言"
+          "范力铭"
         ],
-        "team": "Team 6"
+        "team": "数学科学学院"
       },
       "seed": 0
     },
@@ -975,9 +335,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "宋峰"
+          "朱彦燊"
         ],
-        "team": "Team 13"
+        "team": "数学科学学院"
       },
       "seed": 0
     },
@@ -985,9 +345,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "沈启睿"
+          "陈泽成"
         ],
-        "team": "Team 29"
+        "team": "数学科学学院"
       },
       "seed": 0
     },
@@ -995,9 +355,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "肖承昕"
+          "张家豪"
         ],
-        "team": "Team 18"
+        "team": "数学科学学院"
       },
       "seed": 0
     },
@@ -1005,19 +365,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "段尧"
+          "林嘉麒"
         ],
-        "team": "Team 7"
-      },
-      "seed": 1
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "蔡庭川"
-        ],
-        "team": "Team 1"
+        "team": "数学科学学院"
       },
       "seed": 0
     },
@@ -1025,9 +375,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "谭凡"
+          "王冀为"
         ],
-        "team": "Team 23"
+        "team": "对外汉语教育学院"
       },
       "seed": 0
     },
@@ -1035,9 +385,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "蔡承哲"
+          "赖逸哲"
         ],
-        "team": "Team 31"
+        "team": "对外汉语教育学院"
       },
       "seed": 0
     },
@@ -1045,9 +395,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "吴修阳"
+          "马琮渊"
         ],
-        "team": "Team 15"
+        "team": "政府管理学院"
       },
       "seed": 0
     },
@@ -1055,9 +405,19 @@
       "participant": {
         "kind": "player",
         "members": [
-          "闫明恒"
+          "李厚润"
         ],
-        "team": "Team 5"
+        "team": "计算机学院"
+      },
+      "seed": 8
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "宗欣涛"
+        ],
+        "team": "计算机学院"
       },
       "seed": 0
     },
@@ -1065,9 +425,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "马书博"
+          "翟睿"
         ],
-        "team": "Team 17"
+        "team": "计算机学院"
       },
       "seed": 0
     },
@@ -1075,9 +435,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "任子朗"
+          "王大禹"
         ],
-        "team": "Team 19"
+        "team": "计算机学院"
       },
       "seed": 0
     },
@@ -1085,9 +445,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "肖瑞言"
+          "马连耀"
         ],
-        "team": "Team 28"
+        "team": "国家发展研究院"
       },
       "seed": 0
     },
@@ -1095,9 +455,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "蔡昊成"
+          "孙琪玮"
         ],
-        "team": "Team 15"
+        "team": "中国语言文学系"
       },
       "seed": 0
     },
@@ -1105,9 +465,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "谢志晨"
+          "杨智尧"
         ],
-        "team": "Team 13"
+        "team": "光华管理学院"
       },
       "seed": 0
     },
@@ -1115,9 +475,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "朱铭昕"
+          "肖骥超"
         ],
-        "team": "Team 12"
+        "team": "光华管理学院"
       },
       "seed": 0
     },
@@ -1125,9 +485,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "雷云朗"
+          "周添"
         ],
-        "team": "Team 24"
+        "team": "光华管理学院"
       },
       "seed": 0
     },
@@ -1135,9 +495,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "郭瑞恒"
+          "吴成生"
         ],
-        "team": "Team 25"
+        "team": "光华管理学院"
       },
       "seed": 0
     },
@@ -1145,79 +505,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "顾景达"
+          "刘卿然"
         ],
-        "team": "Team 26"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "胡亦轩"
-        ],
-        "team": "Team 31"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "闫宇涛"
-        ],
-        "team": "Team 20"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "赵清达"
-        ],
-        "team": "Team 18"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "潘彦晨"
-        ],
-        "team": "Team 4"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "韦清涛"
-        ],
-        "team": "Team 11"
-      },
-      "seed": 0
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "陈云博"
-        ],
-        "team": "Team 12"
-      },
-      "seed": 5
-    },
-    {
-      "participant": {
-        "kind": "player",
-        "members": [
-          "陈文翔"
-        ],
-        "team": "Team 2"
+        "team": "光华管理学院"
       },
       "seed": 4
     },
@@ -1225,9 +515,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "钱云晨"
+          "施彭湃"
         ],
-        "team": "Team 10"
+        "team": "先进制造与机器人学院"
       },
       "seed": 0
     },
@@ -1235,9 +525,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "宋翔"
+          "冯元武"
         ],
-        "team": "Team 31"
+        "team": "先进制造与机器人学院"
       },
       "seed": 0
     },
@@ -1245,9 +535,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "尹书超"
+          "石丰"
         ],
-        "team": "Team 15"
+        "team": "信息管理系"
       },
       "seed": 0
     },
@@ -1255,9 +545,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "高弘维"
+          "罗艺达"
         ],
-        "team": "Team 33"
+        "team": "信息管理系"
       },
       "seed": 0
     },
@@ -1265,9 +555,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "侯怀晨"
+          "冯奥"
         ],
-        "team": "Team 34"
+        "team": "信息管理系"
       },
       "seed": 0
     },
@@ -1275,9 +565,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "陆庭松"
+          "魏俊豪"
         ],
-        "team": "Team 9"
+        "team": "信息管理系"
       },
       "seed": 0
     },
@@ -1285,9 +575,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "吴远宏"
+          "马旭"
         ],
-        "team": "Team 35"
+        "team": "信息管理系"
       },
       "seed": 0
     },
@@ -1295,9 +585,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "何启凡"
+          "来敬杰"
         ],
-        "team": "Team 28"
+        "team": "外国语学院"
       },
       "seed": 0
     },
@@ -1305,9 +595,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "黄正维"
+          "高铭"
         ],
-        "team": "Team 7"
+        "team": "法学院"
       },
       "seed": 0
     },
@@ -1315,9 +605,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "史昊尧"
+          "国嘉祎"
         ],
-        "team": "Team 15"
+        "team": "法学院"
       },
       "seed": 0
     },
@@ -1325,9 +615,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "许秉昕"
+          "李嘉乐"
         ],
-        "team": "Team 10"
+        "team": "法学院"
       },
       "seed": 0
     },
@@ -1335,9 +625,529 @@
       "participant": {
         "kind": "player",
         "members": [
-          "梁予峰"
+          "刘健生"
         ],
-        "team": "Team 8"
+        "team": "教育学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "王盛顿"
+        ],
+        "team": "教育学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "杨佳郑"
+        ],
+        "team": "教育学院"
+      },
+      "seed": 5
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "沈彦兆"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "郭显奕"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "唐周子或"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "张皓程"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "王子奥"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "韩傲宇"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "冯铮"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "吕杨铄"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "周明远"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "余宏赫"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "叶苏恺"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "吴尚远"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "蔡良骏"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "高华烨"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "王久尧"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "孙嘉琨"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "朱羿衡"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 2
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "张程皓"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "梁绪钊"
+        ],
+        "team": "信息科学技术学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "王一石"
+        ],
+        "team": "元培学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "林宏伟"
+        ],
+        "team": "元培学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "黄羽喆"
+        ],
+        "team": "元培学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "汪祺"
+        ],
+        "team": "前沿交叉学科研究院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "刘铭烨"
+        ],
+        "team": "前沿交叉学科研究院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "赵亦阳"
+        ],
+        "team": "前沿交叉学科研究院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "王俊皓"
+        ],
+        "team": "前沿交叉学科研究院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "黄霁之"
+        ],
+        "team": "化学与分子工程学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "周成康"
+        ],
+        "team": "化学与分子工程学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "王高鹏"
+        ],
+        "team": "化学与分子工程学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "肖琪丰"
+        ],
+        "team": "化学与分子工程学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "汤梓昕"
+        ],
+        "team": "化学与分子工程学院"
+      },
+      "seed": 1
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "李乐典"
+        ],
+        "team": "化学与分子工程学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "陈颢源"
+        ],
+        "team": "化学与分子工程学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "韩政轩"
+        ],
+        "team": "化学与分子工程学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "齐了"
+        ],
+        "team": "哲学系"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "许褚羚"
+        ],
+        "team": "心理与认知科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "周志昊"
+        ],
+        "team": "生命科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "游开元"
+        ],
+        "team": "生命科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "莫南"
+        ],
+        "team": "生命科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "龙承泽"
+        ],
+        "team": "生命科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "雷奥杰"
+        ],
+        "team": "新闻与传播学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "任一凡"
+        ],
+        "team": "建筑与景观设计学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "席志成"
+        ],
+        "team": "燕京学堂"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "洪宜帅"
+        ],
+        "team": "燕京学堂"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "Daniel Apelbaum"
+        ],
+        "team": "燕京学堂"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "黄敬"
+        ],
+        "team": "现代农学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "岳典辰"
+        ],
+        "team": "现代农学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "张煜松"
+        ],
+        "team": "社会学系"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "刘轩宇"
+        ],
+        "team": "经济学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "徐子涵"
+        ],
+        "team": "经济学院"
       },
       "seed": 6
     },
@@ -1345,9 +1155,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "孟铭远"
+          "蒲梓铖"
         ],
-        "team": "Team 11"
+        "team": "考古文博学院"
       },
       "seed": 0
     },
@@ -1355,9 +1165,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "郭亦凡"
+          "何天宇"
         ],
-        "team": "Team 16"
+        "team": "考古文博学院"
       },
       "seed": 0
     },
@@ -1365,9 +1175,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "孟修然"
+          "王一然"
         ],
-        "team": "Team 22"
+        "team": "考古文博学院"
       },
       "seed": 0
     },
@@ -1375,9 +1185,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "陈家平"
+          "薛靖博"
         ],
-        "team": "Team 1"
+        "team": "软件与微电子学院"
       },
       "seed": 0
     },
@@ -1385,9 +1195,9 @@
       "participant": {
         "kind": "player",
         "members": [
-          "金致楷"
+          "连旺旺"
         ],
-        "team": "Team 3"
+        "team": "软件与微电子学院"
       },
       "seed": 0
     },
@@ -1395,9 +1205,199 @@
       "participant": {
         "kind": "player",
         "members": [
-          "刘凡"
+          "金科上"
         ],
-        "team": "Team 20"
+        "team": "软件与微电子学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "王进开"
+        ],
+        "team": "软件与微电子学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "李炆泽"
+        ],
+        "team": "软件与微电子学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "文泽宇"
+        ],
+        "team": "软件与微电子学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "任超"
+        ],
+        "team": "集成电路学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "姚文帅"
+        ],
+        "team": "集成电路学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "李云溥"
+        ],
+        "team": "马克思主义学院"
+      },
+      "seed": 7
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "尤优"
+        ],
+        "team": "马克思主义学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "史鹏玉"
+        ],
+        "team": "马克思主义学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "彭聪"
+        ],
+        "team": "马克思主义学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "戴正恩"
+        ],
+        "team": "医学部"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "郭嘉诚"
+        ],
+        "team": "医学部"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "伏泽恺"
+        ],
+        "team": "地球与空间科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "黄一召"
+        ],
+        "team": "地球与空间科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "余科翰:"
+        ],
+        "team": "地球与空间科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "苏东昱:"
+        ],
+        "team": "地球与空间科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "陆弈鸣"
+        ],
+        "team": "地球与空间科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "丁海元"
+        ],
+        "team": "地球与空间科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "陈骏驰"
+        ],
+        "team": "地球与空间科学学院"
+      },
+      "seed": 0
+    },
+    {
+      "participant": {
+        "kind": "player",
+        "members": [
+          "王昱森"
+        ],
+        "team": "地球与空间科学学院"
       },
       "seed": 0
     }

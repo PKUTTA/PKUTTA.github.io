@@ -1,8 +1,8 @@
 {
-  "slug": "test-men-single",
+  "slug": "xsb26-men-double",
   "discipline": "men",
-  "format": "single",
-  "name": "男子单打",
+  "format": "double",
+  "name": "男子双打",
   "schedule": "group-knockout",
   "stages": [
     "group",
