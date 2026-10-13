@@ -5,8 +5,8 @@
       "id": 1,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 8:00",
+      "scheduled_table": "5",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -39,8 +39,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -49,8 +49,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -59,8 +59,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -69,8 +69,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -79,8 +79,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -89,8 +89,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 8:00",
           "referee": ""
         }
       ]
@@ -99,8 +99,8 @@
       "id": 2,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 8:00",
+      "scheduled_table": "7",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -133,8 +133,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -143,8 +143,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -153,8 +153,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -163,8 +163,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -173,8 +173,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -183,8 +183,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 8:00",
           "referee": ""
         }
       ]
@@ -193,8 +193,8 @@
       "id": 3,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 8:00",
+      "scheduled_table": "8",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -227,8 +227,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -237,8 +237,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -247,8 +247,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -257,8 +257,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -267,8 +267,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -277,8 +277,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 8:00",
           "referee": ""
         }
       ]
@@ -287,8 +287,8 @@
       "id": 4,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 8:00",
+      "scheduled_table": "9",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -321,8 +321,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -331,8 +331,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -341,8 +341,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -351,8 +351,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -361,8 +361,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -371,8 +371,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 8:00",
           "referee": ""
         }
       ]
@@ -381,8 +381,8 @@
       "id": 5,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 8:00",
+      "scheduled_table": "10",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -415,8 +415,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -425,8 +425,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -435,8 +435,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -445,8 +445,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -455,8 +455,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -465,8 +465,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 8:00",
           "referee": ""
         }
       ]
@@ -475,8 +475,8 @@
       "id": 6,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 9:30",
+      "scheduled_table": "5",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -509,8 +509,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -519,8 +519,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -529,8 +529,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -539,8 +539,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -549,8 +549,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -559,8 +559,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 9:30",
           "referee": ""
         }
       ]
@@ -569,8 +569,8 @@
       "id": 7,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 9:30",
+      "scheduled_table": "7",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -603,8 +603,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -613,8 +613,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -623,8 +623,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -633,8 +633,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -643,8 +643,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -653,8 +653,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 9:30",
           "referee": ""
         }
       ]
@@ -663,8 +663,8 @@
       "id": 8,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 9:30",
+      "scheduled_table": "8",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -697,8 +697,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -707,8 +707,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -717,8 +717,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -727,8 +727,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -737,8 +737,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -747,8 +747,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 9:30",
           "referee": ""
         }
       ]
@@ -757,8 +757,8 @@
       "id": 9,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 9:30",
+      "scheduled_table": "9",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -791,8 +791,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -801,8 +801,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -811,8 +811,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -821,8 +821,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -831,8 +831,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -841,8 +841,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 9:30",
           "referee": ""
         }
       ]
@@ -851,8 +851,8 @@
       "id": 10,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 9:30",
+      "scheduled_table": "10",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -885,8 +885,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -895,8 +895,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -905,8 +905,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -915,8 +915,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -925,8 +925,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 9:30",
           "referee": ""
         },
         {
@@ -935,8 +935,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 9:30",
           "referee": ""
         }
       ]
@@ -945,8 +945,8 @@
       "id": 11,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 11:00",
+      "scheduled_table": "5",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -979,8 +979,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -989,8 +989,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -999,8 +999,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1009,8 +1009,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1019,8 +1019,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1029,8 +1029,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 11:00",
           "referee": ""
         }
       ]
@@ -1039,8 +1039,8 @@
       "id": 12,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 11:00",
+      "scheduled_table": "7",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1073,8 +1073,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1083,8 +1083,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1093,8 +1093,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1103,8 +1103,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1113,8 +1113,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1123,8 +1123,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 11:00",
           "referee": ""
         }
       ]
@@ -1133,8 +1133,8 @@
       "id": 13,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 11:00",
+      "scheduled_table": "8",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1167,8 +1167,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1177,8 +1177,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1187,8 +1187,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1197,8 +1197,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1207,8 +1207,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1217,8 +1217,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 11:00",
           "referee": ""
         }
       ]
@@ -1227,8 +1227,8 @@
       "id": 14,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 11:00",
+      "scheduled_table": "9",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1261,8 +1261,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1271,8 +1271,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1281,8 +1281,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1291,8 +1291,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1301,8 +1301,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1311,8 +1311,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 11:00",
           "referee": ""
         }
       ]
@@ -1321,8 +1321,8 @@
       "id": 15,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 11:00",
+      "scheduled_table": "10",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1355,8 +1355,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1365,8 +1365,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1375,8 +1375,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1385,8 +1385,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1395,8 +1395,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -1405,8 +1405,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 11:00",
           "referee": ""
         }
       ]
@@ -1415,8 +1415,8 @@
       "id": 16,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 12:30",
+      "scheduled_table": "5",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1449,8 +1449,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1459,8 +1459,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1469,8 +1469,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1479,8 +1479,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1489,8 +1489,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1499,8 +1499,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "5",
+          "time": "10/17 12:30",
           "referee": ""
         }
       ]
@@ -1509,8 +1509,8 @@
       "id": 17,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 12:30",
+      "scheduled_table": "7",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1543,8 +1543,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1553,8 +1553,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1563,8 +1563,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1573,8 +1573,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1583,8 +1583,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1593,8 +1593,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "7",
+          "time": "10/17 12:30",
           "referee": ""
         }
       ]
@@ -1603,8 +1603,8 @@
       "id": 18,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 12:30",
+      "scheduled_table": "8",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1637,8 +1637,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1647,8 +1647,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1657,8 +1657,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1667,8 +1667,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1677,8 +1677,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1687,8 +1687,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "8",
+          "time": "10/17 12:30",
           "referee": ""
         }
       ]
@@ -1697,8 +1697,8 @@
       "id": 19,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 12:30",
+      "scheduled_table": "9",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1731,8 +1731,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1741,8 +1741,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1751,8 +1751,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1761,8 +1761,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1771,8 +1771,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1781,8 +1781,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "9",
+          "time": "10/17 12:30",
           "referee": ""
         }
       ]
@@ -1791,8 +1791,8 @@
       "id": 20,
       "size": 4,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 12:30",
+      "scheduled_table": "10",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1825,8 +1825,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1835,8 +1835,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1845,8 +1845,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1855,8 +1855,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1865,8 +1865,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 12:30",
           "referee": ""
         },
         {
@@ -1875,8 +1875,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "10",
+          "time": "10/17 12:30",
           "referee": ""
         }
       ]
@@ -1885,8 +1885,8 @@
       "id": 21,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 8:00",
+      "scheduled_table": "1/2",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -1924,8 +1924,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -1934,8 +1934,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -1944,8 +1944,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -1954,8 +1954,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -1964,8 +1964,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -1974,8 +1974,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -1984,8 +1984,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -1994,8 +1994,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2004,8 +2004,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2014,8 +2014,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 8:00",
           "referee": ""
         }
       ]
@@ -2024,8 +2024,8 @@
       "id": 22,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 8:00",
+      "scheduled_table": "3/4",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -2063,8 +2063,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2073,8 +2073,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2083,8 +2083,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2093,8 +2093,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2103,8 +2103,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2113,8 +2113,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2123,8 +2123,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2133,8 +2133,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2143,8 +2143,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         },
         {
@@ -2153,8 +2153,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 8:00",
           "referee": ""
         }
       ]
@@ -2163,8 +2163,8 @@
       "id": 23,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 9:00",
+      "scheduled_table": "1/2",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -2202,8 +2202,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2212,8 +2212,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2222,8 +2222,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2232,8 +2232,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2242,8 +2242,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2252,8 +2252,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2262,8 +2262,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2272,8 +2272,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2282,8 +2282,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2292,8 +2292,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 9:00",
           "referee": ""
         }
       ]
@@ -2302,8 +2302,8 @@
       "id": 24,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 9:00",
+      "scheduled_table": "3/4",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -2341,8 +2341,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2351,8 +2351,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2361,8 +2361,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2371,8 +2371,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2381,8 +2381,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2391,8 +2391,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2401,8 +2401,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2411,8 +2411,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2421,8 +2421,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         },
         {
@@ -2431,8 +2431,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 9:00",
           "referee": ""
         }
       ]
@@ -2441,8 +2441,8 @@
       "id": 25,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 10:00",
+      "scheduled_table": "1/2",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -2480,8 +2480,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2490,8 +2490,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2500,8 +2500,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2510,8 +2510,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2520,8 +2520,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2530,8 +2530,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2540,8 +2540,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2550,8 +2550,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2560,8 +2560,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2570,8 +2570,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 10:00",
           "referee": ""
         }
       ]
@@ -2580,8 +2580,8 @@
       "id": 26,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 10:00",
+      "scheduled_table": "3/4",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -2619,8 +2619,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2629,8 +2629,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2639,8 +2639,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2649,8 +2649,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2659,8 +2659,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2669,8 +2669,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2679,8 +2679,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2689,8 +2689,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2699,8 +2699,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         },
         {
@@ -2709,8 +2709,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 10:00",
           "referee": ""
         }
       ]
@@ -2719,8 +2719,8 @@
       "id": 27,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 11:00",
+      "scheduled_table": "1/2",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -2758,8 +2758,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2768,8 +2768,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2778,8 +2778,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2788,8 +2788,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2798,8 +2798,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2808,8 +2808,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2818,8 +2818,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2828,8 +2828,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2838,8 +2838,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2848,8 +2848,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 11:00",
           "referee": ""
         }
       ]
@@ -2858,8 +2858,8 @@
       "id": 28,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 11:00",
+      "scheduled_table": "3/4",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -2897,8 +2897,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2907,8 +2907,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2917,8 +2917,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2927,8 +2927,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2937,8 +2937,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2947,8 +2947,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2957,8 +2957,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2967,8 +2967,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2977,8 +2977,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         },
         {
@@ -2987,8 +2987,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 11:00",
           "referee": ""
         }
       ]
@@ -2997,8 +2997,8 @@
       "id": 29,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 12:00",
+      "scheduled_table": "1/2",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -3036,8 +3036,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3046,8 +3046,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3056,8 +3056,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3066,8 +3066,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3076,8 +3076,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3086,8 +3086,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3096,8 +3096,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3106,8 +3106,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3116,8 +3116,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3126,8 +3126,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 12:00",
           "referee": ""
         }
       ]
@@ -3136,8 +3136,8 @@
       "id": 30,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 12:00",
+      "scheduled_table": "3/4",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -3175,8 +3175,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3185,8 +3185,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3195,8 +3195,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3205,8 +3205,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3215,8 +3215,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3225,8 +3225,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3235,8 +3235,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3245,8 +3245,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3255,8 +3255,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         },
         {
@@ -3265,8 +3265,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 12:00",
           "referee": ""
         }
       ]
@@ -3275,8 +3275,8 @@
       "id": 31,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 13:00",
+      "scheduled_table": "1/2",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -3314,8 +3314,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3324,8 +3324,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3334,8 +3334,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3344,8 +3344,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3354,8 +3354,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3364,8 +3364,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3374,8 +3374,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3384,8 +3384,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3394,8 +3394,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3404,8 +3404,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "1/2",
+          "time": "10/17 13:00",
           "referee": ""
         }
       ]
@@ -3414,8 +3414,8 @@
       "id": 32,
       "size": 5,
       "qualifiers": 2,
-      "scheduled_time": "",
-      "scheduled_table": "",
+      "scheduled_time": "10/17 13:00",
+      "scheduled_table": "3/4",
       "scheduled_referee": "",
       "standings": null,
       "ranking_draw_order": null,
@@ -3453,8 +3453,8 @@
           "b": 1,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3463,8 +3463,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3473,8 +3473,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3483,8 +3483,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3493,8 +3493,8 @@
           "b": 2,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3503,8 +3503,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3513,8 +3513,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3523,8 +3523,8 @@
           "b": 3,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3533,8 +3533,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         },
         {
@@ -3543,8 +3543,8 @@
           "b": 4,
           "finished": false,
           "games": [],
-          "table": null,
-          "time": null,
+          "table": "3/4",
+          "time": "10/17 13:00",
           "referee": ""
         }
       ]
