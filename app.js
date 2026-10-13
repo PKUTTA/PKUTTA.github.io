@@ -19,7 +19,8 @@
     trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 4h4m-8 3 1 13h10l1-13M10 11v6m4-6v6"/></svg>',
     close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5 5 19"/></svg>',
     plus: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
-    search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>'
+    search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>',
+    download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>'
   };
   let routeSerial = 0;
   let current = null;
@@ -445,6 +446,7 @@
     if (stageData && stage === 'round_robin') body = renderRoundRobinStage(stageData);
     if (stageData && stage === 'group') body = renderGroupStage(stageData);
     if (stageData && stage === 'knockout') body = renderKnockoutStage(stageData);
+    if (stageData && stage === firstStageForEvent(event)) body += renderParticipantList(stageData);
     const drawButton = admin && (stage === 'group' || stage === 'knockout') && stageData && (stage !== 'knockout' || event.schedule !== 'group-knockout' || complete) ?
       `<button class="button primary" data-action="draw" data-stage="${stage}">${stageData.data?.drawn ? '重新抽签' : '抽签'}</button>` : '';
     shell(`${breadcrumbs([{ text: competition.name, href: routeCompetition(competition.slug) }, { text: eventName(event) }])}
@@ -469,6 +471,50 @@
 
   function participantButton(participant, extraClass = '') {
     return `<button type="button" class="person-link ${extraClass}" ${participantClickable(participant) ? `data-action="participant" data-person="${attr(JSON.stringify(participant))}"` : 'disabled'}>${esc(participantName(participant))}</button>`;
+  }
+
+  function firstStageForEvent(event) {
+    return event.stages?.[0] || (event.schedule === 'group-knockout' ? 'group' : event.schedule === 'round-robin' ? 'round_robin' : 'knockout');
+  }
+
+  function registrationEntrants(stage) {
+    return (stage?.metadata?.entrants || []).filter(entry => participantClickable(entry?.participant));
+  }
+
+  function renderParticipantList(stage) {
+    const id = `${current.competition.slug}-${current.event.slug}-participants`;
+    const entrants = registrationEntrants(stage);
+    return `<details class="panel ranking-panel participant-list-panel" data-ranking-id="${attr(id)}" ${rankingVisibility.get(id) === true ? 'open' : ''}>
+      <summary class="panel-header ranking-summary"><h2>参赛名单</h2><span class="ranking-summary-right"><button class="icon-button participant-download" type="button" data-action="download-participants" title="下载参赛名单 CSV" aria-label="下载参赛名单 CSV">${icon.download}</button><span class="ranking-chevron" aria-hidden="true"></span></span></summary>
+      <div class="panel-body"><p class="participant-list">${entrants.length ? entrants.map(entry => participantButton(entry.participant)).join('，') : '暂无选手'}</p></div></details>`;
+  }
+
+  function participantCsv(stage, format) {
+    const entrants = registrationEntrants(stage);
+    const rows = entrants.map(({ participant, seed }) => format === 'team' ?
+      [participant.team || '', seed ?? 0, ...(participant.members || [])] : format === 'double' ?
+      [participant.members?.[0] || '', participant.members?.[1] || '', participant.team || '', seed ?? 0] :
+      [participant.members?.[0] || participant.name || '', participant.team || '', seed ?? 0]);
+    const header = format === 'team' ? ['队伍', '种子级别', ...Array.from({ length: Math.max(1, ...entrants.map(entry => entry.participant.members?.length || 0)) }, (_, index) => `成员${index + 1}`)] :
+      format === 'double' ? ['选手1', '选手2', '队伍', '种子级别'] : ['选手姓名', '队伍', '种子级别'];
+    const csvCell = value => {
+      const text = String(value ?? '');
+      return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+    };
+    return '\uFEFF' + [header, ...rows].map(row => row.map(csvCell).join(',')).join('\r\n') + '\r\n';
+  }
+
+  function downloadParticipants() {
+    const stage = current?.stages?.[firstStageForEvent(current.event)];
+    if (!stage) return;
+    const url = URL.createObjectURL(new Blob([participantCsv(stage, current.event.format)], { type: 'text/csv;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${current.event.slug}.csv`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
   function bigScore(match) {
@@ -530,11 +576,6 @@
       <div class="panel-body">${table}</div></details>`;
   }
 
-  function rankingToggle(id) {
-    const open = rankingOpen(id);
-    return `<button class="ranking-toggle" type="button" data-action="toggle-rank" data-ranking-id="${attr(id)}" aria-controls="${attr(id)}-table" aria-expanded="${open}" aria-label="${open ? '收起' : '展开'}排名">${open ? '收起排名' : '展开排名'}</button>`;
-  }
-
   function winnerForMatch(match, participantA, participantB) {
     if (participantA?.kind === 'bye') return participantB;
     if (participantB?.kind === 'bye') return participantA;
@@ -547,6 +588,7 @@
     return a > b ? participantA : participantB;
   }
 
+  // Legacy calculation retained for historical callers; stage pages use persisted server standings.
   function rankRoundRobin(participants, matches) {
     const count = participants.length;
     const expected = count * (count - 1) / 2;
@@ -621,11 +663,9 @@
     return matches.find(match => (match.a === a && match.b === b) || (match.a === b && match.b === a));
   }
 
-  function renderRoundRobinTable(participants, matches, qualifiers = 0, rankingId = 'round-robin-rank', groupStandings = undefined) {
-    const isGroup = groupStandings !== undefined;
-    const rank = isGroup ? (groupStandings?.rows ? Object.fromEntries(groupStandings.rows.map(row => [row.index, row.rank])) : null) : rankRoundRobin(participants, matches);
-    const rankColumn = `data-rank-column="${attr(rankingId)}" ${rankingOpen(rankingId) ? '' : 'hidden'}`;
-    const rosterRows = participants.map((person, i) => `<tr><td>${i + 1}</td><td class="${rank && rank[i] <= qualifiers ? 'qualifier' : ''}">${participantButton(person)}</td>${isGroup ? '' : `<td ${rankColumn}>${rank ? rank[i] : ''}</td>`}</tr>`).join('');
+  function renderRoundRobinTable(participants, matches, qualifiers = 0, rankingId = 'round-robin-rank', stageStandings = null) {
+    const rank = stageStandings?.rows ? Object.fromEntries(stageStandings.rows.map(row => [row.index, row.rank])) : null;
+    const rosterRows = participants.map((person, i) => `<tr><td>${i + 1}</td><td class="${rank && rank[i] <= qualifiers ? 'qualifier' : ''}">${participantButton(person)}</td></tr>`).join('');
     const header = participants.map((_, i) => `<th scope="col">${i + 1}</th>`).join('');
     const rows = participants.map((_, i) => {
       const cells = participants.map((__, j) => {
@@ -640,9 +680,9 @@
       }).join('');
       return `<tr><th scope="row">${i + 1}</th>${cells}</tr>`;
     }).join('');
-    const standings = isGroup && groupStandings?.rows ? `<div class="group-ranking-section"><div class="table-section-title"><span>排名</span></div>${renderGroupStandings(participants, groupStandings, qualifiers)}</div>` : '';
-    return `<div class="round-robin-layout${isGroup ? ' group-table-layout' : ''}${standings ? '' : ' two-table-layout'}" style="--matrix-width:${(participants.length + 1) * 56 + 2}px"><div><div class="table-section-title"><span>选手列表</span>${isGroup ? '' : rankingToggle(rankingId)}</div>
-      <div class="table-wrap"><table id="${attr(rankingId)}-table" class="data-table roster-table${isGroup ? '' : ' ranked-roster'}"><thead><tr><th scope="col">#</th><th scope="col">选手</th>${isGroup ? '' : `<th scope="col" ${rankColumn}>排名</th>`}</tr></thead><tbody>${rosterRows}</tbody></table></div></div>
+    const standings = stageStandings?.rows ? `<div class="group-ranking-section"><div class="table-section-title"><span>排名</span></div>${renderGroupStandings(participants, stageStandings, qualifiers)}</div>` : '';
+    return `<div class="round-robin-layout group-table-layout${standings ? '' : ' two-table-layout'}" style="--matrix-width:${(participants.length + 1) * 56 + 2}px"><div><div class="table-section-title"><span>选手列表</span></div>
+      <div class="table-wrap"><table id="${attr(rankingId)}-table" class="data-table roster-table"><thead><tr><th scope="col">#</th><th scope="col">选手</th></tr></thead><tbody>${rosterRows}</tbody></table></div></div>
       <div><div class="table-section-title"><span>对阵图</span></div><div class="table-wrap matrix-wrap"><table class="data-table matrix-table"><thead><tr><th></th>${header}</tr></thead><tbody>${rows}</tbody></table></div></div>${standings}</div>`;
   }
 
@@ -665,8 +705,19 @@
   function renderRoundRobinStage(stage) {
     const participants = stage.data?.participants || stage.metadata?.entrants?.map(entry => entry.participant) || [];
     const matches = stage.data?.matches || [];
-    return `<section class="panel"><div class="panel-header"><h2>循环赛</h2><span class="panel-subtitle">${participants.length} 位选手 · ${matches.length} 场比赛</span></div>
-      <div class="panel-body">${participants.length ? renderRoundRobinTable(participants, matches, 0, `${current.competition.slug}-${current.event.slug}-round-robin`) : empty('暂无选手', '请添加包含选手名单的项目。')}</div></section>`;
+    const finished = participants.length > 0 && matches.length >= participants.length * (participants.length - 1) / 2 && matches.every(match => match.finished);
+    const standings = finished ? stage.data?.standings || null : null;
+    const results = standings?.rows?.map(row => ({ rank: row.rank, participant: participants[row.index] })) || [];
+    return `<div class="stage-stack">${results.length ? renderResultsPanel('round-robin', results) : ''}<section class="panel"><div class="panel-header"><h2>循环赛</h2><span class="panel-subtitle">${participants.length} 位选手 · ${matches.length} 场比赛</span></div>
+      <div class="panel-body">${participants.length ? renderRoundRobinTable(participants, matches, 0, `${current.competition.slug}-${current.event.slug}-round-robin`, standings) : empty('暂无选手', '请添加包含选手名单的项目。')}</div></section></div>`;
+  }
+
+  function renderResultsPanel(stageName, results) {
+    const medal = rank => ({ 1: 'medal-gold', 2: 'medal-silver', 3: 'medal-bronze' })[rank] || '';
+    const ordered = [...results].sort((a, b) => Number(a.rank) - Number(b.rank));
+    const table = `<div class="table-wrap result-table-wrap"><table class="data-table result-table ${stageName}-results-table"><thead><tr><th scope="col">名次</th><th scope="col">选手</th></tr></thead>
+      <tbody>${ordered.map(item => `<tr><td class="${medal(item.rank)}">${esc(item.rank)}</td><td class="result-person">${participantButton(item.participant)}</td></tr>`).join('')}</tbody></table></div>`;
+    return rankingPanel(`${current.competition.slug}-${current.event.slug}-${stageName}-results`, '比赛结果', stageName === 'knockout' ? `前 ${results.length} 名` : `${results.length} 位选手`, table, `${stageName}-results`);
   }
 
   function renderGroupStage(stage) {
@@ -689,8 +740,8 @@
       }));
     }) : [];
     qualifierNames.sort((a, b) => a.groupIndex - b.groupIndex || a.rank - b.rank);
-    const qualifierTable = `<div class="table-wrap"><table class="data-table qualifier-table"><thead><tr><th scope="col">小组</th><th scope="col">选手</th><th scope="col">出线名次</th></tr></thead>
-        <tbody>${qualifierNames.map(item => `<tr><td>小组 #${esc(item.group)}</td><td>${participantButton(item.person)}</td><td>${item.rank}</td></tr>`).join('')}</tbody></table></div>`;
+    const qualifierTable = `<div class="table-wrap result-table-wrap"><table class="data-table result-table qualifier-table"><thead><tr><th scope="col">小组</th><th scope="col">选手</th><th scope="col">出线名次</th></tr></thead>
+        <tbody>${qualifierNames.map(item => `<tr><td>小组 #${esc(item.group)}</td><td class="result-person">${participantButton(item.person)}</td><td>${item.rank}</td></tr>`).join('')}</tbody></table></div>`;
     return `<div class="stage-stack">${finished ? rankingPanel(`${current.competition.slug}-${current.event.slug}-qualifiers`, '小组出线名单', `${qualifierNames.length} 位选手出线`, qualifierTable, 'qualifier-panel') : ''}
       ${groups.length ? panels : empty('小组尚未抽签', admin ? '点击“抽签”分配选手到各小组。' : '抽签完成后会显示对阵信息。')}</div>`;
   }
@@ -794,11 +845,7 @@
         type="button" data-action="match" data-match-id="${attr(bronzeMatch.id)}" aria-label="查看铜牌赛场次">${bracketScore(bronzeMatch)}</button>
       <div class="bronze-person">${participantButton(bronzeMatch.b)}</div></div>` : '';
     const results = stage.data?.results;
-    const resultsTable = `<div class="table-wrap"><table class="data-table knockout-results-table">
-      <thead><tr><th scope="col">名次</th><th scope="col">选手</th></tr></thead>
-      <tbody>${Array.isArray(results) ? results.map(item => `<tr><td>${esc(item.rank)}</td><td>${esc(participantName(item.participant))}</td></tr>`).join('') : ''}</tbody>
-      </table></div>`;
-    const resultsPanel = Array.isArray(results) && results.length ? rankingPanel(`${current.competition.slug}-${current.event.slug}-knockout-results`, '比赛结果', `前 ${results.length} 名`, resultsTable, 'knockout-results') : '';
+    const resultsPanel = Array.isArray(results) && results.length ? renderResultsPanel('knockout', results) : '';
     return `<div class="stage-stack">${resultsPanel}<div><div class="bracket-scroll"><div class="bracket-canvas" style="width:${width}px;height:${height}px">
       <svg viewBox="0 0 ${width} ${height}" aria-hidden="true">${lines.join('')}</svg>${cards.join('')}${buttons.join('')}${bronze}</div></div>
       <div class="bracket-legend"><span><i></i>选手 / 晋级位置</span><span><i class="winner"></i>冠军</span><span>点击比分查看场次详情</span></div></div></div>`;
@@ -1002,8 +1049,8 @@
     if (!participantClickable(participant)) return;
     const name = participantName(participant);
     const content = participant.kind === 'team' ?
-      `<dl class="detail-list"><div><dt>团体成员</dt><dd>${esc((participant.members || []).join('、') || '暂无成员信息')}</dd></div></dl>` :
-      `<dl class="detail-list"><div><dt>队伍</dt><dd>${esc(participant.team || '未填写')}</dd></div></dl>`;
+      `<dl class="detail-list"><div><dt>队伍</dt><dd>${esc(participant.team || '未填写')}</dd></div><div><dt>团体成员</dt><dd>${esc((participant.members || []).join('、') || '暂无成员信息')}</dd></div></dl>` :
+      `<dl class="detail-list"><div><dt>学院</dt><dd>${esc(participant.team || '未填写')}</dd></div></dl>`;
     modalState = { type: 'participant' };
     openModal(name, content, `<button class="button secondary" type="button" data-action="close-modal">关闭</button>`, participant.kind === 'team' ? '参赛团体' : participant.kind === 'pair' ? '双打组合' : '参赛选手');
   }
@@ -1199,20 +1246,9 @@
   async function onAction(action, button) {
     if (action === 'close-modal') return closeModal();
     if (action === 'search') return showSearch();
+    if (action === 'download-participants') return downloadParticipants();
     if (action === 'participant') return showParticipant(JSON.parse(button.dataset.person));
     if (action === 'match') return showMatch(button.dataset.matchId);
-    if (action === 'toggle-rank') {
-      const id = button.dataset.rankingId;
-      const expanded = !rankingOpen(id);
-      rankingVisibility.set(id, expanded);
-      button.setAttribute('aria-expanded', String(expanded));
-      button.setAttribute('aria-label', `${expanded ? '收起' : '展开'}排名`);
-      button.textContent = expanded ? '收起排名' : '展开排名';
-      for (const column of document.querySelectorAll('[data-rank-column]')) {
-        if (column.dataset.rankColumn === id) column.hidden = !expanded;
-      }
-      return;
-    }
     if (!admin) return;
 
     if (action === 'publish') return submitChanges();
@@ -1385,6 +1421,7 @@
     const button = event.target.closest('[data-action]');
     if (!button) return;
     event.preventDefault();
+    if (button.dataset.action === 'download-participants') event.stopPropagation();
     void onAction(button.dataset.action, button);
   });
   document.addEventListener('submit', event => { void onSubmit(event); });
