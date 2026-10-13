@@ -1,8 +1,8 @@
 {
-  "slug": "competition-20261017-4e3038-men-single",
+  "slug": "test-men-double",
   "discipline": "men",
-  "format": "single",
-  "name": "男子单打",
+  "format": "double",
+  "name": "男子双打",
   "schedule": "group-knockout",
   "stages": [
     "group",

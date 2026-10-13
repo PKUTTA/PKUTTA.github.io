@@ -1,8 +1,8 @@
 {
-  "slug": "competition-20261017-89087d-men-single",
-  "discipline": "men",
+  "slug": "test-women-single",
+  "discipline": "women",
   "format": "single",
-  "name": "男子单打",
+  "name": "女子单打",
   "schedule": "group-knockout",
   "stages": [
     "group",
