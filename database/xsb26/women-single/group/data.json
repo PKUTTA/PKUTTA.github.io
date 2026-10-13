@@ -1,5 +1,5 @@
 {
-  "drawn": false,
+  "drawn": true,
   "groups": [
     {
       "id": 1,
@@ -8,28 +8,34 @@
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "1",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "闫孟涵"
+          ],
+          "team": "建筑与景观设计学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "钟千然"
+          ],
+          "team": "医学部"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "黄靖雯"
+          ],
+          "team": "社会学系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "范可枫"
+          ],
+          "team": "中国语言文学系"
         }
       ],
       "matches": [
@@ -93,7 +99,9 @@
           "time": "10/18 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 2,
@@ -102,28 +110,34 @@
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "2",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "徐士茹"
+          ],
+          "team": "哲学系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "朱悦"
+          ],
+          "team": "软件与微电子学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "郭珈汛"
+          ],
+          "team": "软件与微电子学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "彭妍歆"
+          ],
+          "team": "考古文博学院"
         }
       ],
       "matches": [
@@ -187,7 +201,9 @@
           "time": "10/18 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 3,
@@ -196,28 +212,34 @@
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "3",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "周子瑄"
+          ],
+          "team": "集成电路学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "陈文婷"
+          ],
+          "team": "社会学系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "卢星洁"
+          ],
+          "team": "城市与环境学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "邱晨璇"
+          ],
+          "team": "医学部"
         }
       ],
       "matches": [
@@ -281,7 +303,9 @@
           "time": "10/18 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 4,
@@ -290,28 +314,34 @@
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "4",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张馨睿"
+          ],
+          "team": "数学科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王镱霏"
+          ],
+          "team": "城市与环境学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "高艺耘"
+          ],
+          "team": "社会学系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "郭恬圆"
+          ],
+          "team": "光华管理学院"
         }
       ],
       "matches": [
@@ -375,7 +405,9 @@
           "time": "10/18 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 5,
@@ -384,28 +416,34 @@
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "5",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张诗悦"
+          ],
+          "team": "外国语学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "向怡颖"
+          ],
+          "team": "信息管理系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "孙澜媛"
+          ],
+          "team": "教育学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "朱珂瑶"
+          ],
+          "team": "外国语学院"
         }
       ],
       "matches": [
@@ -469,7 +507,9 @@
           "time": "10/18 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 6,
@@ -478,28 +518,34 @@
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "7",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王之韵"
+          ],
+          "team": "经济学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "姜懿真"
+          ],
+          "team": "前沿交叉学科研究院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "商靓"
+          ],
+          "team": "哲学系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "索鑫宇"
+          ],
+          "team": "社会学系"
         }
       ],
       "matches": [
@@ -563,7 +609,9 @@
           "time": "10/18 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 7,
@@ -572,28 +620,34 @@
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "8",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王佳睿"
+          ],
+          "team": "地球与空间科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "康宝宸"
+          ],
+          "team": "外国语学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "戈梓淇"
+          ],
+          "team": "历史学系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张煜晗"
+          ],
+          "team": "地球与空间科学学院"
         }
       ],
       "matches": [
@@ -657,7 +711,9 @@
           "time": "10/18 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 8,
@@ -666,23 +722,27 @@
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "9",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "Xiong Edwina Hui Yun"
+          ],
+          "team": "燕京学堂"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "焦国曦"
+          ],
+          "team": "考古文博学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "尹梓涵"
+          ],
+          "team": "社会学系"
         }
       ],
       "matches": [
@@ -716,7 +776,9 @@
           "time": "10/18 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     }
   ]
 }

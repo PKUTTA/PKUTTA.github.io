@@ -1,5 +1,5 @@
 {
-  "drawn": false,
+  "drawn": true,
   "groups": [
     {
       "id": 1,
@@ -8,28 +8,34 @@
       "scheduled_time": "10/17 8:00",
       "scheduled_table": "5",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "李厚润"
+          ],
+          "team": "计算机学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "陈奥博"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "吴锴佳"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "欧阳承丰"
+          ],
+          "team": "城市与环境学院"
         }
       ],
       "matches": [
@@ -93,7 +99,9 @@
           "time": "10/17 8:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 2,
@@ -102,28 +110,34 @@
       "scheduled_time": "10/17 8:00",
       "scheduled_table": "7",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "李云溥"
+          ],
+          "team": "马克思主义学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "罗艺达"
+          ],
+          "team": "信息管理系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "伏泽恺"
+          ],
+          "team": "地球与空间科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "李嘉乐"
+          ],
+          "team": "法学院"
         }
       ],
       "matches": [
@@ -187,7 +201,9 @@
           "time": "10/17 8:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 3,
@@ -196,28 +212,34 @@
       "scheduled_time": "10/17 8:00",
       "scheduled_table": "8",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "徐子涵"
+          ],
+          "team": "经济学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "翟睿"
+          ],
+          "team": "计算机学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "余哲浩"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "徐翔宇"
+          ],
+          "team": "历史学系"
         }
       ],
       "matches": [
@@ -281,7 +303,9 @@
           "time": "10/17 8:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 4,
@@ -290,28 +314,34 @@
       "scheduled_time": "10/17 8:00",
       "scheduled_table": "9",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "杨佳郑"
+          ],
+          "team": "教育学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "魏俊豪"
+          ],
+          "team": "信息管理系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "孙嘉琨"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "叶苏恺"
+          ],
+          "team": "信息科学技术学院"
         }
       ],
       "matches": [
@@ -375,7 +405,9 @@
           "time": "10/17 8:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 5,
@@ -384,28 +416,34 @@
       "scheduled_time": "10/17 8:00",
       "scheduled_table": "10",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "刘卿然"
+          ],
+          "team": "光华管理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "余宏赫"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "周成康"
+          ],
+          "team": "化学与分子工程学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王靖焜"
+          ],
+          "team": "历史学系"
         }
       ],
       "matches": [
@@ -469,7 +507,9 @@
           "time": "10/17 8:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 6,
@@ -478,28 +518,34 @@
       "scheduled_time": "10/17 9:30",
       "scheduled_table": "5",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "谢东桓"
+          ],
+          "team": "数学科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "周道"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "杨智尧"
+          ],
+          "team": "光华管理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "Daniel Apelbaum"
+          ],
+          "team": "燕京学堂"
         }
       ],
       "matches": [
@@ -563,7 +609,9 @@
           "time": "10/17 9:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 7,
@@ -572,28 +620,34 @@
       "scheduled_time": "10/17 9:30",
       "scheduled_table": "7",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "朱羿衡"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "刘铭烨"
+          ],
+          "team": "前沿交叉学科研究院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "丁海元"
+          ],
+          "team": "地球与空间科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "宗欣涛"
+          ],
+          "team": "计算机学院"
         }
       ],
       "matches": [
@@ -657,7 +711,9 @@
           "time": "10/17 9:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 8,
@@ -666,28 +722,34 @@
       "scheduled_time": "10/17 9:30",
       "scheduled_table": "8",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "汤梓昕"
+          ],
+          "team": "化学与分子工程学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "金科上"
+          ],
+          "team": "软件与微电子学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "韩政轩"
+          ],
+          "team": "化学与分子工程学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "唐周子或"
+          ],
+          "team": "信息科学技术学院"
         }
       ],
       "matches": [
@@ -751,7 +813,9 @@
           "time": "10/17 9:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 9,
@@ -760,28 +824,34 @@
       "scheduled_time": "10/17 9:30",
       "scheduled_table": "9",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "马奥"
+          ],
+          "team": "工学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "高铭"
+          ],
+          "team": "法学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "陈颢源"
+          ],
+          "team": "化学与分子工程学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王盛顿"
+          ],
+          "team": "教育学院"
         }
       ],
       "matches": [
@@ -845,7 +915,9 @@
           "time": "10/17 9:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 10,
@@ -854,28 +926,34 @@
       "scheduled_time": "10/17 9:30",
       "scheduled_table": "10",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "陈泽成"
+          ],
+          "team": "数学科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "肖骥超"
+          ],
+          "team": "光华管理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "范力铭"
+          ],
+          "team": "数学科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "周明远"
+          ],
+          "team": "信息科学技术学院"
         }
       ],
       "matches": [
@@ -939,7 +1017,9 @@
           "time": "10/17 9:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 11,
@@ -948,28 +1028,34 @@
       "scheduled_time": "10/17 11:00",
       "scheduled_table": "5",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王昱森"
+          ],
+          "team": "地球与空间科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "石丰"
+          ],
+          "team": "信息管理系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "游开元"
+          ],
+          "team": "生命科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "吴成生"
+          ],
+          "team": "光华管理学院"
         }
       ],
       "matches": [
@@ -1033,7 +1119,9 @@
           "time": "10/17 11:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 12,
@@ -1042,28 +1130,34 @@
       "scheduled_time": "10/17 11:00",
       "scheduled_table": "7",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "黄羽喆"
+          ],
+          "team": "元培学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "李乐典"
+          ],
+          "team": "化学与分子工程学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "刘轩宇"
+          ],
+          "team": "经济学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张煜松"
+          ],
+          "team": "社会学系"
         }
       ],
       "matches": [
@@ -1127,7 +1221,9 @@
           "time": "10/17 11:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 13,
@@ -1136,28 +1232,34 @@
       "scheduled_time": "10/17 11:00",
       "scheduled_table": "8",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "余科翰:"
+          ],
+          "team": "地球与空间科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "林嘉麒"
+          ],
+          "team": "数学科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "冯奥"
+          ],
+          "team": "信息管理系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "朱彦燊"
+          ],
+          "team": "数学科学学院"
         }
       ],
       "matches": [
@@ -1221,7 +1323,9 @@
           "time": "10/17 11:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 14,
@@ -1230,28 +1334,34 @@
       "scheduled_time": "10/17 11:00",
       "scheduled_table": "9",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张皓程"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "赖逸哲"
+          ],
+          "team": "对外汉语教育学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王一石"
+          ],
+          "team": "元培学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "来敬杰"
+          ],
+          "team": "外国语学院"
         }
       ],
       "matches": [
@@ -1315,7 +1425,9 @@
           "time": "10/17 11:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 15,
@@ -1324,28 +1436,34 @@
       "scheduled_time": "10/17 11:00",
       "scheduled_table": "10",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王俊皓"
+          ],
+          "team": "前沿交叉学科研究院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "施彭湃"
+          ],
+          "team": "先进制造与机器人学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "韩宇明"
+          ],
+          "team": "工学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "宣铭祺"
+          ],
+          "team": "工学院"
         }
       ],
       "matches": [
@@ -1409,7 +1527,9 @@
           "time": "10/17 11:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 16,
@@ -1418,28 +1538,34 @@
       "scheduled_time": "10/17 12:30",
       "scheduled_table": "5",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "龙承泽"
+          ],
+          "team": "生命科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "蒋晓冉"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "陈玉树"
+          ],
+          "team": "工学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "任超"
+          ],
+          "team": "集成电路学院"
         }
       ],
       "matches": [
@@ -1503,7 +1629,9 @@
           "time": "10/17 12:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 17,
@@ -1512,28 +1640,34 @@
       "scheduled_time": "10/17 12:30",
       "scheduled_table": "7",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "赵巍然"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "何曜宇"
+          ],
+          "team": "历史学系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "高华烨"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王子奥"
+          ],
+          "team": "信息科学技术学院"
         }
       ],
       "matches": [
@@ -1597,7 +1731,9 @@
           "time": "10/17 12:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 18,
@@ -1606,28 +1742,34 @@
       "scheduled_time": "10/17 12:30",
       "scheduled_table": "8",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "马琮渊"
+          ],
+          "team": "政府管理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王乐言"
+          ],
+          "team": "数学科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "程知非"
+          ],
+          "team": "工学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "齐了"
+          ],
+          "team": "哲学系"
         }
       ],
       "matches": [
@@ -1691,7 +1833,9 @@
           "time": "10/17 12:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 19,
@@ -1700,28 +1844,34 @@
       "scheduled_time": "10/17 12:30",
       "scheduled_table": "9",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "李锦洲"
+          ],
+          "team": "城市与环境学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "李炆泽"
+          ],
+          "team": "软件与微电子学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "史鹏玉"
+          ],
+          "team": "马克思主义学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "马旭"
+          ],
+          "team": "信息管理系"
         }
       ],
       "matches": [
@@ -1785,7 +1935,9 @@
           "time": "10/17 12:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 20,
@@ -1794,28 +1946,34 @@
       "scheduled_time": "10/17 12:30",
       "scheduled_table": "10",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "国嘉祎"
+          ],
+          "team": "法学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "陆弈鸣"
+          ],
+          "team": "地球与空间科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "赵亦阳"
+          ],
+          "team": "前沿交叉学科研究院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "席志成"
+          ],
+          "team": "燕京学堂"
         }
       ],
       "matches": [
@@ -1879,7 +2037,9 @@
           "time": "10/17 12:30",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 21,
@@ -1888,33 +2048,41 @@
       "scheduled_time": "10/17 8:00",
       "scheduled_table": "1/2",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "万睿希"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "马连耀"
+          ],
+          "team": "国家发展研究院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "苏东昱:"
+          ],
+          "team": "地球与空间科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "吴尚远"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "文泽宇"
+          ],
+          "team": "软件与微电子学院"
         }
       ],
       "matches": [
@@ -2018,7 +2186,9 @@
           "time": "10/17 8:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 22,
@@ -2027,33 +2197,41 @@
       "scheduled_time": "10/17 8:00",
       "scheduled_table": "3/4",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "彭聪"
+          ],
+          "team": "马克思主义学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "何天宇"
+          ],
+          "team": "考古文博学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "雷奥杰"
+          ],
+          "team": "新闻与传播学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "梁绪钊"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "蒲梓铖"
+          ],
+          "team": "考古文博学院"
         }
       ],
       "matches": [
@@ -2157,7 +2335,9 @@
           "time": "10/17 8:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 23,
@@ -2166,33 +2346,41 @@
       "scheduled_time": "10/17 9:00",
       "scheduled_table": "1/2",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "陈骏驰"
+          ],
+          "team": "地球与空间科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "沈彦兆"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "郭显奕"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张益卓"
+          ],
+          "team": "工学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "黄霁之"
+          ],
+          "team": "化学与分子工程学院"
         }
       ],
       "matches": [
@@ -2296,7 +2484,9 @@
           "time": "10/17 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 24,
@@ -2305,33 +2495,41 @@
       "scheduled_time": "10/17 9:00",
       "scheduled_table": "3/4",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "郭宁宇"
+          ],
+          "team": "工学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "连旺旺"
+          ],
+          "team": "软件与微电子学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "汪祺"
+          ],
+          "team": "前沿交叉学科研究院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "韩傲宇"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "黄敬"
+          ],
+          "team": "现代农学院"
         }
       ],
       "matches": [
@@ -2435,7 +2633,9 @@
           "time": "10/17 9:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 25,
@@ -2444,33 +2644,41 @@
       "scheduled_time": "10/17 10:00",
       "scheduled_table": "1/2",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "任一凡"
+          ],
+          "team": "建筑与景观设计学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王冀为"
+          ],
+          "team": "对外汉语教育学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "黄思宇"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "孙琪玮"
+          ],
+          "team": "中国语言文学系"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "姚文帅"
+          ],
+          "team": "集成电路学院"
         }
       ],
       "matches": [
@@ -2574,7 +2782,9 @@
           "time": "10/17 10:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 26,
@@ -2583,33 +2793,41 @@
       "scheduled_time": "10/17 10:00",
       "scheduled_table": "3/4",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "林宏伟"
+          ],
+          "team": "元培学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张素诚"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "吕杨铄"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "费屹萌"
+          ],
+          "team": "城市与环境学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王进开"
+          ],
+          "team": "软件与微电子学院"
         }
       ],
       "matches": [
@@ -2713,7 +2931,9 @@
           "time": "10/17 10:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 27,
@@ -2722,33 +2942,41 @@
       "scheduled_time": "10/17 11:00",
       "scheduled_table": "1/2",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "胡佳乐"
+          ],
+          "team": "城市与环境学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "洪宇泽"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "洪宜帅"
+          ],
+          "team": "燕京学堂"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "岳典辰"
+          ],
+          "team": "现代农学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王一然"
+          ],
+          "team": "考古文博学院"
         }
       ],
       "matches": [
@@ -2852,7 +3080,9 @@
           "time": "10/17 11:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 28,
@@ -2861,33 +3091,41 @@
       "scheduled_time": "10/17 11:00",
       "scheduled_table": "3/4",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "艾宇航"
+          ],
+          "team": "数学科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王高鹏"
+          ],
+          "team": "化学与分子工程学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "薛靖博"
+          ],
+          "team": "软件与微电子学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "刘健生"
+          ],
+          "team": "教育学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "于金声"
+          ],
+          "team": "历史学系"
         }
       ],
       "matches": [
@@ -2991,7 +3229,9 @@
           "time": "10/17 11:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 29,
@@ -3000,33 +3240,41 @@
       "scheduled_time": "10/17 12:00",
       "scheduled_table": "1/2",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "郭嘉诚"
+          ],
+          "team": "医学部"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "胡可为"
+          ],
+          "team": "物理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王久尧"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张择然"
+          ],
+          "team": "工学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张程皓"
+          ],
+          "team": "信息科学技术学院"
         }
       ],
       "matches": [
@@ -3130,7 +3378,9 @@
           "time": "10/17 12:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 30,
@@ -3139,33 +3389,41 @@
       "scheduled_time": "10/17 12:00",
       "scheduled_table": "3/4",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "张家豪"
+          ],
+          "team": "数学科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "王大禹"
+          ],
+          "team": "计算机学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "肖琪丰"
+          ],
+          "team": "化学与分子工程学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "戴正恩"
+          ],
+          "team": "医学部"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "黄一召"
+          ],
+          "team": "地球与空间科学学院"
         }
       ],
       "matches": [
@@ -3269,7 +3527,9 @@
           "time": "10/17 12:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 31,
@@ -3278,33 +3538,41 @@
       "scheduled_time": "10/17 13:00",
       "scheduled_table": "1/2",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "梁鉴诚"
+          ],
+          "team": "工学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "蔡良骏"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "周添"
+          ],
+          "team": "光华管理学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "莫南"
+          ],
+          "team": "生命科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "周志昊"
+          ],
+          "team": "生命科学学院"
         }
       ],
       "matches": [
@@ -3408,7 +3676,9 @@
           "time": "10/17 13:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     },
     {
       "id": 32,
@@ -3417,33 +3687,41 @@
       "scheduled_time": "10/17 13:00",
       "scheduled_table": "3/4",
       "scheduled_referee": "",
-      "standings": null,
-      "ranking_draw_order": null,
       "participants": [
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "尤优"
+          ],
+          "team": "马克思主义学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "许褚羚"
+          ],
+          "team": "心理与认知科学学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "冯铮"
+          ],
+          "team": "信息科学技术学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "冯元武"
+          ],
+          "team": "先进制造与机器人学院"
         },
         {
-          "kind": "undecided",
-          "members": [],
-          "team": ""
+          "kind": "player",
+          "members": [
+            "贾景顺"
+          ],
+          "team": "城市与环境学院"
         }
       ],
       "matches": [
@@ -3547,7 +3825,9 @@
           "time": "10/17 13:00",
           "referee": ""
         }
-      ]
+      ],
+      "ranking_draw_order": null,
+      "standings": null
     }
   ]
 }
