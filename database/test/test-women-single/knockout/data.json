@@ -134,8 +134,21 @@
         ],
         "team": "Team 4"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          5,
+          11
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          8
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -158,8 +171,17 @@
         ],
         "team": "Team 4"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          5
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -182,8 +204,21 @@
         ],
         "team": "Team 33"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          7
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          11,
+          6
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -206,8 +241,17 @@
         ],
         "team": "Team 3"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          8
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -230,8 +274,17 @@
         ],
         "team": "Team 3"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          7
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -254,8 +307,21 @@
         ],
         "team": "Team 13"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          8
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          11,
+          8
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -278,8 +344,17 @@
         ],
         "team": "Team 29"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          5
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -302,8 +377,21 @@
         ],
         "team": "Team 22"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          6,
+          11
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          15,
+          13
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -313,17 +401,34 @@
       "round": 1,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "罗若月"
+        ],
+        "team": "Team 16"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "何云悦"
+        ],
+        "team": "Team 25"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          5,
+          11
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          7
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -333,17 +438,34 @@
       "round": 1,
       "index": 1,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "黄柔"
+        ],
+        "team": "Team 9"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "闫若倩"
+        ],
+        "team": "Team 35"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          8
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          11,
+          6
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -353,17 +475,30 @@
       "round": 1,
       "index": 2,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "孔诗柔"
+        ],
+        "team": "Team 1"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "钱宁"
+        ],
+        "team": "Team 29"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          6
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -373,17 +508,34 @@
       "round": 1,
       "index": 3,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "陆熙"
+        ],
+        "team": "Team 12"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "廖思桐"
+        ],
+        "team": "Team 21"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          13
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          14
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -393,17 +545,34 @@
       "round": 2,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "罗若月"
+        ],
+        "team": "Team 16"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "黄柔"
+        ],
+        "team": "Team 9"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          13,
+          11
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          11,
+          6
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -413,17 +582,34 @@
       "round": 2,
       "index": 1,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "孔诗柔"
+        ],
+        "team": "Team 1"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "廖思桐"
+        ],
+        "team": "Team 21"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          5,
+          11
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          5,
+          11
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -433,17 +619,34 @@
       "round": 3,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "罗若月"
+        ],
+        "team": "Team 16"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "廖思桐"
+        ],
+        "team": "Team 21"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          9
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          11,
+          5
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -452,20 +655,118 @@
   "bronze_match": {
     "id": "bronze",
     "a": {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "黄柔"
+      ],
+      "team": "Team 9"
     },
     "b": {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "孔诗柔"
+      ],
+      "team": "Team 1"
     },
-    "finished": false,
-    "games": [],
+    "finished": true,
+    "games": [
+      [
+        12,
+        14
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        5,
+        11
+      ]
+    ],
     "table": null,
     "time": null,
     "referee": ""
   },
-  "results": null
+  "results": [
+    {
+      "rank": 1,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "罗若月"
+        ],
+        "team": "Team 16"
+      }
+    },
+    {
+      "rank": 2,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "廖思桐"
+        ],
+        "team": "Team 21"
+      }
+    },
+    {
+      "rank": 3,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "孔诗柔"
+        ],
+        "team": "Team 1"
+      }
+    },
+    {
+      "rank": 4,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "黄柔"
+        ],
+        "team": "Team 9"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "何云悦"
+        ],
+        "team": "Team 25"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "钱宁"
+        ],
+        "team": "Team 29"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "闫若倩"
+        ],
+        "team": "Team 35"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "陆熙"
+        ],
+        "team": "Team 12"
+      }
+    }
+  ]
 }
