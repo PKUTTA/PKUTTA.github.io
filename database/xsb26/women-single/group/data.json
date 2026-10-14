@@ -7,7 +7,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "1",
-      "scheduled_referee": "",
+      "scheduled_referee": "廖兴邦",
       "participants": [
         {
           "kind": "player",
@@ -47,7 +47,7 @@
           "games": [],
           "table": "1",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "廖兴邦"
         },
         {
           "id": "g1-m-2",
@@ -57,7 +57,7 @@
           "games": [],
           "table": "1",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "廖兴邦"
         },
         {
           "id": "g1-m-3",
@@ -67,7 +67,7 @@
           "games": [],
           "table": "1",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "廖兴邦"
         },
         {
           "id": "g1-m-4",
@@ -77,7 +77,7 @@
           "games": [],
           "table": "1",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "廖兴邦"
         },
         {
           "id": "g1-m-5",
@@ -87,7 +87,7 @@
           "games": [],
           "table": "1",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "廖兴邦"
         },
         {
           "id": "g1-m-6",
@@ -97,7 +97,7 @@
           "games": [],
           "table": "1",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "廖兴邦"
         }
       ],
       "ranking_draw_order": null,
@@ -109,7 +109,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "2",
-      "scheduled_referee": "",
+      "scheduled_referee": "于苏皓",
       "participants": [
         {
           "kind": "player",
@@ -149,7 +149,7 @@
           "games": [],
           "table": "2",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "于苏皓"
         },
         {
           "id": "g2-m-2",
@@ -159,7 +159,7 @@
           "games": [],
           "table": "2",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "于苏皓"
         },
         {
           "id": "g2-m-3",
@@ -169,7 +169,7 @@
           "games": [],
           "table": "2",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "于苏皓"
         },
         {
           "id": "g2-m-4",
@@ -179,7 +179,7 @@
           "games": [],
           "table": "2",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "于苏皓"
         },
         {
           "id": "g2-m-5",
@@ -189,7 +189,7 @@
           "games": [],
           "table": "2",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "于苏皓"
         },
         {
           "id": "g2-m-6",
@@ -199,7 +199,7 @@
           "games": [],
           "table": "2",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "于苏皓"
         }
       ],
       "ranking_draw_order": null,
@@ -211,7 +211,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "3",
-      "scheduled_referee": "",
+      "scheduled_referee": "韩雅文",
       "participants": [
         {
           "kind": "player",
@@ -251,7 +251,7 @@
           "games": [],
           "table": "3",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "韩雅文"
         },
         {
           "id": "g3-m-2",
@@ -261,7 +261,7 @@
           "games": [],
           "table": "3",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "韩雅文"
         },
         {
           "id": "g3-m-3",
@@ -271,7 +271,7 @@
           "games": [],
           "table": "3",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "韩雅文"
         },
         {
           "id": "g3-m-4",
@@ -281,7 +281,7 @@
           "games": [],
           "table": "3",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "韩雅文"
         },
         {
           "id": "g3-m-5",
@@ -291,7 +291,7 @@
           "games": [],
           "table": "3",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "韩雅文"
         },
         {
           "id": "g3-m-6",
@@ -301,7 +301,7 @@
           "games": [],
           "table": "3",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "韩雅文"
         }
       ],
       "ranking_draw_order": null,
@@ -313,7 +313,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "4",
-      "scheduled_referee": "",
+      "scheduled_referee": "杨怡帆",
       "participants": [
         {
           "kind": "player",
@@ -353,7 +353,7 @@
           "games": [],
           "table": "4",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "杨怡帆"
         },
         {
           "id": "g4-m-2",
@@ -363,7 +363,7 @@
           "games": [],
           "table": "4",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "杨怡帆"
         },
         {
           "id": "g4-m-3",
@@ -373,7 +373,7 @@
           "games": [],
           "table": "4",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "杨怡帆"
         },
         {
           "id": "g4-m-4",
@@ -383,7 +383,7 @@
           "games": [],
           "table": "4",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "杨怡帆"
         },
         {
           "id": "g4-m-5",
@@ -393,7 +393,7 @@
           "games": [],
           "table": "4",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "杨怡帆"
         },
         {
           "id": "g4-m-6",
@@ -403,7 +403,7 @@
           "games": [],
           "table": "4",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "杨怡帆"
         }
       ],
       "ranking_draw_order": null,
@@ -415,7 +415,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "5",
-      "scheduled_referee": "",
+      "scheduled_referee": "尹子睿",
       "participants": [
         {
           "kind": "player",
@@ -455,7 +455,7 @@
           "games": [],
           "table": "5",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "尹子睿"
         },
         {
           "id": "g5-m-2",
@@ -465,7 +465,7 @@
           "games": [],
           "table": "5",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "尹子睿"
         },
         {
           "id": "g5-m-3",
@@ -475,7 +475,7 @@
           "games": [],
           "table": "5",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "尹子睿"
         },
         {
           "id": "g5-m-4",
@@ -485,7 +485,7 @@
           "games": [],
           "table": "5",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "尹子睿"
         },
         {
           "id": "g5-m-5",
@@ -495,7 +495,7 @@
           "games": [],
           "table": "5",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "尹子睿"
         },
         {
           "id": "g5-m-6",
@@ -505,7 +505,7 @@
           "games": [],
           "table": "5",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "尹子睿"
         }
       ],
       "ranking_draw_order": null,
@@ -517,7 +517,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "7",
-      "scheduled_referee": "",
+      "scheduled_referee": "康婕颖",
       "participants": [
         {
           "kind": "player",
@@ -557,7 +557,7 @@
           "games": [],
           "table": "7",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "康婕颖"
         },
         {
           "id": "g6-m-2",
@@ -567,7 +567,7 @@
           "games": [],
           "table": "7",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "康婕颖"
         },
         {
           "id": "g6-m-3",
@@ -577,7 +577,7 @@
           "games": [],
           "table": "7",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "康婕颖"
         },
         {
           "id": "g6-m-4",
@@ -587,7 +587,7 @@
           "games": [],
           "table": "7",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "康婕颖"
         },
         {
           "id": "g6-m-5",
@@ -597,7 +597,7 @@
           "games": [],
           "table": "7",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "康婕颖"
         },
         {
           "id": "g6-m-6",
@@ -607,7 +607,7 @@
           "games": [],
           "table": "7",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "康婕颖"
         }
       ],
       "ranking_draw_order": null,
@@ -619,7 +619,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "8",
-      "scheduled_referee": "",
+      "scheduled_referee": "刘雨菡",
       "participants": [
         {
           "kind": "player",
@@ -659,7 +659,7 @@
           "games": [],
           "table": "8",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "刘雨菡"
         },
         {
           "id": "g7-m-2",
@@ -669,7 +669,7 @@
           "games": [],
           "table": "8",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "刘雨菡"
         },
         {
           "id": "g7-m-3",
@@ -679,7 +679,7 @@
           "games": [],
           "table": "8",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "刘雨菡"
         },
         {
           "id": "g7-m-4",
@@ -689,7 +689,7 @@
           "games": [],
           "table": "8",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "刘雨菡"
         },
         {
           "id": "g7-m-5",
@@ -699,7 +699,7 @@
           "games": [],
           "table": "8",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "刘雨菡"
         },
         {
           "id": "g7-m-6",
@@ -709,7 +709,7 @@
           "games": [],
           "table": "8",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "刘雨菡"
         }
       ],
       "ranking_draw_order": null,
@@ -721,7 +721,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/18 9:00",
       "scheduled_table": "9",
-      "scheduled_referee": "",
+      "scheduled_referee": "李田润",
       "participants": [
         {
           "kind": "player",
@@ -754,7 +754,7 @@
           "games": [],
           "table": "9",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "李田润"
         },
         {
           "id": "g8-m-2",
@@ -764,7 +764,7 @@
           "games": [],
           "table": "9",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "李田润"
         },
         {
           "id": "g8-m-3",
@@ -774,7 +774,7 @@
           "games": [],
           "table": "9",
           "time": "10/18 9:00",
-          "referee": ""
+          "referee": "李田润"
         }
       ],
       "ranking_draw_order": null,
