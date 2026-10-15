@@ -643,7 +643,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/17 18:00",
       "scheduled_table": "9",
-      "scheduled_referee": "龚正宁",
+      "scheduled_referee": "王鑫尧",
       "participants": [
         {
           "kind": "pair",
@@ -679,7 +679,7 @@
           "games": [],
           "table": "9",
           "time": "10/17 18:00",
-          "referee": "龚正宁"
+          "referee": "王鑫尧"
         },
         {
           "id": "g7-m-2",
@@ -689,7 +689,7 @@
           "games": [],
           "table": "9",
           "time": "10/17 18:00",
-          "referee": "龚正宁"
+          "referee": "王鑫尧"
         },
         {
           "id": "g7-m-3",
@@ -699,7 +699,7 @@
           "games": [],
           "table": "9",
           "time": "10/17 18:00",
-          "referee": "龚正宁"
+          "referee": "王鑫尧"
         }
       ],
       "ranking_draw_order": null,
@@ -711,7 +711,7 @@
       "qualifiers": 2,
       "scheduled_time": "10/17 18:00",
       "scheduled_table": "10",
-      "scheduled_referee": "王鑫尧",
+      "scheduled_referee": "倪旖",
       "participants": [
         {
           "kind": "pair",
@@ -747,7 +747,7 @@
           "games": [],
           "table": "10",
           "time": "10/17 18:00",
-          "referee": "王鑫尧"
+          "referee": "倪旖"
         },
         {
           "id": "g8-m-2",
@@ -757,7 +757,7 @@
           "games": [],
           "table": "10",
           "time": "10/17 18:00",
-          "referee": "王鑫尧"
+          "referee": "倪旖"
         },
         {
           "id": "g8-m-3",
@@ -767,7 +767,7 @@
           "games": [],
           "table": "10",
           "time": "10/17 18:00",
-          "referee": "王鑫尧"
+          "referee": "倪旖"
         }
       ],
       "ranking_draw_order": null,
