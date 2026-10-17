@@ -1118,8 +1118,17 @@
           "id": "g7-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              6
+            ]
+          ],
           "table": "7",
           "time": "10/17 9:30",
           "referee": "倪珺清"
