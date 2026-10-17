@@ -2592,12 +2592,12 @@
           "finished": true,
           "games": [
             [
-              10,
-              12
+              11,
+              "wo"
             ],
             [
-              10,
-              12
+              11,
+              "wo"
             ]
           ],
           "table": "8",
@@ -2717,8 +2717,8 @@
       "standings": {
         "order": [
           3,
-          1,
           0,
+          1,
           2
         ],
         "rows": [
@@ -2732,7 +2732,7 @@
             "draw_rank": null
           },
           {
-            "index": 1,
+            "index": 0,
             "rank": 2,
             "points": 2,
             "tied_points": null,
@@ -2741,7 +2741,7 @@
             "draw_rank": null
           },
           {
-            "index": 0,
+            "index": 1,
             "rank": 3,
             "points": 1,
             "tied_points": null,
