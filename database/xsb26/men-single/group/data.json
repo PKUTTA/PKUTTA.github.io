@@ -459,8 +459,17 @@
           "id": "g3-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              "wo"
+            ],
+            [
+              11,
+              "wo"
+            ]
+          ],
           "table": "8",
           "time": "10/17 8:00",
           "referee": "汤桐烁"
@@ -469,8 +478,17 @@
           "id": "g3-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              5
+            ]
+          ],
           "table": "8",
           "time": "10/17 8:00",
           "referee": "汤桐烁"
@@ -479,8 +497,17 @@
           "id": "g3-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              1
+            ],
+            [
+              11,
+              4
+            ]
+          ],
           "table": "8",
           "time": "10/17 8:00",
           "referee": "汤桐烁"
@@ -489,8 +516,17 @@
           "id": "g3-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/17 8:00",
           "referee": "汤桐烁"
@@ -499,8 +535,17 @@
           "id": "g3-m-5",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/17 8:00",
           "referee": "汤桐烁"
@@ -509,15 +554,78 @@
           "id": "g3-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              9,
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/17 8:00",
           "referee": "汤桐烁"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "standings": {
+        "order": [
+          0,
+          3,
+          2,
+          1
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 4,
@@ -3145,8 +3253,17 @@
           "id": "g24-m-7",
           "a": 1,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              4
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 9:00",
           "referee": "靳泽宇、彭睿智"
