@@ -6271,12 +6271,12 @@
           "finished": true,
           "games": [
             [
-              5,
-              11
+              11,
+              5
             ],
             [
-              5,
-              11
+              11,
+              5
             ]
           ],
           "table": "1/2",
@@ -6364,8 +6364,8 @@
           {
             "index": 1,
             "rank": 1,
-            "points": 3,
-            "tied_points": 1,
+            "points": 4,
+            "tied_points": null,
             "game_ratio": null,
             "point_ratio": null,
             "draw_rank": null
@@ -6374,7 +6374,7 @@
             "index": 2,
             "rank": 2,
             "points": 3,
-            "tied_points": 0,
+            "tied_points": null,
             "game_ratio": null,
             "point_ratio": null,
             "draw_rank": null
@@ -6383,7 +6383,7 @@
             "index": 3,
             "rank": 3,
             "points": 2,
-            "tied_points": 1,
+            "tied_points": null,
             "game_ratio": null,
             "point_ratio": null,
             "draw_rank": null
@@ -6391,8 +6391,8 @@
           {
             "index": 4,
             "rank": 4,
-            "points": 2,
-            "tied_points": 0,
+            "points": 1,
+            "tied_points": null,
             "game_ratio": null,
             "point_ratio": null,
             "draw_rank": null
