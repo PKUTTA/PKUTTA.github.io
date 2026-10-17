@@ -977,8 +977,17 @@
           "id": "g6-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              12,
+              10
+            ]
+          ],
           "table": "5",
           "time": "10/17 9:30",
           "referee": "刘雨菡"
@@ -1405,8 +1414,21 @@
           "id": "g10-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              17,
+              15
+            ],
+            [
+              11,
+              7
+            ]
+          ],
           "table": "10",
           "time": "10/17 9:30",
           "referee": "龚正宁"
@@ -3367,8 +3389,17 @@
           "id": "g24-m-4",
           "a": 0,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              1
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 9:00",
           "referee": "靳泽宇、彭睿智"
