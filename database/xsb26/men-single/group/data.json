@@ -2376,8 +2376,17 @@
           "id": "g14-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              13
+            ]
+          ],
           "table": "9",
           "time": "10/17 11:00",
           "referee": "龚正宁"
@@ -2482,8 +2491,58 @@
           "referee": "龚正宁"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "standings": {
+        "order": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "rows": [
+          {
+            "index": 2,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 0,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 15,
