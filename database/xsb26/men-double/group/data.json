@@ -265,8 +265,17 @@
           "id": "g2-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              3,
+              11
+            ],
+            [
+              2,
+              11
+            ]
+          ],
           "table": "2",
           "time": "10/17 18:00",
           "referee": "蔡天诚"
@@ -359,15 +368,78 @@
           "id": "g2-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              9,
+              11
+            ]
+          ],
           "table": "2",
           "time": "10/17 18:00",
           "referee": "蔡天诚"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "standings": {
+        "order": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "rows": [
+          {
+            "index": 1,
+            "rank": 1,
+            "points": 2,
+            "tied_points": 1,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 0,
+            "rank": 2,
+            "points": 2,
+            "tied_points": 0,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 3,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 4,
+            "points": 1,
+            "tied_points": 0,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 3,
