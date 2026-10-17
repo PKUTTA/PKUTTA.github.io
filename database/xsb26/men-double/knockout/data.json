@@ -632,8 +632,21 @@
         ],
         "team": "化学与分子工程学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          7,
+          11
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          9,
+          11
+        ]
+      ],
       "table": "8",
       "time": null,
       "referee": ""
@@ -682,9 +695,12 @@
       "round": 3,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "韩政轩",
+          "万玄同"
+        ],
+        "team": "化学与分子工程学院"
       },
       "b": {
         "kind": "pair",
@@ -704,9 +720,12 @@
   "bronze_match": {
     "id": "bronze",
     "a": {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "高铭",
+        "国嘉祎"
+      ],
+      "team": "法学院"
     },
     "b": {
       "kind": "pair",
