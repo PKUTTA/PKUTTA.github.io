@@ -464,8 +464,29 @@
         ],
         "team": "集成电路学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          9
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          8
+        ]
+      ],
       "table": "8",
       "time": null,
       "referee": ""
@@ -596,9 +617,12 @@
       "round": 2,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "高铭",
+          "国嘉祎"
+        ],
+        "team": "法学院"
       },
       "b": {
         "kind": "pair",
@@ -636,7 +660,7 @@
       },
       "finished": false,
       "games": [],
-      "table": "3",
+      "table": "2",
       "time": null,
       "referee": ""
     },
