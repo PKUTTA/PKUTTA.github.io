@@ -2386,8 +2386,21 @@
           "id": "g14-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              11
+            ]
+          ],
           "table": "9",
           "time": "10/17 11:00",
           "referee": "龚正宁"
@@ -4983,8 +4996,17 @@
           "id": "g27-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "1/2",
           "time": "10/17 11:00",
           "referee": "王艺、康婕颖"
@@ -4993,8 +5015,17 @@
           "id": "g27-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "1/2",
           "time": "10/17 11:00",
           "referee": "王艺、康婕颖"
@@ -5003,8 +5034,17 @@
           "id": "g27-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "1/2",
           "time": "10/17 11:00",
           "referee": "王艺、康婕颖"
@@ -5013,8 +5053,17 @@
           "id": "g27-m-4",
           "a": 0,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "1/2",
           "time": "10/17 11:00",
           "referee": "王艺、康婕颖"
