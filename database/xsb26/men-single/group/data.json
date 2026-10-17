@@ -73,8 +73,17 @@
           "id": "g1-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              2,
+              11
+            ],
+            [
+              3,
+              11
+            ]
+          ],
           "table": "5",
           "time": "10/17 8:00",
           "referee": "廖兴邦"
@@ -83,8 +92,21 @@
           "id": "g1-m-5",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              4
+            ]
+          ],
           "table": "5",
           "time": "10/17 8:00",
           "referee": "廖兴邦"
@@ -93,8 +115,17 @@
           "id": "g1-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              4
+            ]
+          ],
           "table": "5",
           "time": "10/17 8:00",
           "referee": "廖兴邦"
