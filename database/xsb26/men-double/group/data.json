@@ -599,8 +599,17 @@
           "id": "g4-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              6,
+              11
+            ]
+          ],
           "table": "4",
           "time": "10/17 18:00",
           "referee": "王嘉稼"
@@ -609,8 +618,21 @@
           "id": "g4-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              13
+            ]
+          ],
           "table": "4",
           "time": "10/17 18:00",
           "referee": "王嘉稼"
@@ -619,8 +641,17 @@
           "id": "g4-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              8
+            ]
+          ],
           "table": "4",
           "time": "10/17 18:00",
           "referee": "王嘉稼"
@@ -629,8 +660,17 @@
           "id": "g4-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              4
+            ]
+          ],
           "table": "4",
           "time": "10/17 18:00",
           "referee": "王嘉稼"
@@ -639,8 +679,17 @@
           "id": "g4-m-5",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              5
+            ]
+          ],
           "table": "4",
           "time": "10/17 18:00",
           "referee": "王嘉稼"
@@ -649,15 +698,87 @@
           "id": "g4-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              6,
+              11
+            ]
+          ],
           "table": "4",
           "time": "10/17 18:00",
           "referee": "王嘉稼"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "standings": {
+        "order": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "rows": [
+          {
+            "index": 1,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 0,
+            "rank": 2,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": {
+              "won": 3,
+              "lost": 2
+            },
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 3,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": {
+              "won": 3,
+              "lost": 3
+            },
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 4,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": {
+              "won": 2,
+              "lost": 3
+            },
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 5,
