@@ -634,7 +634,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "8",
       "time": null,
       "referee": ""
     },
@@ -658,8 +658,21 @@
         ],
         "team": "信息科学技术学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          11,
+          5
+        ]
+      ],
       "table": "2",
       "time": null,
       "referee": ""
@@ -674,9 +687,12 @@
         "team": ""
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "肖骥超",
+          "刘卿然"
+        ],
+        "team": "光华管理学院"
       },
       "finished": false,
       "games": [],
@@ -693,9 +709,12 @@
       "team": ""
     },
     "b": {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "颜泽鑫",
+        "叶苏恺"
+      ],
+      "team": "信息科学技术学院"
     },
     "finished": false,
     "games": [],
