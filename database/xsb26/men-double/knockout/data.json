@@ -1,86 +1,134 @@
 {
-  "drawn": false,
+  "drawn": true,
   "rounds": 4,
   "slots": [
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "高铭",
+        "国嘉祎"
+      ],
+      "team": "法学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "刘梁菏",
+        "姚凯文"
+      ],
+      "team": "工学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "连旺旺",
+        "王进开"
+      ],
+      "team": "软件与微电子学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "任超",
+        "姚文帅"
+      ],
+      "team": "集成电路学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "朱彦燊",
+        "范力铭"
+      ],
+      "team": "数学科学学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "黄思宇",
+        "蒋晓冉"
+      ],
+      "team": "物理学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "韩政轩",
+        "万玄同"
+      ],
+      "team": "化学与分子工程学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "韩傲宇",
+        "孙嘉琨"
+      ],
+      "team": "信息科学技术学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "李云溥",
+        "彭聪"
+      ],
+      "team": "马克思主义学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "陈奥博",
+        "胡可为"
+      ],
+      "team": "物理学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "肖骥超",
+        "刘卿然"
+      ],
+      "team": "光华管理学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "张皓程",
+        "王子奥"
+      ],
+      "team": "信息科学技术学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "颜泽鑫",
+        "叶苏恺"
+      ],
+      "team": "信息科学技术学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "田佳伦",
+        "朱恒佑"
+      ],
+      "team": "医学部"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "周成康",
+        "李乐典"
+      ],
+      "team": "化学与分子工程学院"
     },
     {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "pair",
+      "members": [
+        "来敬杰",
+        "郑智仁"
+      ],
+      "team": "外国语学院"
     }
   ],
   "matches": [
@@ -89,14 +137,20 @@
       "round": 0,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "高铭",
+          "国嘉祎"
+        ],
+        "team": "法学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "刘梁菏",
+          "姚凯文"
+        ],
+        "team": "工学院"
       },
       "finished": false,
       "games": [],
@@ -109,14 +163,20 @@
       "round": 0,
       "index": 1,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "连旺旺",
+          "王进开"
+        ],
+        "team": "软件与微电子学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "任超",
+          "姚文帅"
+        ],
+        "team": "集成电路学院"
       },
       "finished": false,
       "games": [],
@@ -129,14 +189,20 @@
       "round": 0,
       "index": 2,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "朱彦燊",
+          "范力铭"
+        ],
+        "team": "数学科学学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "黄思宇",
+          "蒋晓冉"
+        ],
+        "team": "物理学院"
       },
       "finished": false,
       "games": [],
@@ -149,14 +215,20 @@
       "round": 0,
       "index": 3,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "韩政轩",
+          "万玄同"
+        ],
+        "team": "化学与分子工程学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "韩傲宇",
+          "孙嘉琨"
+        ],
+        "team": "信息科学技术学院"
       },
       "finished": false,
       "games": [],
@@ -169,14 +241,20 @@
       "round": 0,
       "index": 4,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "李云溥",
+          "彭聪"
+        ],
+        "team": "马克思主义学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "陈奥博",
+          "胡可为"
+        ],
+        "team": "物理学院"
       },
       "finished": false,
       "games": [],
@@ -189,14 +267,20 @@
       "round": 0,
       "index": 5,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "肖骥超",
+          "刘卿然"
+        ],
+        "team": "光华管理学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "张皓程",
+          "王子奥"
+        ],
+        "team": "信息科学技术学院"
       },
       "finished": false,
       "games": [],
@@ -209,14 +293,20 @@
       "round": 0,
       "index": 6,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "颜泽鑫",
+          "叶苏恺"
+        ],
+        "team": "信息科学技术学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "田佳伦",
+          "朱恒佑"
+        ],
+        "team": "医学部"
       },
       "finished": false,
       "games": [],
@@ -229,14 +319,20 @@
       "round": 0,
       "index": 7,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "周成康",
+          "李乐典"
+        ],
+        "team": "化学与分子工程学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "来敬杰",
+          "郑智仁"
+        ],
+        "team": "外国语学院"
       },
       "finished": false,
       "games": [],
