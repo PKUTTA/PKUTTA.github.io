@@ -152,8 +152,21 @@
         ],
         "team": "工学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          10
+        ]
+      ],
       "table": "1",
       "time": null,
       "referee": ""
@@ -256,8 +269,21 @@
         ],
         "team": "信息科学技术学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          12,
+          10
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          11,
+          5
+        ]
+      ],
       "table": "4",
       "time": null,
       "referee": ""
@@ -360,8 +386,21 @@
         ],
         "team": "医学部"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          14,
+          12
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          9
+        ]
+      ],
       "table": "9",
       "time": null,
       "referee": ""
@@ -410,9 +449,12 @@
       "round": 1,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "高铭",
+          "国嘉祎"
+        ],
+        "team": "法学院"
       },
       "b": {
         "kind": "pair",
@@ -441,13 +483,16 @@
         "team": "物理学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "韩政轩",
+          "万玄同"
+        ],
+        "team": "化学与分子工程学院"
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "4",
       "time": null,
       "referee": ""
     },
@@ -473,7 +518,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "9",
       "time": null,
       "referee": ""
     },
@@ -482,9 +527,12 @@
       "round": 1,
       "index": 3,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "颜泽鑫",
+          "叶苏恺"
+        ],
+        "team": "信息科学技术学院"
       },
       "b": {
         "kind": "pair",
@@ -496,7 +544,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "2",
       "time": null,
       "referee": ""
     },
