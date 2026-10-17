@@ -360,8 +360,21 @@
         ],
         "team": "外国语学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          5
+        ]
+      ],
       "table": "10",
       "time": null,
       "referee": ""
@@ -442,9 +455,12 @@
         "team": ""
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "周成康",
+          "李乐典"
+        ],
+        "team": "化学与分子工程学院"
       },
       "finished": false,
       "games": [],
