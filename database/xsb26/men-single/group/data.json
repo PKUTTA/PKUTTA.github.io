@@ -7028,16 +7028,16 @@
           "finished": true,
           "games": [
             [
-              5,
-              11
-            ],
-            [
-              13,
-              11
+              11,
+              5
             ],
             [
               11,
-              4
+              13
+            ],
+            [
+              4,
+              11
             ]
           ],
           "table": "3/4",
@@ -7097,10 +7097,10 @@
       "standings": {
         "order": [
           1,
-          2,
           3,
-          0,
-          4
+          2,
+          4,
+          0
         ],
         "rows": [
           {
@@ -7113,47 +7113,38 @@
             "draw_rank": null
           },
           {
-            "index": 2,
+            "index": 3,
             "rank": 2,
-            "points": 3,
-            "tied_points": null,
+            "points": 2,
+            "tied_points": 1,
             "game_ratio": null,
             "point_ratio": null,
             "draw_rank": null
           },
           {
-            "index": 3,
+            "index": 2,
             "rank": 3,
-            "points": 1,
-            "tied_points": 1,
-            "game_ratio": {
-              "won": 3,
-              "lost": 2
-            },
-            "point_ratio": null,
-            "draw_rank": null
-          },
-          {
-            "index": 0,
-            "rank": 4,
-            "points": 1,
-            "tied_points": 1,
-            "game_ratio": {
-              "won": 3,
-              "lost": 3
-            },
+            "points": 2,
+            "tied_points": 0,
+            "game_ratio": null,
             "point_ratio": null,
             "draw_rank": null
           },
           {
             "index": 4,
-            "rank": 5,
+            "rank": 4,
             "points": 1,
             "tied_points": 1,
-            "game_ratio": {
-              "won": 2,
-              "lost": 3
-            },
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 0,
+            "rank": 5,
+            "points": 1,
+            "tied_points": 0,
+            "game_ratio": null,
             "point_ratio": null,
             "draw_rank": null
           }
