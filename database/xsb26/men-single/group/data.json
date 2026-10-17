@@ -1437,8 +1437,17 @@
           "id": "g10-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              17,
+              15
+            ],
+            [
+              11,
+              6
+            ]
+          ],
           "table": "10",
           "time": "10/17 9:30",
           "referee": "龚正宁"
