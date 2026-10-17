@@ -1413,8 +1413,21 @@
           "id": "g10-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
           "table": "10",
           "time": "10/17 9:30",
           "referee": "龚正宁"
