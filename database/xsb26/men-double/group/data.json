@@ -48,7 +48,12 @@
           "a": 0,
           "b": 1,
           "finished": false,
-          "games": [],
+          "games": [
+            [
+              null,
+              null
+            ]
+          ],
           "table": "1",
           "time": "10/17 18:00",
           "referee": "尹子睿"
@@ -67,8 +72,17 @@
           "id": "g1-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              7
+            ]
+          ],
           "table": "1",
           "time": "10/17 18:00",
           "referee": "尹子睿"
@@ -77,8 +91,21 @@
           "id": "g1-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              9,
+              11
+            ]
+          ],
           "table": "1",
           "time": "10/17 18:00",
           "referee": "尹子睿"
