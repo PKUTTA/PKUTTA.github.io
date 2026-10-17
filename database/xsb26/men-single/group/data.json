@@ -2182,8 +2182,21 @@
           "id": "g12-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              11
+            ]
+          ],
           "table": "7",
           "time": "10/17 11:00",
           "referee": "于苏皓"
