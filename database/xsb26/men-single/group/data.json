@@ -2165,8 +2165,17 @@
           "id": "g11-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              1
+            ],
+            [
+              11,
+              6
+            ]
+          ],
           "table": "5",
           "time": "10/17 11:00",
           "referee": "申宇灏"
@@ -2175,8 +2184,17 @@
           "id": "g11-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              4
+            ]
+          ],
           "table": "5",
           "time": "10/17 11:00",
           "referee": "申宇灏"
@@ -2185,8 +2203,21 @@
           "id": "g11-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              11,
+              7
+            ]
+          ],
           "table": "5",
           "time": "10/17 11:00",
           "referee": "申宇灏"
@@ -2195,8 +2226,17 @@
           "id": "g11-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              4,
+              11
+            ]
+          ],
           "table": "5",
           "time": "10/17 11:00",
           "referee": "申宇灏"
@@ -2205,8 +2245,17 @@
           "id": "g11-m-5",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              1,
+              11
+            ],
+            [
+              9,
+              11
+            ]
+          ],
           "table": "5",
           "time": "10/17 11:00",
           "referee": "申宇灏"
@@ -2215,15 +2264,74 @@
           "id": "g11-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              6
+            ]
+          ],
           "table": "5",
           "time": "10/17 11:00",
           "referee": "申宇灏"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "standings": {
+        "order": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 12,
