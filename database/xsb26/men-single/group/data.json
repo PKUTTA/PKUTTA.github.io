@@ -2470,8 +2470,21 @@
           "id": "g21-m-7",
           "a": 1,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              13,
+              15
+            ]
+          ],
           "table": "1/2",
           "time": "10/17 9:00",
           "referee": "王艺、申宇灏"
@@ -3203,8 +3216,17 @@
           "id": "g24-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              6,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 9:00",
           "referee": "靳泽宇、彭睿智"
