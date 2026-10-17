@@ -1036,8 +1036,17 @@
           "id": "g6-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              2,
+              11
+            ]
+          ],
           "table": "5",
           "time": "10/17 9:30",
           "referee": "刘雨菡"
