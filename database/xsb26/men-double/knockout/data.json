@@ -178,8 +178,21 @@
         ],
         "team": "集成电路学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          5,
+          11
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          8,
+          11
+        ]
+      ],
       "table": "2",
       "time": null,
       "referee": ""
@@ -269,8 +282,21 @@
         ],
         "team": "物理学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          4
+        ]
+      ],
       "table": "6",
       "time": null,
       "referee": ""
@@ -389,9 +415,12 @@
         "team": ""
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "任超",
+          "姚文帅"
+        ],
+        "team": "集成电路学院"
       },
       "finished": false,
       "games": [],
@@ -427,9 +456,12 @@
       "round": 1,
       "index": 2,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "李云溥",
+          "彭聪"
+        ],
+        "team": "马克思主义学院"
       },
       "b": {
         "kind": "pair",
