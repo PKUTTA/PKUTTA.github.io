@@ -39,8 +39,21 @@
       "id": "m-1",
       "a": 0,
       "b": 1,
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          9,
+          11
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          8,
+          11
+        ]
+      ],
       "table": "7",
       "time": "10/17 18:00",
       "referee": "韩雅文"
@@ -49,8 +62,21 @@
       "id": "m-2",
       "a": 0,
       "b": 2,
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          5,
+          11
+        ]
+      ],
       "table": "7",
       "time": "10/17 18:00",
       "referee": "韩雅文"
@@ -59,8 +85,21 @@
       "id": "m-3",
       "a": 0,
       "b": 3,
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          3,
+          11
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          7,
+          11
+        ]
+      ],
       "table": "7",
       "time": "10/17 18:00",
       "referee": "韩雅文"
@@ -69,8 +108,25 @@
       "id": "m-4",
       "a": 1,
       "b": 2,
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          6,
+          11
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          9,
+          11
+        ]
+      ],
       "table": "7",
       "time": "10/17 18:00",
       "referee": "韩雅文"
@@ -79,8 +135,29 @@
       "id": "m-5",
       "a": 1,
       "b": 3,
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          12,
+          10
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          16,
+          14
+        ],
+        [
+          11,
+          7
+        ]
+      ],
       "table": "7",
       "time": "10/17 18:00",
       "referee": "韩雅文"
