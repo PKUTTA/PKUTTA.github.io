@@ -2280,8 +2280,17 @@
           "id": "g22-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              "wo"
+            ],
+            [
+              11,
+              "wo"
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 8:00",
           "referee": "靳泽宇、彭睿智"
@@ -2293,12 +2302,12 @@
           "finished": true,
           "games": [
             [
-              11,
-              "wo"
+              14,
+              12
             ],
             [
               11,
-              "wo"
+              6
             ]
           ],
           "table": "3/4",
@@ -2328,8 +2337,17 @@
           "id": "g22-m-5",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              "wo"
+            ],
+            [
+              11,
+              "wo"
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 8:00",
           "referee": "靳泽宇、彭睿智"
@@ -2418,17 +2436,8 @@
           "id": "g22-m-10",
           "a": 3,
           "b": 4,
-          "finished": true,
-          "games": [
-            [
-              11,
-              "wo"
-            ],
-            [
-              11,
-              "wo"
-            ]
-          ],
+          "finished": false,
+          "games": [],
           "table": "3/4",
           "time": "10/17 8:00",
           "referee": "靳泽宇、彭睿智"
