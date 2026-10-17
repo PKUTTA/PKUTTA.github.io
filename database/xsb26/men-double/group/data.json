@@ -1040,8 +1040,17 @@
           "id": "g6-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              9
+            ]
+          ],
           "table": "8",
           "time": "10/17 18:00",
           "referee": "刘宇航"
@@ -1050,8 +1059,21 @@
           "id": "g6-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ],
           "table": "8",
           "time": "10/17 18:00",
           "referee": "刘宇航"
@@ -1060,8 +1082,17 @@
           "id": "g6-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              2,
+              11
+            ],
+            [
+              4,
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/17 18:00",
           "referee": "刘宇航"
@@ -1070,8 +1101,21 @@
           "id": "g6-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              9,
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/17 18:00",
           "referee": "刘宇航"
@@ -1080,8 +1124,21 @@
           "id": "g6-m-5",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              6,
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/17 18:00",
           "referee": "刘宇航"
