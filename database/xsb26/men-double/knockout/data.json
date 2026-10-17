@@ -710,11 +710,24 @@
         ],
         "team": "光华管理学院"
       },
-      "finished": false,
-      "games": [],
-      "table": null,
-      "time": null,
-      "referee": ""
+      "finished": true,
+      "games": [
+        [
+          3,
+          11
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      "table": "8",
+      "time": "21:30",
+      "referee": "于苏皓、于宗瑞"
     }
   ],
   "bronze_match": {
@@ -735,11 +748,117 @@
       ],
       "team": "信息科学技术学院"
     },
-    "finished": false,
-    "games": [],
-    "table": null,
-    "time": null,
-    "referee": ""
+    "finished": true,
+    "games": [
+      [
+        11,
+        9
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        8,
+        11
+      ]
+    ],
+    "table": "3",
+    "time": "21:30",
+    "referee": "赵星宇、高冠华"
   },
-  "results": null
+  "results": [
+    {
+      "rank": 1,
+      "participant": {
+        "kind": "pair",
+        "members": [
+          "肖骥超",
+          "刘卿然"
+        ],
+        "team": "光华管理学院"
+      }
+    },
+    {
+      "rank": 2,
+      "participant": {
+        "kind": "pair",
+        "members": [
+          "韩政轩",
+          "万玄同"
+        ],
+        "team": "化学与分子工程学院"
+      }
+    },
+    {
+      "rank": 3,
+      "participant": {
+        "kind": "pair",
+        "members": [
+          "颜泽鑫",
+          "叶苏恺"
+        ],
+        "team": "信息科学技术学院"
+      }
+    },
+    {
+      "rank": 4,
+      "participant": {
+        "kind": "pair",
+        "members": [
+          "高铭",
+          "国嘉祎"
+        ],
+        "team": "法学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "pair",
+        "members": [
+          "任超",
+          "姚文帅"
+        ],
+        "team": "集成电路学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "pair",
+        "members": [
+          "周成康",
+          "李乐典"
+        ],
+        "team": "化学与分子工程学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "pair",
+        "members": [
+          "李云溥",
+          "彭聪"
+        ],
+        "team": "马克思主义学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "pair",
+        "members": [
+          "黄思宇",
+          "蒋晓冉"
+        ],
+        "team": "物理学院"
+      }
+    }
+  ]
 }
