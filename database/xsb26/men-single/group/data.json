@@ -176,8 +176,17 @@
           "id": "g2-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              7
+            ]
+          ],
           "table": "7",
           "time": "10/17 8:00",
           "referee": "蔡天诚"
@@ -186,8 +195,17 @@
           "id": "g2-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              "wo"
+            ],
+            [
+              11,
+              "wo"
+            ]
+          ],
           "table": "7",
           "time": "10/17 8:00",
           "referee": "蔡天诚"
@@ -196,8 +214,17 @@
           "id": "g2-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              7
+            ]
+          ],
           "table": "7",
           "time": "10/17 8:00",
           "referee": "蔡天诚"
@@ -206,8 +233,17 @@
           "id": "g2-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              "wo"
+            ],
+            [
+              11,
+              "wo"
+            ]
+          ],
           "table": "7",
           "time": "10/17 8:00",
           "referee": "蔡天诚"
@@ -216,8 +252,17 @@
           "id": "g2-m-5",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
           "table": "7",
           "time": "10/17 8:00",
           "referee": "蔡天诚"
@@ -226,15 +271,74 @@
           "id": "g2-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "7",
           "time": "10/17 8:00",
           "referee": "蔡天诚"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "standings": {
+        "order": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 3,
