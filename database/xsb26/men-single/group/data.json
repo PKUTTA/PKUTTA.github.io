@@ -2428,12 +2428,12 @@
           "finished": true,
           "games": [
             [
-              14,
-              12
+              11,
+              "wo"
             ],
             [
               11,
-              6
+              "wo"
             ]
           ],
           "table": "3/4",
@@ -2485,16 +2485,8 @@
           "finished": true,
           "games": [
             [
-              11,
-              9
-            ],
-            [
-              8,
-              11
-            ],
-            [
-              11,
-              5
+              "wo",
+              "wo"
             ]
           ],
           "table": "3/4",
@@ -2528,11 +2520,11 @@
           "games": [
             [
               "wo",
-              11
+              "wo"
             ],
             [
               "wo",
-              11
+              "wo"
             ]
           ],
           "table": "3/4",
@@ -2565,11 +2557,11 @@
           "finished": true,
           "games": [
             [
-              11,
+              "wo",
               "wo"
             ],
             [
-              11,
+              "wo",
               "wo"
             ]
           ],
@@ -2589,9 +2581,9 @@
         "order": [
           0,
           1,
-          3,
           4,
-          2
+          2,
+          3
         ],
         "rows": [
           {
@@ -2606,15 +2598,6 @@
           {
             "index": 1,
             "rank": 2,
-            "points": 3,
-            "tied_points": null,
-            "game_ratio": null,
-            "point_ratio": null,
-            "draw_rank": null
-          },
-          {
-            "index": 3,
-            "rank": 3,
             "points": 2,
             "tied_points": null,
             "game_ratio": null,
@@ -2623,7 +2606,7 @@
           },
           {
             "index": 4,
-            "rank": 4,
+            "rank": 3,
             "points": 0,
             "tied_points": 0,
             "game_ratio": {
@@ -2638,7 +2621,7 @@
           },
           {
             "index": 2,
-            "rank": 5,
+            "rank": 4,
             "points": 0,
             "tied_points": 0,
             "game_ratio": {
@@ -2650,6 +2633,21 @@
               "lost": 0
             },
             "draw_rank": 2
+          },
+          {
+            "index": 3,
+            "rank": 5,
+            "points": 0,
+            "tied_points": 0,
+            "game_ratio": {
+              "won": 0,
+              "lost": 0
+            },
+            "point_ratio": {
+              "won": 0,
+              "lost": 0
+            },
+            "draw_rank": 3
           }
         ]
       }
