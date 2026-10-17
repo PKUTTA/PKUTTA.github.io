@@ -6712,8 +6712,21 @@
           "id": "g30-m-4",
           "a": 0,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              6,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 12:00",
           "referee": "倪珺清、于宗瑞"
@@ -6841,8 +6854,78 @@
           "referee": "倪珺清、于宗瑞"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        3,
+        4,
+        1,
+        2,
+        0
+      ],
+      "standings": {
+        "order": [
+          1,
+          2,
+          3,
+          0,
+          4
+        ],
+        "rows": [
+          {
+            "index": 1,
+            "rank": 1,
+            "points": 4,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 2,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 3,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": {
+              "won": 3,
+              "lost": 2
+            },
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 0,
+            "rank": 4,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": {
+              "won": 3,
+              "lost": 3
+            },
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 4,
+            "rank": 5,
+            "points": 1,
+            "tied_points": 1,
+            "game_ratio": {
+              "won": 2,
+              "lost": 3
+            },
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 31,
