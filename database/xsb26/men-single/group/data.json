@@ -3310,8 +3310,17 @@
           "id": "g24-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              3
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 9:00",
           "referee": "靳泽宇、彭睿智"
@@ -3339,8 +3348,17 @@
           "id": "g24-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              2
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 9:00",
           "referee": "靳泽宇、彭睿智"
@@ -3359,8 +3377,17 @@
           "id": "g24-m-5",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              6,
+              11
+            ],
+            [
+              5,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 9:00",
           "referee": "靳泽宇、彭睿智"
@@ -3417,8 +3444,17 @@
           "id": "g24-m-9",
           "a": 2,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 9:00",
           "referee": "靳泽宇、彭睿智"
