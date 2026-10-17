@@ -154,7 +154,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "1",
       "time": null,
       "referee": ""
     },
@@ -180,7 +180,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "2",
       "time": null,
       "referee": ""
     },
@@ -206,7 +206,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "3",
       "time": null,
       "referee": ""
     },
@@ -232,7 +232,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "4",
       "time": null,
       "referee": ""
     },
@@ -258,7 +258,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "6",
       "time": null,
       "referee": ""
     },
@@ -284,7 +284,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "8",
       "time": null,
       "referee": ""
     },
@@ -310,7 +310,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "9",
       "time": null,
       "referee": ""
     },
@@ -336,7 +336,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "10",
       "time": null,
       "referee": ""
     },
