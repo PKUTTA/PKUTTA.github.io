@@ -5241,8 +5241,21 @@
           "id": "g27-m-5",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              14,
+              16
+            ],
+            [
+              12,
+              10
+            ]
+          ],
           "table": "1/2",
           "time": "10/17 11:00",
           "referee": "王艺、康婕颖"
@@ -5270,8 +5283,17 @@
           "id": "g27-m-7",
           "a": 1,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              11
+            ]
+          ],
           "table": "1/2",
           "time": "10/17 11:00",
           "referee": "王艺、康婕颖"
@@ -5280,8 +5302,17 @@
           "id": "g27-m-8",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              1
+            ],
+            [
+              11,
+              5
+            ]
+          ],
           "table": "1/2",
           "time": "10/17 11:00",
           "referee": "王艺、康婕颖"
@@ -5293,12 +5324,12 @@
           "finished": true,
           "games": [
             [
-              5,
-              11
+              11,
+              6
             ],
             [
-              5,
-              11
+              11,
+              0
             ]
           ],
           "table": "1/2",
@@ -5329,8 +5360,69 @@
           "referee": "王艺、康婕颖"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        4,
+        0,
+        3,
+        2,
+        1
+      ],
+      "standings": {
+        "order": [
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "rows": [
+          {
+            "index": 1,
+            "rank": 1,
+            "points": 3,
+            "tied_points": 1,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 2,
+            "points": 3,
+            "tied_points": 0,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 3,
+            "points": 2,
+            "tied_points": 1,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 4,
+            "rank": 4,
+            "points": 2,
+            "tied_points": 0,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 0,
+            "rank": 5,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 28,
