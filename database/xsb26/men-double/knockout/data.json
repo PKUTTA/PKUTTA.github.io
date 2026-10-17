@@ -204,8 +204,21 @@
         ],
         "team": "物理学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          8,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          5,
+          11
+        ]
+      ],
       "table": "3",
       "time": null,
       "referee": ""
@@ -378,9 +391,12 @@
       "round": 1,
       "index": 1,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "pair",
+        "members": [
+          "黄思宇",
+          "蒋晓冉"
+        ],
+        "team": "物理学院"
       },
       "b": {
         "kind": "undecided",
