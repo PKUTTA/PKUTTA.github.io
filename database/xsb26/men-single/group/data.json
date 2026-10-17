@@ -6547,8 +6547,17 @@
           "id": "g30-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              7,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 12:00",
           "referee": "倪珺清、于宗瑞"
@@ -6557,8 +6566,17 @@
           "id": "g30-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 12:00",
           "referee": "倪珺清、于宗瑞"
@@ -6567,8 +6585,21 @@
           "id": "g30-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              4
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 12:00",
           "referee": "倪珺清、于宗瑞"
@@ -6587,8 +6618,17 @@
           "id": "g30-m-5",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              7
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 12:00",
           "referee": "倪珺清、于宗瑞"
@@ -6616,8 +6656,17 @@
           "id": "g30-m-7",
           "a": 1,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 12:00",
           "referee": "倪珺清、于宗瑞"
@@ -6626,8 +6675,21 @@
           "id": "g30-m-8",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              5,
+              11
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              11,
+              4
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 12:00",
           "referee": "倪珺清、于宗瑞"
@@ -6636,8 +6698,21 @@
           "id": "g30-m-9",
           "a": 2,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              7
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 12:00",
           "referee": "倪珺清、于宗瑞"
@@ -6714,8 +6789,17 @@
           "id": "g31-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
           "table": "1/2",
           "time": "10/17 13:00",
           "referee": "杨怡帆、黎航宇"
