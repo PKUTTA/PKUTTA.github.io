@@ -7781,6 +7781,44 @@
           "finished": true,
           "games": [
             [
+              9,
+              11
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "table": "3/4",
+          "time": "10/17 13:00",
+          "referee": "倪珺清、于宗瑞"
+        },
+        {
+          "id": "g32-m-6",
+          "a": 1,
+          "b": 3,
+          "finished": true,
+          "games": [
+            [
+              6,
+              11
+            ],
+            [
+              4,
+              11
+            ]
+          ],
+          "table": "3/4",
+          "time": "10/17 13:00",
+          "referee": "倪珺清、于宗瑞"
+        },
+        {
+          "id": "g32-m-7",
+          "a": 1,
+          "b": 4,
+          "finished": true,
+          "games": [
+            [
               11,
               5
             ],
@@ -7794,31 +7832,20 @@
           "referee": "倪珺清、于宗瑞"
         },
         {
-          "id": "g32-m-6",
-          "a": 1,
-          "b": 3,
-          "finished": false,
-          "games": [],
-          "table": "3/4",
-          "time": "10/17 13:00",
-          "referee": "倪珺清、于宗瑞"
-        },
-        {
-          "id": "g32-m-7",
-          "a": 1,
-          "b": 4,
-          "finished": false,
-          "games": [],
-          "table": "3/4",
-          "time": "10/17 13:00",
-          "referee": "倪珺清、于宗瑞"
-        },
-        {
           "id": "g32-m-8",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              9,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 13:00",
           "referee": "倪珺清、于宗瑞"
@@ -7846,15 +7873,85 @@
           "id": "g32-m-10",
           "a": 3,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              2
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 13:00",
           "referee": "倪珺清、于宗瑞"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        1,
+        0,
+        3,
+        4,
+        2
+      ],
+      "standings": {
+        "order": [
+          0,
+          3,
+          2,
+          1,
+          4
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "rank": 1,
+            "points": 4,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 2,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 3,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 4,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 4,
+            "rank": 5,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     }
   ]
 }
