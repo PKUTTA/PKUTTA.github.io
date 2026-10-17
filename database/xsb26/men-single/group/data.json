@@ -4115,8 +4115,17 @@
           "id": "g26-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              2,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 10:00",
           "referee": "邓子洋、刘星宇"
@@ -4135,8 +4144,17 @@
           "id": "g26-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              2,
+              11
+            ],
+            [
+              6,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 10:00",
           "referee": "邓子洋、刘星宇"
@@ -4145,8 +4163,17 @@
           "id": "g26-m-4",
           "a": 0,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              5,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 10:00",
           "referee": "邓子洋、刘星宇"
@@ -4165,8 +4192,17 @@
           "id": "g26-m-6",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              5,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 10:00",
           "referee": "邓子洋、刘星宇"
@@ -4175,8 +4211,21 @@
           "id": "g26-m-7",
           "a": 1,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              8,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 10:00",
           "referee": "邓子洋、刘星宇"
@@ -4205,8 +4254,17 @@
           "id": "g26-m-10",
           "a": 3,
           "b": 4,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              2
+            ],
+            [
+              13,
+              11
+            ]
+          ],
           "table": "3/4",
           "time": "10/17 10:00",
           "referee": "邓子洋、刘星宇"
