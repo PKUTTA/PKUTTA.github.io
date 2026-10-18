@@ -491,8 +491,21 @@
         ],
         "team": "外国语学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          5,
+          11
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          8,
+          11
+        ]
+      ],
       "table": "2",
       "time": null,
       "referee": ""
@@ -548,9 +561,11 @@
       "round": 2,
       "index": 1,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "张诗悦"
+        ],
+        "team": "外国语学院"
       },
       "b": {
         "kind": "undecided",
