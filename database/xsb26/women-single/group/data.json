@@ -453,8 +453,17 @@
           "id": "g4-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              1
+            ],
+            [
+              11,
+              2
+            ]
+          ],
           "table": "4",
           "time": "10/18 9:00",
           "referee": "杨怡帆"
@@ -463,8 +472,17 @@
           "id": "g4-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              1
+            ],
+            [
+              11,
+              3
+            ]
+          ],
           "table": "4",
           "time": "10/18 9:00",
           "referee": "杨怡帆"
@@ -511,8 +529,17 @@
           "id": "g4-m-5",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              3,
+              11
+            ],
+            [
+              1,
+              11
+            ]
+          ],
           "table": "4",
           "time": "10/18 9:00",
           "referee": "杨怡帆"
@@ -537,8 +564,58 @@
           "referee": "杨怡帆"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "standings": {
+        "order": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 5,
@@ -826,8 +903,17 @@
           "id": "g7-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/18 9:00",
           "referee": "倪旖"
@@ -836,8 +922,17 @@
           "id": "g7-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/18 9:00",
           "referee": "倪旖"
@@ -846,8 +941,17 @@
           "id": "g7-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/18 9:00",
           "referee": "倪旖"
@@ -856,8 +960,21 @@
           "id": "g7-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              8
+            ]
+          ],
           "table": "8",
           "time": "10/18 9:00",
           "referee": "倪旖"
@@ -866,8 +983,21 @@
           "id": "g7-m-5",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/18 9:00",
           "referee": "倪旖"
@@ -876,15 +1006,74 @@
           "id": "g7-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              10,
+              12
+            ],
+            [
+              6,
+              11
+            ]
+          ],
           "table": "8",
           "time": "10/18 9:00",
           "referee": "倪旖"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "standings": {
+        "order": [
+          3,
+          1,
+          2,
+          0
+        ],
+        "rows": [
+          {
+            "index": 3,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 0,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 8,
