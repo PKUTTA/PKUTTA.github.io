@@ -202,8 +202,17 @@
           "id": "g2-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              9,
+              11
+            ]
+          ],
           "table": "2",
           "time": "10/18 9:00",
           "referee": "于苏皓"
@@ -212,8 +221,17 @@
           "id": "g2-m-5",
           "a": 1,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              11,
+              13
+            ]
+          ],
           "table": "2",
           "time": "10/18 9:00",
           "referee": "于苏皓"
@@ -222,15 +240,74 @@
           "id": "g2-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              3
+            ]
+          ],
           "table": "2",
           "time": "10/18 9:00",
           "referee": "于苏皓"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "standings": {
+        "order": [
+          2,
+          3,
+          1,
+          0
+        ],
+        "rows": [
+          {
+            "index": 2,
+            "rank": 1,
+            "points": 3,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 3,
+            "rank": 2,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 1,
+            "rank": 3,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 0,
+            "rank": 4,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -396,8 +473,17 @@
           "id": "g4-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              3
+            ]
+          ],
           "table": "4",
           "time": "10/18 9:00",
           "referee": "杨怡帆"
@@ -406,8 +492,17 @@
           "id": "g4-m-4",
           "a": 1,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              7
+            ]
+          ],
           "table": "4",
           "time": "10/18 9:00",
           "referee": "杨怡帆"
@@ -426,8 +521,17 @@
           "id": "g4-m-6",
           "a": 2,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              3,
+              11
+            ],
+            [
+              2,
+              11
+            ]
+          ],
           "table": "4",
           "time": "10/18 9:00",
           "referee": "杨怡帆"
@@ -488,8 +592,17 @@
           "id": "g5-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              5
+            ]
+          ],
           "table": "5",
           "time": "10/18 9:00",
           "referee": "尹子睿"
