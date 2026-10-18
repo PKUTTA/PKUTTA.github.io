@@ -470,8 +470,17 @@
         ],
         "team": "地球与空间科学学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          4
+        ]
+      ],
       "table": "1",
       "time": "13:00",
       "referee": "于苏皓"
@@ -494,8 +503,17 @@
         ],
         "team": "生命科学学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          1
+        ],
+        [
+          11,
+          9
+        ]
+      ],
       "table": "2",
       "time": "13:00",
       "referee": ""
@@ -518,8 +536,17 @@
         ],
         "team": "信息管理系"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          10
+        ]
+      ],
       "table": "3",
       "time": "13:00",
       "referee": ""
@@ -542,8 +569,17 @@
         ],
         "team": "中国语言文学系"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          "wo",
+          11
+        ],
+        [
+          "wo",
+          11
+        ]
+      ],
       "table": "4",
       "time": "13:00",
       "referee": ""
@@ -590,8 +626,17 @@
         ],
         "team": "物理学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          7
+        ]
+      ],
       "table": "7",
       "time": "13:00",
       "referee": ""
@@ -614,8 +659,21 @@
         ],
         "team": "工学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          8,
+          11
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          7,
+          11
+        ]
+      ],
       "table": "8",
       "time": "13:00",
       "referee": ""
@@ -638,8 +696,17 @@
         ],
         "team": "信息科学技术学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          2
+        ],
+        [
+          11,
+          1
+        ]
+      ],
       "table": "9",
       "time": "13:00",
       "referee": ""
@@ -662,8 +729,17 @@
         ],
         "team": "燕京学堂"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          2
+        ]
+      ],
       "table": "1",
       "time": "13:20",
       "referee": ""
@@ -1225,14 +1301,18 @@
       "round": 1,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "李厚润"
+        ],
+        "team": "计算机学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "高铭"
+        ],
+        "team": "法学院"
       },
       "finished": false,
       "games": [],
@@ -1245,14 +1325,18 @@
       "round": 1,
       "index": 1,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "王一石"
+        ],
+        "team": "元培学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "孙琪玮"
+        ],
+        "team": "中国语言文学系"
       },
       "finished": false,
       "games": [],
@@ -1270,9 +1354,11 @@
         "team": ""
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "王大禹"
+        ],
+        "team": "计算机学院"
       },
       "finished": false,
       "games": [],
@@ -1285,14 +1371,18 @@
       "round": 1,
       "index": 3,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "韩宇明"
+        ],
+        "team": "工学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "韩政轩"
+        ],
+        "team": "化学与分子工程学院"
       },
       "finished": false,
       "games": [],
@@ -1305,9 +1395,11 @@
       "round": 1,
       "index": 4,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "Daniel Apelbaum"
+        ],
+        "team": "燕京学堂"
       },
       "b": {
         "kind": "undecided",
