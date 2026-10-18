@@ -696,11 +696,109 @@
       ],
       "team": "软件与微电子学院"
     },
-    "finished": false,
-    "games": [],
+    "finished": true,
+    "games": [
+      [
+        11,
+        7
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        11,
+        8
+      ]
+    ],
     "table": null,
     "time": null,
     "referee": ""
   },
-  "results": null
+  "results": [
+    {
+      "rank": 1,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "闫孟涵"
+        ],
+        "team": "建筑与景观设计学院"
+      }
+    },
+    {
+      "rank": 2,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "张诗悦"
+        ],
+        "team": "外国语学院"
+      }
+    },
+    {
+      "rank": 3,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "周子瑄"
+        ],
+        "team": "集成电路学院"
+      }
+    },
+    {
+      "rank": 4,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "郭珈汛"
+        ],
+        "team": "软件与微电子学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "姜懿真"
+        ],
+        "team": "前沿交叉学科研究院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "张煜晗"
+        ],
+        "team": "地球与空间科学学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "张馨睿"
+        ],
+        "team": "数学科学学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "郭恬圆"
+        ],
+        "team": "光华管理学院"
+      }
+    }
+  ]
 }
