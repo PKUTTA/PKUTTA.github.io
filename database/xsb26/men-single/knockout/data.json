@@ -2612,8 +2612,25 @@
         ],
         "team": "马克思主义学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          10,
+          12
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          5,
+          11
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -2635,11 +2652,105 @@
       ],
       "team": "光华管理学院"
     },
-    "finished": false,
-    "games": [],
-    "table": null,
+    "finished": true,
+    "games": [
+      [
+        4,
+        11
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        7,
+        11
+      ]
+    ],
+    "table": "9",
     "time": null,
-    "referee": ""
+    "referee": "于苏皓、李语宣"
   },
-  "results": null
+  "results": [
+    {
+      "rank": 1,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "李云溥"
+        ],
+        "team": "马克思主义学院"
+      }
+    },
+    {
+      "rank": 2,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "徐子涵"
+        ],
+        "team": "经济学院"
+      }
+    },
+    {
+      "rank": 3,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "刘卿然"
+        ],
+        "team": "光华管理学院"
+      }
+    },
+    {
+      "rank": 4,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "李厚润"
+        ],
+        "team": "计算机学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "Daniel Apelbaum"
+        ],
+        "team": "燕京学堂"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "施彭湃"
+        ],
+        "team": "先进制造与机器人学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "杨佳郑"
+        ],
+        "team": "教育学院"
+      }
+    },
+    {
+      "rank": 5,
+      "participant": {
+        "kind": "player",
+        "members": [
+          "韩政轩"
+        ],
+        "team": "化学与分子工程学院"
+      }
+    }
+  ]
 }
