@@ -145,8 +145,17 @@
           "id": "g2-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "2",
           "time": "10/18 9:00",
           "referee": "于苏皓"
@@ -155,8 +164,17 @@
           "id": "g2-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "2",
           "time": "10/18 9:00",
           "referee": "于苏皓"
@@ -165,8 +183,17 @@
           "id": "g2-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "2",
           "time": "10/18 9:00",
           "referee": "于苏皓"
