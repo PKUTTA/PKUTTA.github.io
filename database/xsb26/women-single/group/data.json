@@ -471,8 +471,17 @@
           "id": "g5-m-3",
           "a": 0,
           "b": 3,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              6
+            ]
+          ],
           "table": "5",
           "time": "10/18 9:00",
           "referee": "尹子睿"
