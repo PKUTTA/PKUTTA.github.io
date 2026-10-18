@@ -795,8 +795,17 @@
           "id": "g8-m-1",
           "a": 0,
           "b": 1,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "9",
           "time": "10/18 9:00",
           "referee": "李田润"
@@ -805,8 +814,17 @@
           "id": "g8-m-2",
           "a": 0,
           "b": 2,
-          "finished": false,
-          "games": [],
+          "finished": true,
+          "games": [
+            [
+              "wo",
+              11
+            ],
+            [
+              "wo",
+              11
+            ]
+          ],
           "table": "9",
           "time": "10/18 9:00",
           "referee": "李田润"
@@ -831,8 +849,47 @@
           "referee": "李田润"
         }
       ],
-      "ranking_draw_order": null,
-      "standings": null
+      "ranking_draw_order": [
+        2,
+        1,
+        0
+      ],
+      "standings": {
+        "order": [
+          1,
+          2,
+          0
+        ],
+        "rows": [
+          {
+            "index": 1,
+            "rank": 1,
+            "points": 2,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 2,
+            "rank": 2,
+            "points": 1,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          },
+          {
+            "index": 0,
+            "rank": 3,
+            "points": 0,
+            "tied_points": null,
+            "game_ratio": null,
+            "point_ratio": null,
+            "draw_rank": null
+          }
+        ]
+      }
     }
   ]
 }
