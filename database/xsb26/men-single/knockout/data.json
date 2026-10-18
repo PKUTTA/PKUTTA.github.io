@@ -2526,8 +2526,29 @@
         ],
         "team": "经济学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          12,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          8,
+          11
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -2578,9 +2599,11 @@
       "round": 5,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "徐子涵"
+        ],
+        "team": "经济学院"
       },
       "b": {
         "kind": "player",
@@ -2599,9 +2622,11 @@
   "bronze_match": {
     "id": "bronze",
     "a": {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "李厚润"
+      ],
+      "team": "计算机学院"
     },
     "b": {
       "kind": "player",
