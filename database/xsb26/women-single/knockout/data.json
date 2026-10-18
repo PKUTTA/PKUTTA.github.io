@@ -454,8 +454,21 @@
         ],
         "team": "集成电路学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          "wo",
+          11
+        ],
+        [
+          "wo",
+          11
+        ],
+        [
+          "wo",
+          11
+        ]
+      ],
       "table": "9",
       "time": null,
       "referee": ""
@@ -518,9 +531,11 @@
         "team": ""
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "周子瑄"
+        ],
+        "team": "集成电路学院"
       },
       "finished": false,
       "games": [],
