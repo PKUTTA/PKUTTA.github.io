@@ -2411,8 +2411,25 @@
         ],
         "team": "经济学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          8
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          5,
+          11
+        ]
+      ],
       "table": "9",
       "time": null,
       "referee": ""
@@ -2503,9 +2520,11 @@
         "team": "计算机学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "徐子涵"
+        ],
+        "team": "经济学院"
       },
       "finished": false,
       "games": [],
