@@ -2124,7 +2124,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "3",
       "time": null,
       "referee": ""
     },
@@ -2172,7 +2172,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "5",
       "time": null,
       "referee": ""
     },
@@ -2196,7 +2196,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "7",
       "time": null,
       "referee": ""
     },
@@ -2220,7 +2220,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "8",
       "time": null,
       "referee": ""
     },
@@ -2244,7 +2244,7 @@
       },
       "finished": false,
       "games": [],
-      "table": null,
+      "table": "9",
       "time": null,
       "referee": ""
     },
