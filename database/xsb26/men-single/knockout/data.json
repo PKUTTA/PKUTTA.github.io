@@ -2246,8 +2246,21 @@
         ],
         "team": "数学科学学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          10
+        ]
+      ],
       "table": "7",
       "time": null,
       "referee": ""
@@ -2384,9 +2397,11 @@
         "team": "光华管理学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "杨佳郑"
+        ],
+        "team": "教育学院"
       },
       "finished": false,
       "games": [],
