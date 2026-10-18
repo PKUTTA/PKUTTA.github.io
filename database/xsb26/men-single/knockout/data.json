@@ -1092,8 +1092,17 @@
         ],
         "team": "医学部"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          4
+        ]
+      ],
       "table": "4",
       "time": "13:40",
       "referee": ""
@@ -1656,9 +1665,11 @@
         "team": "集成电路学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "刘卿然"
+        ],
+        "team": "光华管理学院"
       },
       "finished": false,
       "games": [],
