@@ -1546,8 +1546,17 @@
         ],
         "team": "法学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          2
+        ],
+        [
+          11,
+          6
+        ]
+      ],
       "table": "1",
       "time": null,
       "referee": ""
@@ -1917,9 +1926,11 @@
       "round": 2,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "李厚润"
+        ],
+        "team": "计算机学院"
       },
       "b": {
         "kind": "undecided",
