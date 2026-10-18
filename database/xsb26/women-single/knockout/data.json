@@ -430,8 +430,25 @@
         ],
         "team": "前沿交叉学科研究院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          9,
+          11
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          11,
+          7
+        ]
+      ],
       "table": "7",
       "time": null,
       "referee": ""
@@ -528,8 +545,21 @@
         ],
         "team": "软件与微电子学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          12,
+          14
+        ]
+      ],
       "table": "4",
       "time": null,
       "referee": ""
@@ -539,9 +569,11 @@
       "round": 2,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "闫孟涵"
+        ],
+        "team": "建筑与景观设计学院"
       },
       "b": {
         "kind": "player",
@@ -568,9 +600,11 @@
         "team": "外国语学院"
       },
       "b": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "郭珈汛"
+        ],
+        "team": "软件与微电子学院"
       },
       "finished": false,
       "games": [],

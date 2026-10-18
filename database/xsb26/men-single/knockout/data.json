@@ -2374,8 +2374,21 @@
         ],
         "team": "化学与分子工程学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          6
+        ]
+      ],
       "table": "7",
       "time": null,
       "referee": ""
@@ -2422,8 +2435,21 @@
         ],
         "team": "教育学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          4
+        ],
+        [
+          16,
+          14
+        ],
+        [
+          11,
+          4
+        ]
+      ],
       "table": "2",
       "time": null,
       "referee": ""
@@ -2457,9 +2483,11 @@
       "round": 4,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "李厚润"
+        ],
+        "team": "计算机学院"
       },
       "b": {
         "kind": "undecided",
@@ -2477,9 +2505,11 @@
       "round": 4,
       "index": 1,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "刘卿然"
+        ],
+        "team": "光华管理学院"
       },
       "b": {
         "kind": "undecided",
