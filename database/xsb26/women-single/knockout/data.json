@@ -656,8 +656,25 @@
         ],
         "team": "外国语学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          11,
+          5
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
