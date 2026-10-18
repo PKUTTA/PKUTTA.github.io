@@ -2148,8 +2148,25 @@
         ],
         "team": "光华管理学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          9,
+          11
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          14,
+          12
+        ]
+      ],
       "table": "3",
       "time": null,
       "referee": ""
@@ -2368,9 +2385,11 @@
       "round": 3,
       "index": 1,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "Daniel Apelbaum"
+        ],
+        "team": "燕京学堂"
       },
       "b": {
         "kind": "player",
