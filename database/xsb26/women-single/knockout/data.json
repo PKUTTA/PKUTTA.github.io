@@ -582,8 +582,21 @@
         ],
         "team": "集成电路学院"
       },
-      "finished": false,
-      "games": [],
+      "finished": true,
+      "games": [
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          11,
+          2
+        ]
+      ],
       "table": null,
       "time": null,
       "referee": ""
@@ -630,9 +643,11 @@
       "round": 3,
       "index": 0,
       "a": {
-        "kind": "undecided",
-        "members": [],
-        "team": ""
+        "kind": "player",
+        "members": [
+          "闫孟涵"
+        ],
+        "team": "建筑与景观设计学院"
       },
       "b": {
         "kind": "player",
@@ -651,9 +666,11 @@
   "bronze_match": {
     "id": "bronze",
     "a": {
-      "kind": "undecided",
-      "members": [],
-      "team": ""
+      "kind": "player",
+      "members": [
+        "周子瑄"
+      ],
+      "team": "集成电路学院"
     },
     "b": {
       "kind": "player",
